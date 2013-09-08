@@ -1,0 +1,165 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.zeeflexslider a:active,
+.zeeflexslider a:focus  {outline: none;}
+.zeeslides,
+.zeeflex-control-nav,
+.zeeflex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.zeeflexslider {margin: 0; padding: 0;}
+.zeeflexslider .zeeslides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.zeeflexslider .zeeslides img {width: 100%; display: block;}
+.zeeflex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .zeeslides element */
+.zeeslides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .zeeslides {display: block;} 
+* html .zeeslides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .zeeslides > li:first-child {display: block;}
+
+.zeeflex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .zeeflex-viewport {max-height: 300px;}
+
+/*  ThemeZee Slider Layout
+*****************************************/
+#frontpage-slider {
+	position: relative; 
+	zoom: 1;
+	margin: 0;
+	background: transparent;
+	border: none;
+}
+#frontpage-slider  .zeeslides {
+	zoom: 1;
+}
+#frontpage-slider .zeeslide img {
+	max-width: 1340px;
+	width: 100%;
+	max-height: 450px;
+	height: auto;
+}
+/* Direction Nav */
+#frontpage-slider .zeeflex-direction-nav {
+	*height: 0;
+}
+#frontpage-slider .zeeflex-direction-nav a {
+	display: block;
+	position: absolute;
+	margin: -40px 0 0 0;
+	width: 40px;
+	height: 40px;
+	background: url(../images/flexslider-nav.png) no-repeat 0 0 #333;
+	text-align: left;
+	text-indent: -9999em;
+	top: 40px;
+	cursor: pointer;
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;	
+}
+#frontpage-slider .zeeflex-direction-nav .zeeflex-next {
+	background-position: -40px 0; 
+	left: 41px;
+}
+#frontpage-slider .zeeflex-direction-nav .zeeflex-prev {
+	left: 0;
+}
+#frontpage-slider:hover .zeeflex-next {
+	opacity: 1; 
+}
+#frontpage-slider:hover .zeeflex-prev {
+	opacity: 1; 
+}
+#frontpage-slider:hover .zeeflex-next:hover, #frontpage-slider:hover .zeeflex-prev:hover {
+	background-color: #e84747;
+}
+
+/* Control Nav */
+#frontpage-slider .zeeflex-control-nav {
+	width: 100%; 
+	position: absolute; 
+	margin: 1px 0 0;
+	display: table;
+}
+#frontpage-slider .zeeflex-control-nav li {
+	padding: 0 1px 1px 0;
+	background: #fff;
+	display: table-cell; 
+	zoom: 1; 
+	*display: inline;
+}
+#frontpage-slider .zeeflex-control-paging li a {
+	height: 15px; 
+	display: block; 
+	background: #444;
+	cursor: pointer; 
+	text-indent: -9999px; 
+}
+#frontpage-slider .zeeflex-control-paging li a:hover { 
+	background: #666; 
+}
+#frontpage-slider .zeeflex-control-paging li a.zeeflex-active { 
+	background: #e84747; 
+	cursor: default; 
+}
+
+/* Slider Entry */
+.slide-entry {
+	line-height: 1.6em;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	margin-top: 1px;
+	padding: 1em 1.5em;
+	color: #fff;
+	background: #333;
+	border-top: 10px solid #e84747;
+}
+.slide-title {
+	font-family: 'Francois One', Tahoma, Verdana, Arial;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1.4em;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	text-transform: uppercase;
+	padding: 0.2em 0;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 1em;
+}
+.slide-title a:link, .slide-title a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.slide-title a:hover, .slide-title a:active{
+	color: #ccc;
+}
+.slide-more-link, .slide-more-link:link, .slide-more-link:visited {
+	color: #eee;
+	font-style: italic;
+	display: inline-block;
+	margin: 0.3em 0;
+}
+.slide-more-link:hover, .slide-more-link:active{
+	text-decoration: underline;
+}

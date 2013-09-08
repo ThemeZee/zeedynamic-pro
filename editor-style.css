@@ -1,0 +1,215 @@
+/* Styles for usage in the TinyMCE editor. */
+html {
+	font-size: 100.01%;
+}
+html .mceContentBody {
+	max-width: 700px;
+	line-height: 1.6em;
+}
+body {
+	font-family: 'Arimo', Verdana, Arial;
+	font-size: 0.95em;
+	color: #111;
+	line-height: 1;
+}
+
+/* Text Elements
+-------------------------------------------------------------- */
+a, a:link, a:visited{
+	color: #ba1111;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+p {
+	margin: 0.8em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #222;
+	font-weight: bold;
+	line-height: 1.0em;
+	margin: 1.2em 0 0.3em;
+}
+h1 {
+	font-size: 3.0em;
+}
+h2 {
+	font-size: 2.25em;
+}
+h3 {
+	font-size: 1.5em;
+}
+h4 {
+	font-size: 1.25em;
+}
+h5 {
+	font-size: 1.125em;
+	margin: 1.3em 0 0;
+}
+h6 {
+	font-size: 1.0em;
+	margin: 1.3em 0 0;
+}
+ul{
+	list-style: square inside;
+	margin: 0 0 0.8em 1.5em;
+}
+ol{
+	list-style: decimal inside;
+	margin: 0 0 0.8em 1.5em;
+}
+ol ol {
+	list-style: upper-alpha inside;
+}
+ol ol ol {
+	list-style: lower-roman inside;
+}
+ol ol ol ol {
+	list-style: lower-alpha inside;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0.2em;
+}
+dl {
+	margin: 0.8em 0 1.5em 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+big, .big_tag {
+	font-size: 1.3em;
+}
+ins {
+	padding: 1px 2px;
+	background: #ffa;
+	text-decoration: none;
+}
+code, pre {
+	padding: 3px 8px;
+	margin: 0 1px;
+	background: #eeeeee;
+	color: #222;
+	font-size: 0.9em;
+	font-family: Monospace, "Courier New", Courier;
+	overflow: auto;
+	line-height: 1.0em;
+}
+del, strike, s{
+	text-decoration: line-through;
+}
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+small {
+	font-size: 0.7em;
+}
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+	font-size: 0.8em;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+var, kbd, tt, .tt_tag {
+	font-size: 1.1em;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+blockquote {
+	background:#f5f5f5;
+	border-left: 10px solid #ccc;
+	margin: 1.5em;
+	padding: 0.8em 1.5em;
+}
+blockquote p {
+	display:inline;
+}
+blockquote cite {
+	display: block;
+	margin: 0.5em 0 0 0.5em;
+	color: #777;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #ddd;
+	margin: 20px 0;
+	text-align: left;
+	width: 100%;
+}
+tr th,
+thead th {
+	background: #e5e5e5;
+	font-weight: bold;
+	padding: 0.2em 0.8em;
+}
+tr td {
+	border-top: 1px solid #ddd;
+	padding: 0.2em 0.8em;
+}
+tr.alternate td {
+	background: #f5f5f5;
+}
+
+/* Images | Videos
+-------------------------------------------------------------- */
+img {
+	max-width: 100%;
+	height: auto;
+}
+.wp-post-image {
+	padding: 4px;
+	border: 1px solid #ddd;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wp-caption {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 1em 0;
+}
+.wp-caption-text {
+	margin: 0 !important;
+	padding: 0;
+	font-size: 0.8em;
+	text-align: center;
+}
+.alignleft { 
+	float: left; 
+	display: inline; 
+	margin: 1em 2em 1em 0;
+}
+.alignright	{
+	float: right; 
+	display: inline; 
+	margin: 1em 0 1em 2em;
+}
+.aligncenter {
+	margin: 1em auto; 
+	display: block;
+}
+embed, iframe, object, video {
+	max-width: 100%;
+}

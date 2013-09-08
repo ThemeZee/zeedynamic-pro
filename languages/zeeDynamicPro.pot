@@ -1,0 +1,1284 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zeeDynamicPro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-15 16:45+0100\n"
+"PO-Revision-Date: 2013-09-08 19:10+0100\n"
+"Last-Translator: Ulrich Pogson <grapplerulrich@gmail.com>\n"
+"Language-Team: ThemeZee <contact@themezee.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: 404.php:9
+msgid "404 Error: Not found"
+msgstr ""
+
+#: 404.php:12
+msgid ""
+"The page you trying to reach does not exist, or has been moved. Please use "
+"the menus or the search box to find what you are looking for"
+msgstr ""
+
+#: 404.php:14
+msgid "Search"
+msgstr ""
+
+#: 404.php:17 includes/widgets/widget-tabbed.php:274
+msgid "Recent Posts"
+msgstr ""
+
+#: 404.php:27 template-sitemap.php:38 includes/widgets/widget-tabbed.php:271
+msgid "Pages"
+msgstr ""
+
+#: archive.php:10
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:10
+msgid "F Y"
+msgstr ""
+
+#: archive.php:12 template-sitemap.php:48
+#: includes/widgets/widget-tabbed.php:267
+msgid "Archives"
+msgstr ""
+
+#: author.php:12
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: category.php:8
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:13
+msgid "Enter password to view comments."
+msgstr ""
+
+#: comments.php:21 includes/template-tags.php:35
+#: includes/template-tags.php:230 includes/widgets/widget-popular-posts.php:66
+#: includes/widgets/widget-recent-posts.php:65
+msgid "One comment"
+msgstr ""
+
+#: comments.php:21 includes/template-tags.php:35
+#: includes/template-tags.php:230 includes/widgets/widget-popular-posts.php:66
+#: includes/widgets/widget-recent-posts.php:65
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: functions.php:99
+msgid "Main Navigation"
+msgstr ""
+
+#: functions.php:131
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:133
+msgid ""
+"Appears on posts and also pages (in case Sidebar Pages has no widgets) "
+"except frontpage/fullwidth template."
+msgstr ""
+
+#: functions.php:140
+msgid "Sidebar Pages"
+msgstr ""
+
+#: functions.php:142
+msgid ""
+"Appears on static pages only. Leave this widget area empty to use Main "
+"Sidebar on pages."
+msgstr ""
+
+#: functions.php:151
+msgid "Frontpage Widgets #1"
+msgstr ""
+
+#: functions.php:153
+msgid ""
+"First three column horizontal widget area displayed on frontpage template."
+msgstr ""
+
+#: functions.php:160
+msgid "Frontpage Widgets #2"
+msgstr ""
+
+#: functions.php:162
+msgid ""
+"Second three column horizontal widget area displayed on frontpage template."
+msgstr ""
+
+#: functions.php:169
+msgid "Frontpage Widgets #3"
+msgstr ""
+
+#: functions.php:171
+msgid "Two column horizontal widget area displayed on frontpage template."
+msgstr ""
+
+#: functions.php:180
+msgid "Footer Widgets Left"
+msgstr ""
+
+#: functions.php:182
+msgid "Appears on footer on the left hand side."
+msgstr ""
+
+#: functions.php:189
+msgid "Footer Widgets Center Left"
+msgstr ""
+
+#: functions.php:191
+msgid "Appears on footer on center left position."
+msgstr ""
+
+#: functions.php:198
+msgid "Footer Widgets Center Right"
+msgstr ""
+
+#: functions.php:200
+msgid "Appears on footer on center right position."
+msgstr ""
+
+#: functions.php:207
+msgid "Footer Widgets Right"
+msgstr ""
+
+#: functions.php:209
+msgid "Appears on footer on the right hand side."
+msgstr ""
+
+#: functions.php:275
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:291
+msgid "zeeTasty Theme"
+msgstr ""
+
+#: functions.php:319
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:320 functions.php:340
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:331
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: functions.php:335
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:339
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: image.php:22
+msgid "Previous"
+msgstr ""
+
+#: image.php:23
+msgid "Next"
+msgstr ""
+
+#: image.php:25
+msgid "Return to Gallery"
+msgstr ""
+
+#: image.php:26
+msgid "Return to"
+msgstr ""
+
+#: loop-content.php:11 loop.php:17 includes/template-tags.php:169
+#: includes/template-tags.php:237
+msgid "Read more"
+msgstr ""
+
+#: page.php:12 template-fullwidth.php:17 template-sitemap.php:17
+msgid "Edit"
+msgstr ""
+
+#: search.php:9 search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:29
+msgid ""
+"No matches. Please try again, or use the navigation menus to find what you "
+"search for."
+msgstr ""
+
+#: searchform.php:3
+msgid "Search..."
+msgstr ""
+
+#: sidebar.php:20
+msgid "Widget Area"
+msgstr ""
+
+#: tag.php:8
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: template-sitemap.php:27
+msgid "Latest Posts"
+msgstr ""
+
+#: template-sitemap.php:43 includes/widgets/widget-tabbed.php:268
+msgid "Categories"
+msgstr ""
+
+#: template-sitemap.php:53
+msgid "Posts by Category"
+msgstr ""
+
+#: template-sitemap.php:56
+msgid "Category"
+msgstr ""
+
+#: includes/frontpage-slider.php:30
+#: includes/options/settings/settings-frontpage.php:10
+msgid "Frontpage Slider"
+msgstr ""
+
+#: includes/frontpage-slider.php:54
+msgid "Slide Image"
+msgstr ""
+
+#: includes/frontpage-slider.php:55
+msgid "Slide Order"
+msgstr ""
+
+#: includes/frontpage-slider.php:61
+msgid "Slide Link"
+msgstr ""
+
+#: includes/frontpage-slider.php:72
+msgid "Link Name: "
+msgstr ""
+
+#: includes/frontpage-slider.php:73
+msgid "The name/title of the link."
+msgstr ""
+
+#: includes/frontpage-slider.php:75
+msgid "Link URL: "
+msgstr ""
+
+#: includes/frontpage-slider.php:76
+msgid "The URL the link should point to."
+msgstr ""
+
+#: includes/template-tags.php:17
+#, php-format
+msgid ""
+"<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time datetime=\"%3$s\">"
+"%4$s</time></a>"
+msgstr ""
+
+#: includes/template-tags.php:26
+#, php-format
+msgid "by <a href=\"%1$s\" title=\"%2$s\" rel=\"author\">%3$s</a>"
+msgstr ""
+
+#: includes/template-tags.php:28
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: includes/template-tags.php:35 includes/template-tags.php:230
+msgid "Leave a comment"
+msgstr ""
+
+#: includes/template-tags.php:39
+msgid "Edit Post"
+msgstr ""
+
+#: includes/template-tags.php:50 includes/template-tags.php:65
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: includes/template-tags.php:97
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#: includes/template-tags.php:98
+msgid "Recent Entries &raquo;"
+msgstr ""
+
+#: includes/customization/custom-jscript.php:18
+msgid "Menu"
+msgstr ""
+
+#: includes/options/options-framework.php:17
+#: includes/options/options-framework.php:71
+msgid "Theme Options"
+msgstr ""
+
+#: includes/options/options-framework.php:43
+msgid "Use this Image"
+msgstr ""
+
+#: includes/options/options-framework.php:75
+msgid "Theme Options successfully updated."
+msgstr ""
+
+#: includes/options/options-framework.php:101
+msgid "Save Changes"
+msgstr ""
+
+#: includes/options/options-framework.php:133
+#: includes/options/options-framework.php:135
+msgid "Welcome"
+msgstr ""
+
+#: includes/options/options-framework.php:283
+msgid "Upload Image"
+msgstr ""
+
+#: includes/options/options-setup.php:30
+msgid "General"
+msgstr ""
+
+#: includes/options/options-setup.php:35
+msgid "Colors"
+msgstr ""
+
+#: includes/options/options-setup.php:40
+msgid "Fonts"
+msgstr ""
+
+#: includes/options/options-setup.php:45
+msgid "Front Page"
+msgstr ""
+
+#: includes/options/options-setup.php:50
+msgid "Social Media"
+msgstr ""
+
+#: includes/options/options-setup.php:55
+msgid "Ads"
+msgstr ""
+
+#: includes/options/options-setup.php:69
+msgid "Theme Data"
+msgstr ""
+
+#: includes/options/options-setup.php:71
+msgid "Name"
+msgstr ""
+
+#: includes/options/options-setup.php:72
+msgid "Version"
+msgstr ""
+
+#: includes/options/options-setup.php:73
+msgid "(Changelog)"
+msgstr ""
+
+#: includes/options/options-setup.php:74
+msgid "Author"
+msgstr ""
+
+#: includes/options/options-setup.php:79
+msgid "Quick Links"
+msgstr ""
+
+#: includes/options/options-setup.php:82
+msgid "Check Theme Updates"
+msgstr ""
+
+#: includes/options/options-setup.php:83
+#: includes/options/options-setup.php:133
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/options/options-setup.php:84
+msgid "Support Forum"
+msgstr ""
+
+#: includes/options/options-setup.php:89
+msgid "Help to translate"
+msgstr ""
+
+#: includes/options/options-setup.php:91
+msgid ""
+"You want to use this WordPress theme in your native language? Then help out "
+"to translate it!"
+msgstr ""
+
+#: includes/options/options-setup.php:93
+msgid "Join the Online Translation Project"
+msgstr ""
+
+#: includes/options/options-setup.php:98
+msgid "Subscribe Now"
+msgstr ""
+
+#: includes/options/options-setup.php:100
+msgid ""
+"Subscribe now and get informed about each <b>Theme Release</b> from ThemeZee."
+msgstr ""
+
+#: includes/options/options-setup.php:102
+msgid "RSS Feed"
+msgstr ""
+
+#: includes/options/options-setup.php:103
+msgid "Email Subscription"
+msgstr ""
+
+#: includes/options/options-setup.php:104
+msgid "Follow me on Twitter"
+msgstr ""
+
+#: includes/options/options-setup.php:105
+msgid "Become a Facebok Fan"
+msgstr ""
+
+#: includes/options/options-setup.php:122
+msgid "Thank you for installing this theme!"
+msgstr ""
+
+#: includes/options/options-setup.php:124
+msgid "Welcome to"
+msgstr ""
+
+#: includes/options/options-setup.php:126
+msgid ""
+"First of all, the theme options might alarm you, <b>but don't panic</b>. "
+"Everything is organized and documented well enough for you."
+msgstr ""
+
+#: includes/options/options-setup.php:131
+msgid "Learn more about "
+msgstr ""
+
+#: includes/options/options-setup.php:134
+msgid ""
+"The <b>Theme Docs</b> provides a lot of tutorials to install and configure "
+"your theme and learn everything about WordPress and ThemeZee Themes."
+msgstr ""
+
+#: includes/options/options-setup.php:135
+msgid "Visit Theme Docs"
+msgstr ""
+
+#: includes/options/options-setup.php:140
+msgid "Need any help?"
+msgstr ""
+
+#: includes/options/options-setup.php:142
+msgid "Theme Support Forum"
+msgstr ""
+
+#: includes/options/options-setup.php:143
+msgid ""
+"If you have any questions beyond the theme documentation, just jump over to "
+"the <b>Support Forum</b> and ask for help!"
+msgstr ""
+
+#: includes/options/options-setup.php:144
+msgid "Visit Support Forum"
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:7
+msgid "125x125 Sidebar Banner"
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:19
+msgid "About Sidebar Banner"
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:20
+msgid ""
+"Please note: You can display your 125x125 banner ads configured below with "
+"the <b>Banner Ads Widget</b> on Appearance > Widgets."
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:26
+msgid "Rotate banners?"
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:27
+msgid "Check this to randomly rotate the ad spots."
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:33
+#: includes/options/settings/settings-ads.php:47
+#: includes/options/settings/settings-ads.php:61
+#: includes/options/settings/settings-ads.php:75
+#: includes/options/settings/settings-ads.php:89
+#: includes/options/settings/settings-ads.php:103
+#: includes/options/settings/settings-ads.php:117
+#: includes/options/settings/settings-ads.php:131
+msgid "Ad Spot Image URL"
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:34
+#: includes/options/settings/settings-ads.php:48
+#: includes/options/settings/settings-ads.php:62
+#: includes/options/settings/settings-ads.php:76
+#: includes/options/settings/settings-ads.php:90
+#: includes/options/settings/settings-ads.php:104
+#: includes/options/settings/settings-ads.php:118
+#: includes/options/settings/settings-ads.php:132
+msgid "Enter the image URL for this ad spot."
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:40
+#: includes/options/settings/settings-ads.php:54
+#: includes/options/settings/settings-ads.php:68
+#: includes/options/settings/settings-ads.php:82
+#: includes/options/settings/settings-ads.php:96
+#: includes/options/settings/settings-ads.php:110
+#: includes/options/settings/settings-ads.php:124
+#: includes/options/settings/settings-ads.php:138
+msgid "Ad Spot Destination"
+msgstr ""
+
+#: includes/options/settings/settings-ads.php:41
+#: includes/options/settings/settings-ads.php:55
+#: includes/options/settings/settings-ads.php:69
+#: includes/options/settings/settings-ads.php:83
+#: includes/options/settings/settings-ads.php:97
+#: includes/options/settings/settings-ads.php:111
+#: includes/options/settings/settings-ads.php:125
+#: includes/options/settings/settings-ads.php:139
+msgid "Enter the URL where this ad spot points to."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:7
+msgid "Predefined Color Schemes"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:10
+msgid "Custom Colors"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:13
+msgid "General Color Settings"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:16
+msgid "Post Color Settings"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:19
+msgid "Sidebar Color Settings"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:22
+msgid "Frontpage Color Settings"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:30
+msgid "Black"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:31
+msgid "Blue"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:32
+msgid "Brown"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:33
+msgid "Green"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:34
+msgid "Orange"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:35
+msgid "Purple"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:36
+msgid "Red"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:37
+msgid "Standard"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:45
+msgid "Please select your color scheme here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:53
+msgid "Navigation Color Style"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:54
+msgid ""
+"Choose between light or dark color scheme for dropdown menus and mobile "
+"navigation."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:59
+msgid "Light Navigation"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:60
+msgid "Dark Navigation"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:65
+msgid "Active Custom Colors?"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:66
+msgid "Check this to activate the Custom Color Function."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:74
+msgid "Link Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:75
+msgid "Select the color of links here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:81
+msgid "Navigation Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:82
+msgid "Select the color of the navigation menu here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:88
+msgid "Footer Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:89
+msgid "Select the background color of the footer area here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:97
+msgid "Post Title Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:98
+msgid "Select the color of post titles here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:104
+msgid "Post Title Hover Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:105
+msgid "Select the hover color of post titles here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:111
+msgid "Post Button Colors"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:112
+msgid "Select the color of the Read More and Post Comment button here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:120
+msgid "Sidebar Title Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:121
+msgid "Select the color of the sidebar title here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:127
+msgid "Sidebar Link Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:128
+msgid "Select the color of sidebar links here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:136
+msgid "Frontpage Slider Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:137
+msgid "Select the background color of the frontpage slideshow here."
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:143
+msgid "Frontpage Widgets Color"
+msgstr ""
+
+#: includes/options/settings/settings-colors.php:144
+msgid "Select the background color of the first frontpage widget bar."
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:48
+msgid "Activate Custom Fonts"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:51
+msgid "Font Families"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:64
+msgid "Active Custom Fonts?"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:65
+msgid "Check this to activate Custom Fonts."
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:71
+msgid "Install more Fonts"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:72
+msgid ""
+"You want more fonts? You can install further fonts from the <a target="
+"\"_blank\" href=\"http://www.google.com/webfonts/\">Google Font API</a> "
+"here. \n"
+"\t\t\t\t\t\t\t\t\tJust insert a list of fonts separated by Semicolon, i.e  "
+"Arial; Galindo; Cantora One; ..."
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:79
+msgid "Text Font"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:80
+msgid "Select the font family of text here. (default = Alef)"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:87
+msgid "Navigation Font"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:88
+msgid "Select the navigation font here. (default = Alef)"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:95
+msgid "Post/Page Title Fonts"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:96
+msgid "Select the title font here. (default = Roboto)"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:103
+msgid "Widget Title Fonts"
+msgstr ""
+
+#: includes/options/settings/settings-fonts.php:104
+msgid "Select the widget title font here. (default = Roboto)"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:7
+msgid "Activate Frontpage Template"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:13
+msgid "Frontpage Intro"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:16
+msgid "Frontpage Widgets"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:19
+#: includes/options/settings/settings-frontpage.php:109
+msgid "Frontpage Entry"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:22
+msgid "Frontpage Blog Posts"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:32
+msgid "Turn on Frontpage Template?"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:33
+msgid ""
+"Check this to automatically display the frontpage template on HOME page. You "
+"can also manually create a page and select the \"Frontpage Template\" page "
+"template instead of using this option."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:41
+msgid "Show Frontpage Slider?"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:42
+msgid ""
+"Check this to activate the Slideshow displayed on the front page template."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:60
+msgid ""
+"Enter the speed of the slideshow cycling (timeout between slides), in "
+"milliseconds."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:67
+msgid ""
+"Please note: The frontpage slideshow is based on a custom post type. You can "
+"add new slides on your <b>WordPress admin panel > Frontpage Slider > Add "
+"new</b> page. This menu item only appears if <b>slider is activated.</b>"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:76
+msgid "Frontpage Intro Headline"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:77
+msgid "You can insert a big headline for the frontpage intro here."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:83
+msgid "Frontpage Intro Text"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:84
+msgid "Enter here the Text of the Frontpage Intro."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:92
+msgid "About Frontpage Widgets"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:93
+msgid ""
+"Please note: You can configure your widgets to be displayed on the frontpage "
+"template on <b>Appearance > Widgets</b>."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:102
+msgid "Frontpage Entry Title"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:103
+msgid ""
+"Enter here the title of your normal page content displayed on the frontpage "
+"template."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:110
+msgid ""
+"Enter here normal page content displayed on the frontpage template (one "
+"column)."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:118
+msgid "Show Frontpage Blog Posts?"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:119
+msgid "Check this to show the latest blog post on the frontpage template"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:125
+msgid "Header Title of the latest blog posts"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:126
+msgid "Enter here the Title which is displayed above the latest blog posts."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:132
+msgid "Blog Posts Content"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:133
+msgid "Select which content should be displayed at the frontpage blog posts."
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:138
+msgid "Display Thumbnails"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:139
+msgid "Display Postmeta"
+msgstr ""
+
+#: includes/options/settings/settings-frontpage.php:140
+msgid "Display Excerpt"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:7
+msgid "Header Settings"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:10
+msgid "Layout Settings"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:13
+msgid "Custom CSS Code"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:25
+msgid ""
+"Paste the full Image URL of your logo or click Upload Image. Leave this "
+"field blank to display the site title instead of a logo image."
+msgstr ""
+
+#: includes/options/settings/settings-general.php:31
+msgid "Show Tagline?"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:32
+msgid ""
+"Check this if you want to show your tagline(blog description) below the logo"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:40
+msgid "Sidebar Options"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:46
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:47
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:51
+msgid "Hide Credit Link?"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:52
+msgid "Check this if you want to hide the credit link to themezee.com"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:58
+msgid "Footer Content"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:59
+msgid "Enter the content which is displayed in the footer here."
+msgstr ""
+
+#: includes/options/settings/settings-general.php:67
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/options/settings/settings-general.php:68
+msgid "Place your Custom CSS code here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:7
+msgid "Social Media Icons"
+msgstr ""
+
+#: includes/options/settings/settings-social.php:19
+msgid "Information about Social Media Icons"
+msgstr ""
+
+#: includes/options/settings/settings-social.php:20
+msgid ""
+"Please note: You can display the Social Icons with the <b>Social Media "
+"Widget</b> which you can set on Appearance > Widgets."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:27
+msgid "Enter the URL to your Twitter Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:34
+msgid "Enter the URL to your Facebook Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:41
+msgid "Enter the URL to your Google+ profile."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:48
+msgid "Enter the URL to your Pinterest profile."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:55
+msgid "Enter the URL to your Instagram profile."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:62
+msgid "Enter the URL to your LinkedIn Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:69
+msgid "Enter the URL to your Blogger Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:76
+msgid "Enter the URL to your Tumblr Blog here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:83
+msgid "Enter the URL to your Typepad Blog here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:90
+msgid "Enter the URL to your Wordpress.com Blog here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:97
+msgid "Enter the URL to your Flickr Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:104
+msgid "Enter the URL to your Soundcloud Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:111
+msgid "Enter the URL to your Spotify Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:118
+msgid "Enter the URL to your Last.fm Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:125
+msgid "Enter the URL to your Youtube Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:132
+msgid "Enter the URL to your Vimeo Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:139
+msgid "Enter the URL to your DeviantART Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:146
+msgid "Enter the URL to your Dribbble Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:153
+msgid "Enter the URL to your Delicious Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:160
+msgid "Enter the URL to your Digg Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:167
+msgid "Enter the URL to your StumpleUpon Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:174
+msgid "Enter your RSS URL (e.g. Feedburner Feed) here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:181
+msgid "Enter your Email URL (e.g. Feedburner Email Subscription) here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:188
+msgid "Enter the URL to your Friendfeed Profile here."
+msgstr ""
+
+#: includes/options/settings/settings-social.php:195
+msgid "Enter your Skype Contact here."
+msgstr ""
+
+#: includes/widgets/widget-ads.php:6
+msgid "Show your 125x125 Banner Ads"
+msgstr ""
+
+#: includes/widgets/widget-ads.php:52
+#: includes/widgets/widget-socialmedia.php:160
+msgid "Go to WP-Admin-> Appearance-> Theme Options to configure this widget"
+msgstr ""
+
+#: includes/widgets/widget-ads.php:72
+#: includes/widgets/widget-popular-posts.php:115
+#: includes/widgets/widget-recent-comments.php:119
+#: includes/widgets/widget-recent-posts.php:114
+#: includes/widgets/widget-socialmedia.php:185
+#: includes/widgets/widget-tabbed.php:294
+#: includes/widgets/widget-tabbed.php:302
+#: includes/widgets/widget-tabbed.php:310
+#: includes/widgets/widget-tabbed.php:318
+#: includes/widgets/widget-tabbed.php:326
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/widget-ads.php:75
+#: includes/widgets/widget-socialmedia.php:188
+msgid "Open links in a new window"
+msgstr ""
+
+#: includes/widgets/widget-popular-posts.php:8
+msgid "Show popular posts with post thumbnails."
+msgstr ""
+
+#: includes/widgets/widget-popular-posts.php:66
+#: includes/widgets/widget-recent-posts.php:65
+msgid "No comments"
+msgstr ""
+
+#: includes/widgets/widget-popular-posts.php:118
+#: includes/widgets/widget-recent-posts.php:117
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/widgets/widget-popular-posts.php:122
+#: includes/widgets/widget-recent-posts.php:121
+msgid "Show Post Thumbnails?"
+msgstr ""
+
+#: includes/widgets/widget-popular-posts.php:124
+#: includes/widgets/widget-recent-posts.php:123
+msgid "Excerpt length in number of words:"
+msgstr ""
+
+#: includes/widgets/widget-popular-posts.php:128
+#: includes/widgets/widget-recent-posts.php:127
+msgid "Show Postmeta(Date, Comments)?"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:8
+msgid "Show recent comments with gravatar."
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:62
+msgid " on"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:68
+msgid " said:"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:122
+msgid "Number of comments to show:"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:126
+msgid "Show avatar of comment author?"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:129
+msgid "Show post title of commented post?"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:132
+msgid "Show excerpt of comment?"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:134
+msgid "Excerpt length in number of characters:"
+msgstr ""
+
+#: includes/widgets/widget-recent-comments.php:138
+msgid "Show date of comment?"
+msgstr ""
+
+#: includes/widgets/widget-recent-posts.php:8
+#: includes/widgets/widget-tabbed.php:9
+msgid "Show recent posts with post thumbnails."
+msgstr ""
+
+#: includes/widgets/widget-socialmedia.php:5
+msgid "Show your Social Media Buttons"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:147
+msgid "Syndicate this site using RSS 2.0"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:147
+msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:148
+msgid "The latest comments to all posts in RSS"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:148
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:149
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:149
+msgid "WordPress.org"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:194
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:269
+msgid "Links"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:270
+msgid "Meta"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:272
+msgid "Popular Posts"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:273
+msgid "Recent Comments"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:275
+msgid "Tag Cloud"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:298
+msgid "Tab 1:"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:306
+msgid "Tab 2:"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:314
+msgid "Tab 3:"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:322
+msgid "Tab 4:"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:331
+msgid "Settings for Recent/Popular Posts and Recent Comments"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:332
+msgid "Number of entries:"
+msgstr ""
+
+#: includes/widgets/widget-tabbed.php:335
+msgid "Show Thumbnails?"
+msgstr ""
