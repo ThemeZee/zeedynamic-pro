@@ -1,6 +1,6 @@
 /*======================================
 Theme Name: zeeDynamicPro
-Theme URI: http://themezee.com/themes/zeefocus/
+Theme URI: http://themezee.com/themes/zeedynamic/
 Description: zeeDynamicPro is the upgrade version of zeeDynamic and comes with additional features.
 Version: 1.0
 Author: ThemeZee
@@ -61,7 +61,6 @@ body {
 	font-size: 1.0em;
 	border: 0;
 	color: #111;
-	background: #eee;
 }
 
 /* Links */
@@ -366,7 +365,7 @@ input, textarea, select {
 
 /* Theme Ads Widget */
 .widget-ads img {
-	margin: 0.3em;
+	margin: 0 0.2em 0.5em 0;
 }
 
 /* Theme Search Widget */
@@ -440,10 +439,8 @@ input, textarea, select {
 }
 .widget-recent-posts ul li {
 	list-style: none;
-	margin: 0 0 1em 0;
-}
-.widget-recent-posts ul li.widget-thumb {
-	min-height: 75px;
+	margin: 0 0 0.5em 0;
+	overflow: auto;
 }
 .widget-recent-posts .wp-post-image {
 	float: left;
@@ -470,14 +467,12 @@ input, textarea, select {
 }
 .widget-recent-comments ul li {
 	list-style: none;
-	margin: 0 0 1em 0;
-}
-.widget-recent-comments ul li.widget-avatar {
-	min-height: 55px;
+	margin: 0 0 0.4em 0;
+	overflow: auto;
 }
 .widget-recent-comments img {
 	float: left;
-	margin: 0.3em 0.8em 0.5em 0;
+	margin: 0.3em 0.8em 0.4em 0;
 }
 .widget-recent-comments .comment-content {
 	font-weight: normal !important;
@@ -535,23 +530,25 @@ input, textarea, select {
 	padding: 0 !important;
 	margin: 1em 0 0 0 !important;
 }
+.widget-tabbed .tabdiv li.widget-thumb {
+	list-style: none;
+	margin: 0 0 0.5em 0;
+	overflow: auto;
+}
 .widget-tabbed .tabdiv  li.widget-thumb .wp-post-image {
 	float: left;
-	margin: 0.3em 0.8em 0.8em 0;
+	margin: 0.3em 0.8em 0.5em 0;
 	max-width: 75px;
 	height: auto;
 }
-.widget-tabbed .tabdiv li.widget-thumb {
-	min-height: 95px;
+.widget-tabbed .tabdiv li.widget-avatar{
 	list-style: none;
+	margin: 0 0 0.3em 0;
+	overflow: auto;
 }
 .widget-tabbed .tabdiv li.widget-avatar img {
 	float: left;
 	margin: 0.3em 0.8em 0.3em 0;
-}
-.widget-tabbed .tabdiv li.widget-avatar{
-	min-height: 65px;
-	list-style: none;
 }
 .widget-tabbed .tabdiv ul li .widget-postmeta {
 	margin: 0.1em 0;
@@ -959,7 +956,7 @@ article .wp-post-image {
 .gallery-item {
 	float: left;
 	margin: 0.7em 0 0 0 !important;
-	padding-right: 1px;
+	padding-right: 1em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1377,7 +1374,6 @@ embed, iframe, object, video {
 /* Small screens | <1120px */
 @media only screen and (max-width: 70em) {
 	#wrapper {
-		border-top: 20px solid yellow;
 		width: 94%;
 	}
 	.footer-widget-column {
@@ -1387,7 +1383,6 @@ embed, iframe, object, video {
 /* Smaller screens | <1120px */
 @media only screen and (max-width: 65em) {
 	#wrapper {
-		border-top: 20px solid orange;
 		width: 96%;
 	}
 	.widget, .type-post, .type-page, .type-attachment,
@@ -1409,7 +1404,6 @@ embed, iframe, object, video {
 /* Tablets (landscape) | <960px */
 @media only screen and (max-width: 60em) {
 	#wrapper {
-		border-top: 20px solid blue;
 		width: 100%;
 	}
 	#header {
@@ -1580,9 +1574,6 @@ embed, iframe, object, video {
 
 /* Tablets (portrait) | <800px */
 @media only screen and (max-width: 50em) {
-	#wrapper {
-		border-top: 20px solid red;
-	}
 	#logo .site-title {
 		font-size: 2.3em;
 	}
@@ -1621,9 +1612,6 @@ embed, iframe, object, video {
 
 /* Phablets (portrait) | <640px */
 @media only screen and (max-width: 40em) {
-	#wrapper {
-		border-top: 20px solid purple;
-	}
 	.page-title {
 		font-size: 2.0em;
 	}
@@ -1672,9 +1660,6 @@ embed, iframe, object, video {
 
 /* Smartphones | <480px */
 @media only screen and (max-width: 30em) {
-	#wrapper {
-		border-top: 20px solid green;
-	}
 	#logo .site-title {
 		font-size: 2.0em;
 	}
@@ -1686,9 +1671,6 @@ embed, iframe, object, video {
 
 /* Smartphones | <320px */
 @media only screen and (max-width: 20em) {
-	#wrapper {
-		border-top: 20px solid red;
-	}
 	.postmeta span, .postinfo span {
 		display: block;
 	}
