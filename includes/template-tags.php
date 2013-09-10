@@ -191,7 +191,7 @@ if ( ! function_exists( 'themezee_display_category_posts_horizontal' ) ):
 
 			<div class="frontpage-category-horizontal clearfix">
 
-		<?php if ($zee_category_query->have_posts()) : while ($zee_category_query->have_posts()) : $zee_category_query->the_post(); $i++; ?>
+		<?php if ($zee_category_query->have_posts()) : while ($zee_category_query->have_posts()) : $zee_category_query->the_post(); ?>
 			
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -475,9 +475,7 @@ if ( ! function_exists( 'themezee_display_frontpage_slideshow' ) ):
 					</li>
 				
 				<?php endwhile; ?>
-			
-			<?php echo $slider; ?>
-			
+
 					</ul>
 				</div>
 			</div>
