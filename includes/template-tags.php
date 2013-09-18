@@ -166,7 +166,7 @@ if ( ! function_exists( 'themezee_display_category_posts_horizontal' ) ):
 	function themezee_display_category_posts_horizontal() { 
 	
 		// Get Theme Options
-		$options = get_option('themezee_options');
+		$options = get_option('zeedynamic_options');
 		
 		// Limit the number of words in slideshow post excerpts
 		add_filter('excerpt_length', 'themezee_frontpage_category_excerpt_length'); 
@@ -329,7 +329,7 @@ if ( ! function_exists( 'themezee_display_category_posts_columns' ) ):
 	function themezee_display_category_posts_columns() { 
 	
 		// Get Theme Options
-		$options = get_option('themezee_options');
+		$options = get_option('zeedynamic_options');
 		
 		// Limit the number of words in slideshow post excerpts
 		add_filter('excerpt_length', 'themezee_frontpage_category_excerpt_length'); 
@@ -436,7 +436,7 @@ if ( ! function_exists( 'themezee_display_frontpage_slideshow' ) ):
 	function themezee_display_frontpage_slideshow() { 
 	
 		// Get Query Arguments for Featured Posts Slider
-		$options = get_option('themezee_options');
+		$options = get_option('zeedynamic_options');
 		$slider_limit = intval($options['themeZee_frontpage_slider_limit']);
 		$slider_content = ($options['themeZee_frontpage_slider_content'] == 'recent') ? 'date' : 'comment_count';
 		$slider_category = $options['themeZee_frontpage_slider_category'];
@@ -498,7 +498,7 @@ if ( ! function_exists( 'themezee_display_frontpage_posts' ) ):
 	function themezee_display_frontpage_posts() { 
 	
 		// Get Theme Options from Database
-		$options = get_option('themezee_options'); 
+		$options = get_option('zeedynamic_options'); 
 		
 		// Get Pagination query
 		if ( get_query_var('paged') ) :

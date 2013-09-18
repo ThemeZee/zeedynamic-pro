@@ -3,7 +3,7 @@ add_action('wp_head', 'themezee_css_layout');
 function themezee_css_layout() {
 	
 	echo '<style type="text/css">';
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	// Wide Layout?
 	if ( isset($options['themeZee_general_theme_layout']) and $options['themeZee_general_theme_layout'] == 'wide' ) {

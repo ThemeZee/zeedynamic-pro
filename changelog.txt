@@ -2,10 +2,13 @@
 zeeDynamicPro Changelog
 ===================================
 
+Version 1.0.2
+-----------------------------------
+[added] unique name for theme options array in the database
+
 Version 1.0.1
 -----------------------------------
 [fixed] undefined variables in template-tags.php
-
 
 Version 1.0
 -----------------------------------

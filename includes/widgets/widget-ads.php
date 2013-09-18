@@ -22,7 +22,7 @@
 			else
 				$target = 0;
 
-			$options = get_option('themezee_options');
+			$options = get_option('zeedynamic_options');
 			if ( isset($options['themeZee_ads_rotate']) and $options['themeZee_ads_rotate'] == 'true' ) {
 				shuffle($nr);
 			}

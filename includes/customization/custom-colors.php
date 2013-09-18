@@ -13,7 +13,7 @@ add_action('wp_head', 'themezee_custom_colors');
 function themezee_custom_colors() { 
 	
 	// Get Theme Options
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	// Check if Custom Colors are active
 	if ( isset($options['themeZee_color_activate']) and $options['themeZee_color_activate'] == 'true' ) :

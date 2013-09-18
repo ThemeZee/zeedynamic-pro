@@ -31,7 +31,7 @@ if ( ! function_exists( 'themezee_custom_jscript_slider' ) ):
 function themezee_custom_jscript_slider() { 
 	
 	// Get Theme Options
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	// Set Parameters array
 	$params = array();

@@ -8,7 +8,7 @@
  */
 
 	// Get Theme Options
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 
 	// Check Theme Options if user wants to display the custom frontpage template (override Reading Settings)
 	if ( isset($options['themeZee_frontpage_activate']) and $options['themeZee_frontpage_activate'] == 'true' ) :

@@ -3,7 +3,7 @@
 // Include Fonts from Google Web Fonts API
 function themezee_load_web_fonts() { 
 
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	// Default Fonts which haven't to be load from Google
 	$default_fonts = array('Arial', 'Verdana', 'Tahoma', 'Times New Roman');
@@ -70,7 +70,7 @@ add_action('wp_head', 'themezee_css_fonts');
 function themezee_css_fonts() {
 	
 	echo '<style type="text/css">';
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	if ( isset($options['themeZee_fonts_activate']) and $options['themeZee_fonts_activate'] == 'true' ) {
 	

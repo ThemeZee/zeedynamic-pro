@@ -5,7 +5,7 @@ Template Name: Frontpage Template
 ?>
 <?php get_header(); ?>
 
-<?php $options = get_option('themezee_options'); // Get Theme Options from Database ?>
+<?php $options = get_option('zeedynamic_options'); // Get Theme Options from Database ?>
 	
 	<div id="wrap" class="container template-frontpage">
 	

@@ -8,7 +8,7 @@
  */
 
 // Get Theme Options
-$options = get_option('themezee_options');
+$options = get_option('zeedynamic_options');
 
 $header_content = esc_attr($options['themeZee_general_header_content']);
 

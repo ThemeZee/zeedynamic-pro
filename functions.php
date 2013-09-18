@@ -20,7 +20,7 @@ function themezee_enqueue_scripts() {
 	wp_enqueue_script('jquery');
 	
 	// Register and Enqueue FlexSlider JS and CSS if necessary
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	if(isset($options['themeZee_frontpage_slider_active']) and $options['themeZee_frontpage_slider_active'] == 'true' ) :
 		
 		// FlexSlider CSS
@@ -253,7 +253,7 @@ function themezee_default_menu() {
 
 // Display Credit Link Function
 function themezee_credit_link() {
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	if(!isset($options['themeZee_show_credit_link']) or $options['themeZee_show_credit_link'] == 'false') : ?>
 		<a href="http://themezee.com/themes/zeedynamic/"><?php _e('zeeDynamic Theme', 'zeeDynamicPro_language'); ?></a>
 <?php endif;
@@ -344,7 +344,7 @@ endif;
 function themezee_frontpage_posts_query($paged) {
 	
 	// Get Query Arguments
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	$frontpage_posts_category = $options['themeZee_frontpage_posts_category'];
 		
 	$query_arguments = array(

@@ -29,7 +29,7 @@
 			
 				<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			<?php // Display Logo Image or Site Title
-				$options = get_option('themezee_options');
+				$options = get_option('zeedynamic_options');
 				if ( isset($options['themeZee_general_logo']) and $options['themeZee_general_logo'] <> "" ) : ?>
 					<img class="logo-image" src="<?php echo esc_url($options['themeZee_general_logo']); ?>" alt="Logo" /></a>
 			<?php else: ?>

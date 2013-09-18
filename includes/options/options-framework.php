@@ -51,7 +51,7 @@ function themezee_options_scripts() {
 
 // Display theme options page
 function themezee_options_page() { 
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	$theme_data = wp_get_theme();
 ?>
 			
@@ -92,11 +92,11 @@ function themezee_options_page() {
 			<form class="zee_form" action="options.php" method="post">
 				
 					<div class="zee_settings">
-						<?php settings_fields('themezee_options'); ?>
+						<?php settings_fields('zeedynamic_options'); ?>
 						<?php do_settings_sections('themezee'); ?>
 					</div>
 
-				<input name="themezee_options[validation-submit]" type="hidden" value="<?php echo $tab ?>" />
+				<input name="zeedynamic_options[validation-submit]" type="hidden" value="<?php echo $tab ?>" />
 
 				<p><input name="Submit" class="button-primary" type="submit" value="<?php esc_attr_e('Save Changes', 'zeeDynamicPro_language'); ?>" /></p>
 			</form>
@@ -156,7 +156,7 @@ add_action('admin_init', 'themezee_options_register_settings');
 function themezee_options_register_settings() {
 
 	// Register Theme Options
-	register_setting( 'themezee_options', 'themezee_options', 'themezee_options_validate' );
+	register_setting( 'zeedynamic_options', 'zeedynamic_options', 'themezee_options_validate' );
 	
 	// Check if active page is Theme Options panel
 	if ( isset($_GET['page']) and $_GET['page'] == 'themezee' ) :
@@ -192,7 +192,7 @@ function themezee_options_register_settings() {
 
 // Display Setting Fields
 function themezee_options_display_setting( $setting = array() ) {
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	
 	if ( ! isset( $options[$setting['id']] ) )
 		$options[$setting['id']] = $setting['std']; 
@@ -200,22 +200,22 @@ function themezee_options_display_setting( $setting = array() ) {
 	switch ( $setting['type'] ) {
 	
 		case 'text':
-			echo "<input id='".$setting['id']."' class='zee-text-field' name='themezee_options[".$setting['id']."]' type='text' value='". esc_attr($options[$setting['id']]) ."' />";
+			echo "<input id='".$setting['id']."' class='zee-text-field' name='zeedynamic_options[".$setting['id']."]' type='text' value='". esc_attr($options[$setting['id']]) ."' />";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 		
 		case 'url':
-			echo "<input id='".$setting['id']."' class='zee-url-field' name='themezee_options[".$setting['id']."]' type='text' value='". esc_url($options[$setting['id']]) ."' />";
+			echo "<input id='".$setting['id']."' class='zee-url-field' name='zeedynamic_options[".$setting['id']."]' type='text' value='". esc_url($options[$setting['id']]) ."' />";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 		
 		case 'textarea':
-			echo "<textarea id='".$setting['id']."' name='themezee_options[".$setting['id']."]' rows='5'>" . esc_attr($options[$setting['id']]) . "</textarea>";
+			echo "<textarea id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]' rows='5'>" . esc_attr($options[$setting['id']]) . "</textarea>";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 		
 		case 'html':
-			echo "<textarea id='".$setting['id']."' name='themezee_options[".$setting['id']."]' rows='5'>" . wp_kses_post($options[$setting['id']]) . "</textarea>";
+			echo "<textarea id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]' rows='5'>" . wp_kses_post($options[$setting['id']]) . "</textarea>";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 		
@@ -223,7 +223,7 @@ function themezee_options_display_setting( $setting = array() ) {
 			$editor_settings = array(
 				'media_buttons' => false,
 				'teeny' => true,
-				'textarea_name' => 'themezee_options['.$setting['id'].']',
+				'textarea_name' => 'zeedynamic_options['.$setting['id'].']',
 				'textarea_rows' => 10,
 				'quicktags' => true
 			);
@@ -236,13 +236,13 @@ function themezee_options_display_setting( $setting = array() ) {
 		break;
 			
 		case 'checkbox':
-			echo "<input id='".$setting['id']."' name='themezee_options[".$setting['id']."]' type='checkbox' value='true'";
+			echo "<input id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]' type='checkbox' value='true'";
 			checked( $options[$setting['id']], 'true' );
 			echo ' /><label> '.$setting['desc'].'</label>';
 		break;
 		
 		case 'multicheckbox':
-			echo "<input id='".$setting['id']."' name='themezee_options[".$setting['id']."]' type='hidden' value='true' />";
+			echo "<input id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]' type='hidden' value='true' />";
 			foreach ( $setting['choices'] as $value => $label ) {
 				$checkbox = $setting['id'] . '_' . $value;	
 				if ( ! isset( $options[$checkbox] ) )
@@ -250,13 +250,13 @@ function themezee_options_display_setting( $setting = array() ) {
 		
 				echo "<input id='".$checkbox."'";
 				checked( $options[$checkbox], 'true' );
-				echo " type='checkbox' name='themezee_options[".$checkbox."]' value='true'/> " . $label . "<br/>";
+				echo " type='checkbox' name='zeedynamic_options[".$checkbox."]' value='true'/> " . $label . "<br/>";
 			}
 			echo '<label>'.$setting['desc'].'</label>';
 		break;
 	
 		case 'select':
-			echo "<select id='".$setting['id']."' name='themezee_options[".$setting['id']."]'>";
+			echo "<select id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]'>";
 		 
 			foreach ( $setting['choices'] as $value => $label ) {
 				echo '<option ';
@@ -272,20 +272,20 @@ function themezee_options_display_setting( $setting = array() ) {
 			foreach ( $setting['choices'] as $value => $label ) {
 				echo "<input id='".$setting['id']."'";
 				checked( $options[$setting['id']], $value );
-				echo " type='radio' name='themezee_options[".$setting['id']."]' value='" . $value . "'/> " . $label . "<br/>";
+				echo " type='radio' name='zeedynamic_options[".$setting['id']."]' value='" . $value . "'/> " . $label . "<br/>";
 			}
 			echo '<label>'.$setting['desc'].'</label>';
 		break;
 
 		case 'image':
 			echo "<p class='zee-image-bg'><img id='".$setting['id']."img' src='" . esc_attr($options[$setting['id']]) . "' /></p>";
-			echo '<input class="zee-upload-image-field" id="'.$setting['id'].'" name="themezee_options['.$setting['id'].']" type="text" value="'. esc_attr($options[$setting['id']]) .'" />';
+			echo '<input class="zee-upload-image-field" id="'.$setting['id'].'" name="zeedynamic_options['.$setting['id'].']" type="text" value="'. esc_attr($options[$setting['id']]) .'" />';
 			echo '<input class="zee-upload-image-button button-secondary" type="button" value="'. __('Upload Image', 'zeeDynamicPro_language') .'" />';
 			echo '	<label>'.$setting['desc'].'</label>';
 		break;
 
 		case 'fontpicker':
-			echo "<select id='".$setting['id']."' class='zee-fontpicker' name='themezee_options[".$setting['id']."]'>";
+			echo "<select id='".$setting['id']."' class='zee-fontpicker' name='zeedynamic_options[".$setting['id']."]'>";
 				foreach ( $setting['choices'] as $value => $label ) {
 					echo '<option style="font-size: 1.3em; font-family: '.$value.'" ';
 					selected( $options[$setting['id']], $value );
@@ -298,12 +298,12 @@ function themezee_options_display_setting( $setting = array() ) {
 		break;
 		
 		case 'colorpicker':
-			echo "<input id='".$setting['id']."' name='themezee_options[".$setting['id']."]' class='zee-colorpicker-field' type='text' value='". esc_attr($options[$setting['id']]) ."' data-default-color='".$setting['std']."' />";
+			echo "<input id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]' class='zee-colorpicker-field' type='text' value='". esc_attr($options[$setting['id']]) ."' data-default-color='".$setting['std']."' />";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 		
 		default:
-			echo "<input id='".$setting['id']."' class='zee-text-field' name='themezee_options[".$setting['id']."]' size='40' type='text' value='". esc_attr($options[$setting['id']]) ."' />";
+			echo "<input id='".$setting['id']."' class='zee-text-field' name='zeedynamic_options[".$setting['id']."]' size='40' type='text' value='". esc_attr($options[$setting['id']]) ."' />";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 	}
@@ -312,7 +312,7 @@ function themezee_options_display_setting( $setting = array() ) {
 
 // Validate Settings
 function themezee_options_validate($input) {
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 
 	if ( isset ( $input['validation-submit'] ) ) :
 		$tab = $input['validation-submit'];
@@ -381,11 +381,17 @@ add_filter( 'option_page_capability_themezee_options', 'themezee_options_capabil
 
 // Set Default Options
 function themezee_options_set_default_options() {
-     $theme_options = get_option( 'themezee_options' );
+     $theme_options = get_option( 'zeedynamic_options' );
      if ( false === $theme_options ) {
-          $theme_options = themezee_options_get_default_options();
+		
+		$old_options = get_option( 'themezee_options' );
+		if ( false === $old_options ) {
+			$theme_options = themezee_options_get_default_options();
+		} else {
+			$theme_options = $old_options;
+		}
      }
-     update_option( 'themezee_options', $theme_options );
+     update_option( 'zeedynamic_options', $theme_options );
 }
 // Initialize Theme options
 add_action('after_setup_theme','themezee_options_set_default_options', 9 );

@@ -11,7 +11,7 @@
 			$title = empty($instance['title']) ? '' : apply_filters('widget_title', $instance['title']);
 			
 			$url = get_template_directory_uri() . '/images/icons';
-			$options = get_option('themeZee_options');
+			$options = get_option('zeedynamic_options');
 			$networks = '';
 			
 			if( isset($instance['target']) and $instance['target'] == 1) :

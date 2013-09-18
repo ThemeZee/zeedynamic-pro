@@ -27,7 +27,7 @@ function themezee_get_web_fonts() {
 		'Verdana' => 'Verdana');
 		
 	// Add fonts installed by User
-	$options = get_option('themezee_options');
+	$options = get_option('zeedynamic_options');
 	if ( isset($options['themeZee_fonts_installed']) and $options['themeZee_fonts_installed'] != '' ) :
 		
 		$fonts = explode(";", $options['themeZee_fonts_installed']);
