@@ -12,16 +12,21 @@
 if ( ! function_exists( 'themezee_display_custom_header' ) ):
 	
 	function themezee_display_custom_header() {
-
+		
+		// Check if page is displayed and featured header image is used
+		if( is_page() && has_post_thumbnail() ) :
+		?>
+			<div id="custom-header" class="container">
+				<?php the_post_thumbnail('custom_header_image'); ?>
+			</div>
+<?php
 		// Check if there is a custom header image
-		if( get_header_image() != '' ) : ?>
-				
-				<div id="custom-header" class="container">
-					<img src="<?php echo get_header_image(); ?>" />
-				</div>
-			
-			<?php 
-			
+		elseif( get_header_image() ) :
+		?>
+			<div id="custom-header" class="container">
+				<img src="<?php echo get_header_image(); ?>" />
+			</div>
+<?php 
 		endif;
 
 	}

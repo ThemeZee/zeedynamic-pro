@@ -5,6 +5,7 @@ zeeDynamicPro Changelog
 Version 1.0.2
 -----------------------------------
 [added] unique name for theme options array in the database
+[added] featured image header for pages
 
 Version 1.0.1
 -----------------------------------

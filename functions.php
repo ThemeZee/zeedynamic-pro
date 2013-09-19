@@ -100,6 +100,9 @@ add_action( 'after_setup_theme', 'themezee_add_image_sizes' );
 if ( ! function_exists( 'themezee_add_image_sizes' ) ):
 function themezee_add_image_sizes() { 
 	
+	// Add Custom Header Image Size
+	add_image_size( 'custom_header_image', 1340, 200, true);
+	
 	// Add Featured Image Size
 	add_image_size( 'featured_image', 860, 280, true);
 	

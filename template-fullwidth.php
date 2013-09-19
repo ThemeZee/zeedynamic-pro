@@ -16,7 +16,6 @@ Template Name: Fullwidth Template
 				<h2 class="page-title"><span><?php the_title(); ?></span></h2>
 				
 				<div class="entry clearfix">
-					<?php the_post_thumbnail('medium', array('class' => 'alignleft')); ?>
 					<?php the_content(); ?>
 				</div>
 				<?php wp_link_pages(); ?>
