@@ -2,6 +2,11 @@
 zeeDynamicPro Changelog
 ===================================
 
+Version 1.0.3
+-----------------------------------
+[added] sidebar left/right custom page templates
+[fixed] logo and widget overflow issue
+
 Version 1.0.2
 -----------------------------------
 [added] unique name for theme options array in the database

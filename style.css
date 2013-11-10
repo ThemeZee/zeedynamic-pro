@@ -2,7 +2,7 @@
 Theme Name: zeeDynamicPro
 Theme URI: http://themezee.com/themes/zeedynamic/
 Description: zeeDynamicPro is the upgrade version of zeeDynamic and comes with additional features.
-Version: 1.0.2
+Version: 1.0.3
 Author: ThemeZee
 Author URI: http://themezee.com
 Tags:  two-columns, light, orange, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, flexible-width, one-column, left-sidebar, right-sidebar, three-columns, black, silver, red, white, green, blue, purple, gray
@@ -149,6 +149,7 @@ input, textarea, select {
 -------------------------------------------------------------- */
 #logo {
 	float: left;
+	max-width: 100%;
 }
 #logo .logo-image {
 	border: 0;
@@ -316,6 +317,8 @@ input, textarea, select {
 	border: 1px solid #ddd;
 	padding: 1.5em;
 	background: #fff;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
 }
 .widgettitle {
 	font-size: 0.9em;
