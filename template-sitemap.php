@@ -5,7 +5,7 @@ Template Name: Sitemap Template
 ?>
 <?php get_header(); ?>
 
-	<div id="wrap" class="container template-sitemap">
+	<div id="wrap" class="container clearfix template-sitemap">
 		
 		<section id="content" class="primary" role="main">
 		

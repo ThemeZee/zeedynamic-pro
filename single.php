@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="wrap" class="container">
+	<div id="wrap" class="container clearfix">
 		
 		<section id="content" class="primary" role="main">
 		

@@ -141,7 +141,7 @@ input, textarea, select {
 	box-sizing: border-box;
 }
 #sidebar {
-	margin-left: 72%;
+	float: right;
 	width: 28%;
 }
 
@@ -1419,6 +1419,7 @@ embed, iframe, object, video {
 	}
 	#sidebar {
 		clear: both;
+		float: none;
 		margin: 2em 0 0;
 		width: 100%;
 	}

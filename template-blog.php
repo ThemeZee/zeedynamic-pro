@@ -5,7 +5,7 @@ Template Name: Blog (full posts)
 ?>
 <?php get_header(); ?>
 	
-	<div id="wrap" class="container template-blog">
+	<div id="wrap" class="container clearfix template-blog">
 	
 		<section id="content" class="primary" role="main">
 		

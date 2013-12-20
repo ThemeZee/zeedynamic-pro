@@ -60,8 +60,7 @@ function themezee_css_layout() {
 					padding-left: 1.5em;
 				}
 				#sidebar {
-					margin-left: 0;
-					margin-right: 72%;
+					float: left;
 				}
 			}
 		';

@@ -4,7 +4,7 @@
 	$author = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
 ?>
 	
-	<div id="wrap" class="container">
+	<div id="wrap" class="container clearfix">
 		
 		<section id="content" class="primary" role="main">
 		

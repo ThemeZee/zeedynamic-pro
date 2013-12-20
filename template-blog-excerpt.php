@@ -5,7 +5,7 @@ Template Name: Blog Excerpt (summary)
 ?>
 <?php get_header(); ?>
 	
-	<div id="wrap" class="container template-blog-excerpt">
+	<div id="wrap" class="container clearfix template-blog-excerpt">
 	
 		<section id="content" class="primary" role="main">
 		

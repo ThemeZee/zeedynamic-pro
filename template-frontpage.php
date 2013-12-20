@@ -7,7 +7,7 @@ Template Name: Frontpage Template
 
 <?php $options = get_option('zeedynamic_options'); // Get Theme Options from Database ?>
 	
-	<div id="wrap" class="container template-frontpage">
+	<div id="wrap" class="container clearfix template-frontpage">
 	
 		<section id="content" class="primary" role="main">
 		
