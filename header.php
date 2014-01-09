@@ -38,7 +38,7 @@
 				</a>
 				
 			<?php if(isset($options['themeZee_general_tagline']) and $options['themeZee_general_tagline'] == 'true') : ?>
-				<h2 class="site-description""><?php echo bloginfo('description'); ?></h2>
+				<h2 class="site-description"><?php echo bloginfo('description'); ?></h2>
 			<?php endif; ?>
 			
 			</div>

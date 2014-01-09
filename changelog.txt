@@ -4,7 +4,10 @@ zeeDynamicPro Changelog
 
 Version 1.0.3
 -----------------------------------
+[added] new theme options layout for WP 3.8
 [added] sidebar left/right custom page templates
+[fixed] double quotation on tagline in header.php
+[fixed] center aligned images
 [fixed] logo and widget overflow issue
 
 Version 1.0.2

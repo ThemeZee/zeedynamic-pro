@@ -949,7 +949,7 @@ article .wp-post-image {
 }
 .aligncenter {
 	margin: 1em auto; 
-	display: inline;
+	display: block;
 }
 
 /* Gallery Styling */
