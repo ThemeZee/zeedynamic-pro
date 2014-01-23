@@ -17,13 +17,20 @@ jQuery(document).ready(function($) {
 	/** Widescreen Dropdown Navigation */
 	/* Get Screen Size with Listener */ 
 	if(typeof matchMedia == 'function') {
-		var mq = window.matchMedia('(min-width: 60em)');
+		var mq = window.matchMedia('(max-width: 60em)');
 		mq.addListener(zeeWidthChange);
 		zeeWidthChange(mq);
 	}
 	function zeeWidthChange(mq) {
 		if (mq.matches) {
 	
+			/* Reset dropdown animations */
+			$('#mainnav-menu ul').css({display: 'block'}); // Opera Fix
+			$('#mainnav-menu li ul').css({visibility: 'visible', display: 'block'});
+			$('#mainnav-menu li').unbind('mouseenter mouseleave');
+		
+		} else {
+			
 			/* Add dropdown animations */
 			$('#mainnav-menu ul').css({display: 'none'}); // Opera Fix
 			$('#mainnav-menu li').hover(function(){
@@ -31,12 +38,7 @@ jQuery(document).ready(function($) {
 			},function(){
 				$(this).find('ul:first').css({visibility: 'hidden'});
 			});
-		
-		} else {
-			/* Reset dropdown animations */
-			$('#mainnav-menu ul').css({display: 'block'}); // Opera Fix
-			$('#mainnav-menu li ul').css({visibility: 'visible', display: 'block'});
-			$('#mainnav-menu li').unbind('mouseenter mouseleave');
+			
 		}
 	}
 	
