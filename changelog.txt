@@ -5,10 +5,13 @@ zeeDynamicPro Changelog
 Version 1.0.3
 -----------------------------------
 [added] new theme options layout for WP 3.8
-[added] sidebar left/right custom page templates
+[added] span tags to frontpage category titles
+[changed] embed google fonts with protocal relative url
+[fixed] logo and widget overflow issue
 [fixed] double quotation on tagline in header.php
 [fixed] center aligned images
-[fixed] logo and widget overflow issue
+[fixed] widgets breaking sidebar floating
+[fixed] navigation js media query
 
 Version 1.0.2
 -----------------------------------

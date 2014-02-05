@@ -13,36 +13,36 @@ function themezee_load_web_fonts() {
 	
 		// Load Text Font
 		if(isset($options['themeZee_fonts_text']) and !in_array($options['themeZee_fonts_text'], $default_fonts)) :
-			wp_register_style('themezee_text_font', 'http://fonts.googleapis.com/css?family=' . $options['themeZee_fonts_text']);
+			wp_register_style('themezee_text_font', '//fonts.googleapis.com/css?family=' . $options['themeZee_fonts_text']);
 			wp_enqueue_style('themezee_text_font');
 			$default_fonts[] = $options['themeZee_fonts_text']; // add font to array to prevent second font embed
 		endif;
 		
 		// Load Navigation Font
 		if(isset($options['themeZee_fonts_navi']) and !in_array($options['themeZee_fonts_navi'], $default_fonts)) :
-			wp_register_style('themezee_navi_font', 'http://fonts.googleapis.com/css?family=' . $options['themeZee_fonts_navi']);
+			wp_register_style('themezee_navi_font', '//fonts.googleapis.com/css?family=' . $options['themeZee_fonts_navi']);
 			wp_enqueue_style('themezee_navi_font');
 			$default_fonts[] = $options['themeZee_fonts_navi']; // add font to array to prevent second font embed
 		endif;
 		
 		// Load Title Font
 		if(isset($options['themeZee_fonts_title']) and !in_array($options['themeZee_fonts_title'], $default_fonts)) :
-			wp_register_style('themezee_title_font', 'http://fonts.googleapis.com/css?family=' . $options['themeZee_fonts_title']);
+			wp_register_style('themezee_title_font', '//fonts.googleapis.com/css?family=' . $options['themeZee_fonts_title']);
 			wp_enqueue_style('themezee_title_font');
 			$default_fonts[] = $options['themeZee_fonts_title']; // add font to array to prevent second font embed
 		endif;
 		
 		// Load Widget Font
 		if(isset($options['themeZee_fonts_widget']) and !in_array($options['themeZee_fonts_widget'], $default_fonts)) :
-			wp_register_style('themezee_widget_font', 'http://fonts.googleapis.com/css?family=' . $options['themeZee_fonts_widget']);
+			wp_register_style('themezee_widget_font', '//fonts.googleapis.com/css?family=' . $options['themeZee_fonts_widget']);
 			wp_enqueue_style('themezee_widget_font');
 		endif;
 		
 	// Load Standard Font
 	else: 
-		wp_register_style('themezee_default_font', 'http://fonts.googleapis.com/css?family=Droid+Sans');
+		wp_register_style('themezee_default_font', '//fonts.googleapis.com/css?family=Droid+Sans');
 		wp_enqueue_style('themezee_default_font');
-		wp_register_style('themezee_default_title_font', 'http://fonts.googleapis.com/css?family=Francois+One');
+		wp_register_style('themezee_default_title_font', '//fonts.googleapis.com/css?family=Francois+One');
 		wp_enqueue_style('themezee_default_title_font');
 	endif;
 }
@@ -57,7 +57,7 @@ function themezee_load_web_fonts_admin() {
 	if ( isset($_GET['page']) and $_GET['page'] == 'themezee' and isset($_GET['tab']) and $_GET['tab'] == 'fonts' ) :
 		
 		foreach ( $default_fonts as $value => $label ) {
-			wp_register_style('themezee_font_' . $label, 'http://fonts.googleapis.com/css?family=' . $value);
+			wp_register_style('themezee_font_' . $label, '//fonts.googleapis.com/css?family=' . $value);
 			wp_enqueue_style('themezee_font_' . $label);
 		}
 		

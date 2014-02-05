@@ -64,50 +64,48 @@ function themezee_options_array() {
 function themezee_options_sidebar() {
 	$theme_data = wp_get_theme(); 
 ?>
-	<div class="zee_options_sidebar">
+
+	<dl><dt><h4><?php _e('Theme Data', 'zeeDynamicPro_language'); ?></h4></dt>
+		<dd>
+			<p><?php _e('Name', 'zeeDynamicPro_language'); ?>: <?php echo $theme_data->Name; ?><br/>
+			<?php _e('Version', 'zeeDynamicPro_language'); ?>: <b><?php echo $theme_data->Version; ?></b>
+			<a href="<?php echo get_template_directory_uri(); ?>/changelog.txt" target="_blank"><?php _e('(Changelog)', 'zeeDynamicPro_language'); ?></a><br/>
+			<?php _e('Author', 'zeeDynamicPro_language'); ?>: <a href="http://themezee.com/" target="_blank">ThemeZee</a><br/>
+			</p>
+		</dd>
+	</dl>
 	
-		<dl><dt><h4><?php _e('Theme Data', 'zeeDynamicPro_language'); ?></h4></dt>
-			<dd>
-				<p><?php _e('Name', 'zeeDynamicPro_language'); ?>: <?php echo $theme_data->Name; ?><br/>
-				<?php _e('Version', 'zeeDynamicPro_language'); ?>: <b><?php echo $theme_data->Version; ?></b>
-				<a href="<?php echo get_template_directory_uri(); ?>/changelog.txt" target="_blank"><?php _e('(Changelog)', 'zeeDynamicPro_language'); ?></a><br/>
-				<?php _e('Author', 'zeeDynamicPro_language'); ?>: <a href="http://themezee.com/" target="_blank">ThemeZee</a><br/>
-				</p>
-			</dd>
-		</dl>
-		
-		<dl><dt><h4><?php echo $theme_data->Name; ?> <?php _e('Quick Links', 'zeeDynamicPro_language'); ?> </h4></dt>
-			<dd>
-				<ul>
-					<li><a href="http://themezee.com/pro-themes/" target="_blank"><?php _e('Check Theme Updates', 'zeeDynamicPro_language'); ?></a></li>
-					<li><a href="http://themezee.com/docs/" target="_blank"><?php _e('Theme Documentation', 'zeeDynamicPro_language'); ?></a></li>
-					<li><a href="http://themezee.com/forums/" target="_blank"><?php _e('Support Forum', 'zeeDynamicPro_language'); ?></a></li>
-				</ul>
-			</dd>
-		</dl>
-		
-		<dl><dt><h4><?php _e('Help to translate', 'zeeDynamicPro_language'); ?> </h4></dt>
-			<dd>
-				<p><?php _e('You want to use this WordPress theme in your native language? Then help out to translate it!', 'zeeDynamicPro_language'); ?></p>
-				<ul>
-					<li><a href="http://translate.themezee.org/projects/zeedynamic" target="_blank"><?php _e('Join the Online Translation Project', 'zeeDynamicPro_language'); ?></a></li>
-				</ul>
-			</dd>
-		</dl>
-				
-		<dl><dt><h4><?php _e('Subscribe Now', 'zeeDynamicPro_language'); ?></h4></dt>
-			<dd>
-				<p><?php _e('Subscribe now and get informed about each <b>Theme Release</b> from ThemeZee.', 'zeeDynamicPro_language'); ?></p>
-				<ul class="subscribe">
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/rss.png"/><a href="http://themezee.com/feed/" target="_blank"><?php _e('RSS Feed', 'zeeDynamicPro_language'); ?></a></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/email.png"/><a href="http://feedburner.google.com/fb/a/mailverify?uri=Themezee" target="_blank"><?php _e('Email Subscription', 'zeeDynamicPro_language'); ?></a></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/twitter.png"/><a href="http://twitter.com/ThemeZee" target="_blank"><?php _e('Follow me on Twitter', 'zeeDynamicPro_language'); ?></a></li>
-					<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/facebook.png"/><a href="http://www.facebook.com/ThemeZee" target="_blank"><?php _e('Become a Facebook Fan', 'zeeDynamicPro_language'); ?></a></li>
-				</ul>
-			</dd>
-		</dl>
-	</div>
-	<div class="clear"></div>
+	<dl><dt><h4><?php echo $theme_data->Name; ?> <?php _e('Quick Links', 'zeeDynamicPro_language'); ?> </h4></dt>
+		<dd>
+			<ul>
+				<li><a href="http://themezee.com/pro-themes/" target="_blank"><?php _e('Check Theme Updates', 'zeeDynamicPro_language'); ?></a></li>
+				<li><a href="http://themezee.com/docs/" target="_blank"><?php _e('Theme Documentation', 'zeeDynamicPro_language'); ?></a></li>
+				<li><a href="http://themezee.com/forums/" target="_blank"><?php _e('Support Forum', 'zeeDynamicPro_language'); ?></a></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl><dt><h4><?php _e('Subscribe Now', 'zeeDynamicPro_language'); ?></h4></dt>
+		<dd>
+			<p><?php _e('Subscribe now and get informed about each <b>Theme Release</b> from ThemeZee.', 'zeeDynamicPro_language'); ?></p>
+			<ul class="subscribe">
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/rss.png"/><a href="http://themezee.com/feed/" target="_blank"><?php _e('RSS Feed', 'zeeDynamicPro_language'); ?></a></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/email.png"/><a href="http://feedburner.google.com/fb/a/mailverify?uri=Themezee" target="_blank"><?php _e('Email Subscription', 'zeeDynamicPro_language'); ?></a></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/twitter.png"/><a href="http://twitter.com/ThemeZee" target="_blank"><?php _e('Follow me on Twitter', 'zeeDynamicPro_language'); ?></a></li>
+				<li><img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/facebook.png"/><a href="http://www.facebook.com/ThemeZee" target="_blank"><?php _e('Become a Facebook Fan', 'zeeDynamicPro_language'); ?></a></li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<dl><dt><h4><?php _e('Help to translate', 'zeeDynamicPro_language'); ?> </h4></dt>
+		<dd>
+			<p><?php _e('You want to use this WordPress theme in your native language? Then help out to translate it!', 'zeeDynamicPro_language'); ?></p>
+			<ul>
+				<li><a href="http://translate.themezee.org/projects/zeedynamic" target="_blank"><?php _e('Join the Online Translation Project', 'zeeDynamicPro_language'); ?></a></li>
+			</ul>
+		</dd>
+	</dl>
+
 <?php
 }
 
@@ -116,34 +114,33 @@ function themezee_options_sidebar() {
 function themezee_options_welcome_page() { 
 	$theme_data = wp_get_theme();
 ?>
-	<div id="zee_welcome">
+	<div id="themezee-admin-welcome">
 		<h3><?php _e('Thank you for installing this theme!', 'zeeDynamicPro_language'); ?></h3>
 		<div class="container">
 			<h1><?php _e('Welcome to', 'zeeDynamicPro_language'); ?> <?php echo $theme_data->Name; ?></h1>
-			<div class="zee_intro">
+			<div class="welcome-intro">
 				<?php _e("First of all, the theme options might alarm you, <b>but don't panic</b>. Everything is organized and documented well enough for you.", 'zeeDynamicPro_language'); ?>
 			</div>
 		</div>
-		<div class="welcome_halfed">
-			<div class="welcome_left">
+		<div id="themezee-admin-welcome-columns" class="themezee-admin-clearfix">
+			<div class="column-left">
 				<h3><?php _e('Learn more about ', 'zeeDynamicPro_language'); ?> <?php echo $theme_data->Name; ?></h3>
 				<div class="container">
 					<h2><?php _e('Theme Documentation', 'zeeDynamicPro_language'); ?></h2>
 					<p><?php _e('The <b>Theme Docs</b> provides a lot of tutorials to install and configure your theme and learn everything about WordPress and ThemeZee Themes.', 'zeeDynamicPro_language'); ?></p>
-					<p><a class="welcome_button" href="http://themezee.com/docs/" target="_blank"><?php _e('Visit Theme Docs', 'zeeDynamicPro_language'); ?></a>
+					<p><a class="themezee-admin-button" href="http://themezee.com/docs/" target="_blank"><?php _e('Visit Theme Docs', 'zeeDynamicPro_language'); ?></a>
 					</p>
 				</div>
 			</div>
-			<div class="welcome_right">
+			<div class="column-right">
 				<h3><?php _e('Need any help?', 'zeeDynamicPro_language'); ?></h3>
 				<div class="container">
 					<h2><?php _e('Theme Support Forum', 'zeeDynamicPro_language'); ?></h2>
 					<p><?php _e('If you have any questions beyond the theme documentation, just jump over to the <b>Support Forum</b> and ask for help!', 'zeeDynamicPro_language'); ?></p>
-					<p><a class="welcome_button" href="http://themezee.com/forums/" target="_blank"><?php _e('Visit Support Forum', 'zeeDynamicPro_language'); ?></a>
+					<p><a class="themezee-admin-button" href="http://themezee.com/forums/" target="_blank"><?php _e('Visit Support Forum', 'zeeDynamicPro_language'); ?></a>
 					</p>
 				</div>
 			</div>
-			<div class="clear"></div>
 		</div>
 	</div>
 <?php

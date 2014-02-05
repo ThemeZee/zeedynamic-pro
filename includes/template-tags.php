@@ -298,7 +298,7 @@ if ( ! function_exists( 'themezee_display_category_posts_boxed' ) ):
 		<div class="frontpage-category-wrapper">
 		
 			<h2 class="frontpage-category-title">
-				<?php printf( __( 'Latest in %s', 'zeeDynamicPro_language' ), get_category_by_slug(esc_attr($category))->cat_name); ?>
+				<?php printf( __( '<span>Latest in</span> %s', 'zeeDynamicPro_language' ), get_category_by_slug(esc_attr($category))->cat_name); ?>
 			<h2>
 			
 			<div class="frontpage-category-boxed clearfix">
@@ -372,7 +372,7 @@ if ( ! function_exists( 'themezee_display_category_posts_columns' ) ):
 			<div class="frontpage-category-left frontpage-category-columns">
 		
 				<h2 class="frontpage-category-title">
-					<?php printf( __( 'Latest in %s', 'zeeDynamicPro_language' ), get_category_by_slug(esc_attr($options['themeZee_frontpage_category_three']))->cat_name); ?>
+					<?php printf( __( '<span>Latest in</span> %s', 'zeeDynamicPro_language' ), get_category_by_slug(esc_attr($options['themeZee_frontpage_category_three']))->cat_name); ?>
 				<h2>
 			
 				<?php if ($zee_first_category_query->have_posts()) : while ($zee_first_category_query->have_posts()) : $zee_first_category_query->the_post(); $i++;
@@ -407,7 +407,7 @@ if ( ! function_exists( 'themezee_display_category_posts_columns' ) ):
 			<div class="frontpage-category-right frontpage-category-columns">
 		
 				<h2 class="frontpage-category-title">
-					<?php printf( __( 'Latest in %s', 'zeeDynamicPro_language' ), get_category_by_slug(esc_attr($options['themeZee_frontpage_category_four']))->cat_name); ?>
+					<?php printf( __( '<span>Latest in</span> %s', 'zeeDynamicPro_language' ), get_category_by_slug(esc_attr($options['themeZee_frontpage_category_four']))->cat_name); ?>
 				<h2>
 				<?php if ($zee_second_category_query->have_posts()) : while ($zee_second_category_query->have_posts()) : $zee_second_category_query->the_post(); $j++;
 				

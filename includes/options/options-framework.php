@@ -55,59 +55,73 @@ function themezee_options_page() {
 	$theme_data = wp_get_theme();
 ?>
 			
-	<div class="wrap zee_admin_wrap">  			
-
-		<div id="zee_admin_head">
-			<div id="zee_options_logo">
+	<div class="wrap themezee-admin-wrapper">  			
+		
+		<div id="themezee-admin-header" class="themezee-admin-clearfix">
+		
+			<h2 class="themezee-admin-header-title"><?php echo $theme_data->Name; ?> <?php _e('Theme Options', 'zeeDynamicPro_language'); ?></h2>
+		
+			<div class="themezee-admin-header-logo">
 				<a href="http://themezee.com/" target="_blank">
 					<img src="<?php echo get_template_directory_uri(); ?>/includes/options/images/themezee_logo.png" alt="Logo" />
 				</a>
 			</div>
+
 		</div>
-		<div class="clear"></div>
 		
-		<div id="zee_admin_heading">
-			<div class="icon32" id="icon-themes"></div>
-			<h2><?php echo $theme_data->Name; ?> <?php _e('Theme Options', 'zeeDynamicPro_language'); ?></h2>
-		</div>
-		<div class="clear"></div>
-		<?php if ( isset( $_GET['settings-updated'] ) ) : ?>
-			<div class="updated"><p><?php _e('Theme Options successfully updated.', 'zeeDynamicPro_language'); ?></p></div>
-		<?php endif; ?>
-		<div class="clear"></div>
-			
 		<?php // call function to display tab navigation
-		themezee_options_tabs_menu(); ?>
+			themezee_options_tabs_menu(); ?>
 			
+		<div id="themezee-admin-wrap" class="themezee-admin-clearfix">
+			
+			<div id="themezee-admin-content">
+			
+			<?php if ( isset( $_GET['settings-updated'] ) ) : ?>
+				<div class="themezee-updated"><?php _e('Theme Options successfully updated.', 'zeeDynamicPro_language'); ?></div>
+			<?php endif; ?>
+		
 		<?php 
-		if ( isset ( $_GET['tab'] ) ) : $tab = esc_attr($_GET['tab']); else: $tab = 'welcome'; endif; ?>
-		
-		<?php // Check which tab on theme options is selected
-		if( isset ( $_GET['tab'] ) and $_GET['tab'] <> 'welcome') :
+			// Check which tab on theme options is selected
+			if ( isset ( $_GET['tab'] ) ) : 
+				$tab = esc_attr($_GET['tab']); 
+			else: 
+				$tab = 'welcome'; 
+			endif;
 			
-			// Get Tab
-			$tab = esc_attr($_GET['tab']);
-		?>
-		
-			<form class="zee_form" action="options.php" method="post">
+			// Check if welcome screen or settings tab is displayed
+			if( isset ( $tab ) and $tab <> 'welcome') :
 				
-					<div class="zee_settings">
-						<?php settings_fields('zeedynamic_options'); ?>
-						<?php do_settings_sections('themezee'); ?>
-					</div>
+				// Display Settings Page
+			?>
 
-				<input name="zeedynamic_options[validation-submit]" type="hidden" value="<?php echo $tab ?>" />
+				<form class="themezee-admin-form" action="options.php" method="post">
+					
+						<div class="themezee-admin-settings">
+							<?php settings_fields('zeedynamic_options'); ?>
+							<?php do_settings_sections('themezee'); ?>
+						</div>
 
-				<p><input name="Submit" class="button-primary" type="submit" value="<?php esc_attr_e('Save Changes', 'zeeDynamicPro_language'); ?>" /></p>
-			</form>
+					<input name="zeedynamic_options[validation-submit]" type="hidden" value="<?php echo $tab ?>" />
+
+					<p><input name="Submit" class="button-primary" type="submit" value="<?php esc_attr_e('Save Changes', 'zeeDynamicPro_language'); ?>" /></p>
+				</form>
+
+		<?php 
+			else: // Display Welcome Page
+				themezee_options_welcome_page(); 
+			endif; ?>
 			
-	<?php else: // Display Welcome Page
-			themezee_options_welcome_page(); 
-		endif;
+			</div>
+			
+			<div id="themezee-admin-sidebar" class="themezee-admin-clearfix">
 		
-		// call function to display sidebar content
-		themezee_options_sidebar(); 
-	?>	
+				<?php // call function to display sidebar content
+					themezee_options_sidebar(); 
+				?>
+			</div>
+	
+		</div>
+		
 	</div>
 
 <?php
@@ -145,7 +159,7 @@ function themezee_options_tabs_menu() {
 	endforeach;
 	
 	// Display Tab Navigaiton
-	echo '<h2 id="zee_tabs_navi" class="nav-tab-wrapper">';
+	echo '<h2 id="themezee-admin-tabs" class="nav-tab-wrapper themezee-admin-clearfix">';
 	foreach ( $links as $link ) : echo $link; endforeach;
 	echo '</h2>';
 }
@@ -201,6 +215,11 @@ function themezee_options_display_setting( $setting = array() ) {
 	
 		case 'text':
 			echo "<input id='".$setting['id']."' class='zee-text-field' name='zeedynamic_options[".$setting['id']."]' type='text' value='". esc_attr($options[$setting['id']]) ."' />";
+			echo '<br/><label>'.$setting['desc'].'</label>';
+		break;
+		
+		case 'htmltext':
+			echo "<textarea id='".$setting['id']."' name='zeedynamic_options[".$setting['id']."]' rows='1'>" . wp_kses_post($options[$setting['id']]) . "</textarea>";
 			echo '<br/><label>'.$setting['desc'].'</label>';
 		break;
 		
@@ -351,7 +370,7 @@ function themezee_options_validate($input) {
 		{
 			$options[$setting['id']] = esc_textarea(trim($input[$setting['id']]));
 		}
-		elseif ($setting['type'] == 'html' or $setting['type'] == 'editor')
+		elseif ($setting['type'] == 'html' or $setting['type'] == 'htmltext' or $setting['type'] == 'editor')
 		{
 			$options[$setting['id']] = wp_kses_post(trim($input[$setting['id']]));
 		}

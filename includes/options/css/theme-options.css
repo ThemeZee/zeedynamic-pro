@@ -1,311 +1,341 @@
-/*============================ HEADER / LOGO ============================*/
-#zee_admin_head {
-	width: 100%;
-	height: 43px;
+
+/* Clearing Floats */
+.themezee-admin-clearfix:before, .themezee-admin-clearfix:after {  
+	content: " ";
+	display: table;  
+}  
+.themezee-admin-clearfix:after {  
+	clear: both;
+}  
+.themezee-admin-clearfix {
+    *zoom: 1; /* For IE 6/7 only */  
+}
+
+/* Header */
+#themezee-admin-header {
+	background: #f0f0f0;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, #f0f0f0),
+		color-stop(1, #ddd)
+	);
+	background-image: -o-linear-gradient(right, #f0f0f0 0%, #ddd 100%);
+	background-image: -moz-linear-gradient(right, #f0f0f0 0%, #ddd 100%);
+	background-image: -webkit-linear-gradient(right, #f0f0f0 0%, #ddd 100%);
+	background-image: -ms-linear-gradient(right, #f0f0f0 0%, #ddd 100%);
+	background-image: linear-gradient(to right, #f0f0f0 0%, #ddd 100%);
 	margin-right: -10px;
-	background: #fff url(../images/head.png) repeat-y top right;
-	padding-right: 10px;
-	-moz-border-radius-topright: 5px;
-	-moz-border-radius-bottomright: 5px; 
-	-webkit-border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px; 
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
-#zee_options_logo {
+#themezee-admin-header .themezee-admin-header-title {
+	float: left;
+	line-height: 1em !important;
+	padding: 0.5em !important;
+}
+#themezee-admin-header .themezee-admin-header-logo {
 	float: right;
+}
+#themezee-admin-header .themezee-admin-header-logo  img {
+	vertical-align: top;
+	width: 175px;
+	height: 35px;
 	background: #333;
-	padding-top: 2px;
+	border: 6px solid #333;
 }
-#zee_options_logo img {
-	width: 180px;
-	height: 36px;
+
+/* Navigation Tabs */
+#themezee-admin-tabs {
+	margin: 0 0 1em;
 }
-#zee_admin_heading {
-	margin-top: -43px;
+#themezee-admin-tabs .nav-tab {
+	font-size: 0.7em;
+	padding: 0.5em 1em;
+	margin-top: 0.5em;
 }
-#zee_tabs_navi {
-	padding-left: 5px;
-	margin: 15px 0;
+.themezee-admin-wrapper .themezee-updated {
+	padding: 0.8em;
+	margin-bottom: 1.5em;
+	background-color: #FFFFFF;
+    border-left: 4px solid #7AD03A;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
-.zee_admin_wrap .updated {
-	margin-top: 15px !important;
-}
-/*============================ NAVIGATION TABS ============================*/
-#zee_tabs_navi a {
-	color: #21759b;
-	font-size: 0.8em;
-}
-#zee_tabs_navi a:hover {
-	color: #d54e21;
-}
-#zee_tabs_navi a.nav-tab-active {
-	color: #464646;
-}
-/*============================ SETTINGS FORM ============================*/
-.zee_settings h3 {
-	margin: 0 !important;
-	padding: 8px 10px !important;
-	border: 1px solid #dfdfdf;
-	border-bottom: none;
-	font-size: 1.1em;
-	color: #464646;
-	text-shadow:#fff 0 1px 0;
-	-moz-box-shadow:inset 0 1px 0 #fff;
-	-webkit-box-shadow:inset 0 1px 0 #fff;
-	box-shadow:inset 0 1px 0 #fff;
-	-webkit-border-top-right-radius:3px;
-	-webkit-border-top-left-radius:3px;
-	border-top-right-radius:3px;
-	border-top-left-radius:3px;
-	background-image:-ms-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-moz-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-o-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#ececec));
-	background-image:-webkit-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:linear-gradient(top,#f9f9f9,#ececec);
-}
-.zee_form{
-	margin-top: 10px;
+
+/* Layout */
+#themezee-admin-content {
 	float: left;
 	width: 72%;
+	padding-right: 1.5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-.zee_settings .form-table {
-	margin: 0 0 20px 0;
+#themezee-admin-sidebar {
+	float: right;
+	width: 28%;
+}
+	
+/* Settings Form */
+.themezee-admin-settings h3 {
+	margin: 0 !important;
+	padding: 0.7em 0.8em;
+	line-height: 1.4em;
 	background: #fff;
-	border: 1px solid #dfdfdf;
-}
-.zee_settings .form-table tr td, .zee_settings .form-table tr th{
-	border: 1px solid #dfdfdf;
-	padding: 15px;
-}
-.zee_settings .form-table tr th {
-	color: #666;
-	font-size: 1.0em;
-	font-weight: bold;
-	background: #f8f8f8;
-	background-image:-ms-linear-gradient(top,#f6f6f6,#fbfbfb);
-	background-image:-moz-linear-gradient(top,#f6f6f6,#fbfbfb);
-	background-image:-o-linear-gradient(top,#f6f6f6,#fbfbfb);
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#f6f6f6),to(#fbfbfb));
-	background-image:-webkit-linear-gradient(top,#f6f6f6,#fbfbfb);
-	background-image:linear-gradient(top,#f6f6f6,#fbfbfb);
-}
-.zee_settings .form-table label{ 
-	color: #555;
+	border: 1px solid #e5e5e5;
 	font-size: 1.1em;
-	font-style: italic;
+	color: #111;
+	text-shadow: #fff 0 1px 0;
 }
-.zee_settings .form-table input { 
-	margin-bottom: 5px;
+.themezee-admin-settings .form-table {
+	margin: 0 0 1.5em 0;
+	background: #fefefe;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
 }
-.zee_settings .form-table .zee-upload-image-field,
-.zee_settings .form-table .zee-text-field,
-.zee_settings .form-table .zee-url-field,
-.zee_settings .form-table textarea { 
+.themezee-admin-settings .form-table tr td, .themezee-admin-settings .form-table tr th{
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	padding: 1.3em;
+	font-size: 0.95em;
+	color: #444;
+}
+.themezee-admin-settings .form-table label{ 
+	color: #444;
+}
+.themezee-admin-settings .form-table input[type="text"], 
+.themezee-admin-settings .form-table textarea { 
+	margin-bottom: 0.5em;
+}
+
+/* Special Settings Fields */
+.themezee-admin-settings .form-table .zee-upload-image-field,
+.themezee-admin-settings .form-table .zee-text-field,
+.themezee-admin-settings .form-table .zee-url-field,
+.themezee-admin-settings .form-table textarea { 
 	width: 100%; 
 }
-.wp-editor-wrap td, .wp-editor-wrap th, .wp-editor-wrap tr {
+.themezee-admin-settings .form-table select { 
+	width: 100% !important;
+}
+.themezee-admin-settings .wp-editor-wrap td, 
+.themezee-admin-settings .wp-editor-wrap th, 
+.themezee-admin-settings.wp-editor-wrap tr {
 	border: none !important;
 	padding: 0 !important;
 }
-.zee-image-bg {
+.themezee-admin-settings .zee-image-bg {
 	width: 98%;
 	padding: 4px 1% 0 1%;
 	background: transparent url(../images/zee-logo-bg.png) repeat left top;
 	overflow: hidden;
+	margin-bottom: 0.5em;
 }
-.zee-image-bg img {
+.themezee-admin-settings .zee-image-bg img {
 	max-width: 450px;
 	height: auto;
 }
-.zee-font-bg {
-	padding: 5px 10px;
-	background: #f5f5f5;
+.themezee-admin-settings .zee-font-bg {
+	padding: 0.4em;
+	background: #fafafa;
 	font-size: 1.3em;
-	margin-top: 10px;
-	border-left: 2px solid #ddd;
+	margin-top: 1em;
+	border: 1px solid #e5e5e5;
 }
-/*============================ SIDEBAR ============================*/
-.zee_options_sidebar {
-	margin-top: 25px;
-	width: 26%;
-	margin-left: 74%;
+
+/* Sidebar Widgets */
+#themezee-admin-sidebar dl {
+	margin: 0;
+	margin-bottom: 1.5em;
+	background: #fefefe;
+	color: #444;
 }
-.zee_options_sidebar dl {
-	margin-bottom: 20px;
-	background: #fff;
-}
-.zee_options_sidebar dt {
+#themezee-admin-sidebar dt {
 	margin: 0 !important;
-	padding: 8px 10px !important;
-	border: 1px solid #dfdfdf;
-	border-bottom: none;
+	padding: 0.8em;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 	font-size: 1.1em;
-	color: #464646;
-	text-shadow:#fff 0 1px 0;
-	-moz-box-shadow:inset 0 1px 0 #fff;
-	-webkit-box-shadow:inset 0 1px 0 #fff;
-	box-shadow:inset 0 1px 0 #fff;
-	-webkit-border-top-right-radius:3px;
-	-webkit-border-top-left-radius:3px;
-	border-top-right-radius:3px;
-	border-top-left-radius:3px;
-	background-image:-ms-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-moz-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-o-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#ececec));
-	background-image:-webkit-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:linear-gradient(top,#f9f9f9,#ececec);
+	color: #111;
+	text-shadow: #fff 0 1px 0;
 }
-.zee_options_sidebar dt h4 {
+#themezee-admin-sidebar dt h4 {
 	padding: 0 !important;
 	margin: 0 !important;
 }
-.zee_options_sidebar dd {
-	padding: 10px 15px 5px 15px;
+#themezee-admin-sidebar dd {
+	padding: 1em 1.2em;
 	margin: 0;
-	border: 1px solid #dfdfdf;
-	-webkit-border-bottom-right-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	border-bottom-right-radius:3px;
-	border-bottom-left-radius:3px;
+	border: 1px solid #e5e5e5;
+	border-top: none;
 }
-.zee_options_sidebar dd p {
-	margin: 5px 0 10px 0;
+#themezee-admin-sidebar dd p {
+	margin: 0.2em 0;
 	line-height: 1.4em;
 }
-.zee_options_sidebar dd ul {
-	margin: 5px 0;
+#themezee-admin-sidebar dd ul {
+	margin: 0.5em 0 0.2em;
 	list-style: inside circle;
 }
-.zee_options_sidebar .subscribe {
+#themezee-admin-sidebar .subscribe {
 	list-style: none;
 }
-.zee_options_sidebar .subscribe li{
+#themezee-admin-sidebar .subscribe li{
 	padding: 1px 0;
 }
-.zee_options_sidebar .subscribe img{
+#themezee-admin-sidebar .subscribe img{
 	float: left;
 	margin-right: 5px;
 	width: 16px;
 	height: 16px;
 }
-/*============================ WELCOME SCREEN ============================*/
-#zee_welcome {
-	margin-top: 10px !important;
-	float: left;
-	width: 72%;
+
+/* Welcome Screen Layout */
+#themezee-admin-welcome .container {
+	margin: 0 0 1.5em 0;
+	background: #fefefe;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.04);
+	padding: 1.3em 1.3em 1em;
+	font-size: 0.95em;
+	color: #444;
 }
-#zee_welcome .welcome_left {
-	float: left;
-	width: 49%;
-}
-#zee_welcome .welcome_right {
-	width: 49%;
-	margin-left: 51%;
-}
-#zee_welcome .container {
-	padding: 5px 10px;
-	margin-bottom: 20px;
-	border: 1px solid #dfdfdf;
-	background-image:-ms-linear-gradient(bottom,#f6f6f6,#fbfbfb);
-	background-image:-moz-linear-gradient(bottom,#f6f6f6,#fbfbfb);
-	background-image:-o-linear-gradient(bottom,#f6f6f6,#fbfbfb);
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#f6f6f6),to(#fbfbfb));
-	background-image:-webkit-linear-gradient(bottom,#f6f6f6,#fbfbfb);
-	background-image:linear-gradient(bottom,#f6f6f6,#fbfbfb);
-}
-#zee_welcome h3 {
+#themezee-admin-welcome h3 {
 	margin: 0 !important;
-	padding: 8px 10px !important;
-	border: 1px solid #dfdfdf;
-	border-bottom: none;
+	padding: 0.7em 0.8em;
+	line-height: 1.4em;
+	background: #fff;
+	border: 1px solid #e5e5e5;
 	font-size: 1.1em;
-	color: #464646;
-	text-shadow:#fff 0 1px 0;
-	-moz-box-shadow:inset 0 1px 0 #fff;
-	-webkit-box-shadow:inset 0 1px 0 #fff;
-	box-shadow:inset 0 1px 0 #fff;
-	-webkit-border-top-right-radius:3px;
-	-webkit-border-top-left-radius:3px;
-	border-top-right-radius:3px;
-	border-top-left-radius:3px;
-	background-image:-ms-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-moz-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-o-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:-webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#ececec));
-	background-image:-webkit-linear-gradient(top,#f9f9f9,#ececec);
-	background-image:linear-gradient(top,#f9f9f9,#ececec);
+	color: #111;
+	text-shadow: #fff 0 1px 0;
 }
-#zee_welcome h1 {
-	font-size: 3.0em;
-	margin: 15px 10px 5px 10px;
+#themezee-admin-welcome .column-left {
+	float: left;
+	width: 50%;
+	padding-right: 0.75em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#themezee-admin-welcome .column-right {
+	float: right;
+	width: 50%;
+	padding-left: 0.75em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Welcome Screen Content */
+#themezee-admin-welcome h1 {
+	font-size: 2.4em;
+	margin: 0.2em;
 	font-weight: normal;
 	line-height: 1.3em;
 }
-#zee_welcome .zee_intro {
-	padding: 5px 10px;
-	font-size: 1.8em;
+#themezee-admin-welcome .welcome-intro {
+	padding: 0.3em;
+	font-size: 1.6em;
 	color: #777;
 	line-height: 1.7em;
 }
-#zee_welcome .zee_intro b {
+#themezee-admin-welcome .welcome-intro b {
 	color: #333;
 }
-#zee_welcome h2 {
-	font-size: 2.0em;
+
+#themezee-admin-welcome h2 {
+	font-size: 1.6em;
 	margin: 0;
 	font-weight: normal;
 	line-height: 1.0em;
 }
-#zee_welcome h4 {
-	font-size: 1.4em;
+#themezee-admin-welcome h4 {
+	font-size: 1.3em;
 	margin: 0;
-	line-height: 1.0em;
-	background: #e4e4e4;
-	padding: 10px;
-	text-shadow:#fff 0 1px 0;
-	-webkit-border-top-right-radius:3px;
-	-webkit-border-top-left-radius:3px;
-	border-top-right-radius:3px;
-	border-top-left-radius:3px;
+	text-shadow: #fff 0 1px 0;
 }
-#zee_welcome p {
-	font-size: 1.2em;
-	line-height: 1.2em;
-}
-#zee_welcome ul {
-	margin: 0 0 10px 0;
-	padding: 5px 10px;
-	list-style: none !important;
-	background: #eee;
-	font-size: 1.2em;
-	min-height: 140px;
-	-webkit-border-bottom-right-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	border-bottom-right-radius:3px;
-	border-bottom-left-radius:3px;
-}
-#zee_welcome ul li{
+#themezee-admin-welcome ul {
+	margin: 0.6em 0 1em;
 	padding: 0;
-	margin: 5px 0;
+	list-style: none !important;
+	font-size: 1.1em;
 }
-#zee_welcome .welcome_button {
+#themezee-admin-welcome ul li{
+	margin: 0;
+	padding: 0.6em;
+	background: #eee;
+	border-top: 1px solid #fff;
+}
+#themezee-admin-welcome .themezee-admin-button {
 	display: block;
 	text-align: center;
 	margin: 0;
-	font-size: 1.3em;
-	line-height: 1.2em;
-	padding: 15px;
+	font-size: 1.2em;
+	padding: 0.7em;
 	background: #21759b;
 	color: #fff;
 	text-decoration: none;
-	-webkit-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	border-radius:3px;
+	border: none;
 }
-#zee_welcome .welcome_button:hover {
+#themezee-admin-welcome .themezee-admin-button:hover {
 	background: #333;
+}
+
+/* Media Query | <980px */
+@media only screen and (max-width: 980px) {
+	#themezee-admin-header {
+		margin-right: 0;
+	}
+	#themezee-admin-content {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+	#themezee-admin-sidebar {
+		float: none;
+		margin-top: 3em;
+		width: 100%;
+	}
+}
+/* Media Query | <782px */
+@media only screen and (max-width: 782px) {
+	.themezee-admin-settings h3 {
+		border-bottom: none;
+	}
+	.themezee-admin-settings .form-table tr th{
+		border: none;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 0.7em 1em;
+		font-size: 0.95em;
+		color: #444;
+		background: #f5f5f5;
+	}
+	.themezee-admin-settings .form-table tr td{
+		border: none;
+		margin: none;
+	}
+
+}
+/* Media Query | <600px */
+@media only screen and (max-width: 600px) {
+	#themezee-admin-header {
+		background: none;
+	}
+	#themezee-admin-header .themezee-admin-header-logo {
+		display: none;
+	}
+	#themezee-admin-welcome .column-left {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+	}
+	#themezee-admin-welcome .column-right {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+	}
 }
