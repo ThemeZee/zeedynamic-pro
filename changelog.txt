@@ -2,6 +2,10 @@
 zeeDynamicPro Changelog
 ===================================
 
+Version 1.0.4
+-----------------------------------
+[fixed] frontpage template load more button issue
+
 Version 1.0.3
 -----------------------------------
 [added] new theme options layout for WP 3.8
