@@ -61,6 +61,8 @@ function themezee_custom_jscript_posts() {
 	// Get Pagination query
 	if ( get_query_var('paged') ) :
 		$paged = (int)get_query_var('paged');
+	elseif ( get_query_var('page') ) :
+		$paged = (int)get_query_var('page');
 	else :
 		$paged = 1;
 	endif;

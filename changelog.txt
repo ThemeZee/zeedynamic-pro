@@ -2,6 +2,10 @@
 zeeDynamicPro Changelog
 ===================================
 
+Version 1.0.5
+-----------------------------------
+[fixed] frontpage template load more button second issue
+
 Version 1.0.4
 -----------------------------------
 [fixed] frontpage template load more button issue
