@@ -1,0 +1,45 @@
+/*
+ * Customizer CSS
+ *
+ * Adjusts styling for theme option controls in the Customizer
+ *
+ * @package zeeDynamic Pro
+ */
+
+#customize-control-zeedynamic_theme_options-header_spacing {
+	margin-top: 16px;
+}
+
+#customize-control-zeedynamic_theme_options-footer_text textarea {
+	height: 4em;
+}
+
+/* Custom Font Control */
+.customize-control-zeedynamic_pro_custom_font {
+	margin-bottom: 24px;
+}
+
+.customize-control-zeedynamic_pro_custom_font .actions, 
+.customize-control-zeedynamic_pro_custom_font_list .actions {
+	margin-top: 8px;
+}
+
+.customize-control-zeedynamic_pro_custom_font .actions .button.previous {
+	margin-right: 4px;
+}
+
+.customize-control-zeedynamic_pro_custom_font .actions .button.standard {
+	float: right;
+}
+
+.customize-control-zeedynamic_pro_custom_font select {
+	width: 100%;
+}
+
+.customize-control-zeedynamic_pro_custom_font div:hover {
+	cursor: default;
+}
+
+.customize-control-zeedynamic_pro_custom_font .actions .button:hover {
+	cursor: pointer;
+}

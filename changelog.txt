@@ -1,35 +1,7 @@
 ===================================
-zeeDynamicPro Changelog
+zeeDynamic Pro Changelog
 ===================================
-
-Version 1.0.5
------------------------------------
-[fixed] frontpage template load more button second issue
-
-Version 1.0.4
------------------------------------
-[fixed] frontpage template load more button issue
-
-Version 1.0.3
------------------------------------
-[added] new theme options layout for WP 3.8
-[added] span tags to frontpage category titles
-[changed] embed google fonts with protocal relative url
-[fixed] logo and widget overflow issue
-[fixed] double quotation on tagline in header.php
-[fixed] center aligned images
-[fixed] widgets breaking sidebar floating
-[fixed] navigation js media query
-
-Version 1.0.2
------------------------------------
-[added] unique name for theme options array in the database
-[added] featured image header for pages
-
-Version 1.0.1
------------------------------------
-[fixed] undefined variables in template-tags.php
 
 Version 1.0
 -----------------------------------
-Final Version
+Initial Version

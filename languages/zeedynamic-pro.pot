@@ -1,0 +1,410 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zeeDynamic Pro\n"
+"Report-Msgid-Bugs-To: https://themezee.com/\n"
+"POT-Creation-Date: 2016-04-01 15:22+0100\n"
+"PO-Revision-Date: 2016-04-01 15:22+0100\n"
+"Last-Translator: \n"
+"Language-Team: ThemeZee <support@themezee.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: zeedynamic-pro.php:178
+msgid "Settings"
+msgstr ""
+
+#: zeedynamic-pro.php:200
+#, php-format
+msgid ""
+"The %1$s add-on needs the %2$s theme activated in order to work. You should "
+"deactivate %1$s if you have switched to another theme permanently."
+msgstr ""
+
+#: zeedynamic-pro.php:222
+#, php-format
+msgid ""
+"Please enter your license key for the %1$s add-on in order to receive "
+"updates and support. <a href=\"%2$s\">Enter License Key</a>"
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:177
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:184
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:324
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:324
+msgid "Error"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:44
+#: includes/admin/class-settings-page.php:45
+msgid "Pro Version"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:65
+msgid "zeeDynamic Pro"
+msgstr ""
+
+#: includes/admin/class-settings.php:132
+msgid "License"
+msgstr ""
+
+#: includes/admin/class-settings.php:172
+msgid "Configure the zeeDynamic Pro Addon."
+msgstr ""
+
+#: includes/admin/class-settings.php:182
+#, php-format
+msgid ""
+"Please enter your license key. An active license key is needed for automatic "
+"plugin updates and <a href=\"%s\" target=\"_blank\">support</a>."
+msgstr ""
+
+#: includes/admin/class-settings.php:283
+msgid "License Key"
+msgstr ""
+
+#: includes/admin/class-settings.php:409
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/admin/class-settings.php:410
+msgid "Your license is valid!"
+msgstr ""
+
+#: includes/admin/class-settings.php:413
+msgid "Renew Your License"
+msgstr ""
+
+#: includes/admin/class-settings.php:414
+msgid ""
+"Your license has expired, renew today to continue getting updates and "
+"support!"
+msgstr ""
+
+#: includes/admin/class-settings.php:416 includes/admin/class-settings.php:419
+msgid "Activate License"
+msgstr ""
+
+#: includes/admin/class-settings.php:417
+msgid "Your license is invalid!"
+msgstr ""
+
+#: includes/admin/class-settings.php:513
+#, php-format
+msgid ""
+"The callback function used for the <strong>%s</strong> setting is missing."
+msgstr ""
+
+#: includes/customizer/class-customize-font-control.php:30
+msgid "Previous Font"
+msgstr ""
+
+#: includes/customizer/class-customize-font-control.php:31
+msgid "Next Font"
+msgstr ""
+
+#: includes/customizer/class-customize-font-control.php:32
+msgctxt "default font button"
+msgid "Default"
+msgstr ""
+
+#: includes/customizer/class-customize-font-list-control.php:29
+msgid "Update Fonts"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:308
+msgid "Theme Colors"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:327
+msgctxt "color setting"
+msgid "Top Navigation"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:344
+msgctxt "color setting"
+msgid "Navigation (primary)"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:361
+msgctxt "color setting"
+msgid "Navigation (secondary)"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:378
+msgctxt "color setting"
+msgid "Content (primary)"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:395
+msgctxt "color setting"
+msgid "Content (secondary)"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:412
+msgctxt "color setting"
+msgid "Footer"
+msgstr ""
+
+#: includes/modules/class-custom-colors.php:429
+msgctxt "color setting"
+msgid "Footer Navigation"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:203
+msgid "Theme Fonts"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:222
+msgid "Base Font"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:238
+msgctxt "font setting"
+msgid "Headings"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:254
+msgctxt "font setting"
+msgid "Navigation"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:270
+msgctxt "font setting"
+msgid "Widget Titles"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:287
+msgid "Choose available Fonts"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:291
+msgid "Default Browser Fonts (12)"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:292
+msgid "ThemeZee Favorite Fonts (35)"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:293
+msgid "Most Popular Google Fonts (100)"
+msgstr ""
+
+#: includes/modules/class-custom-fonts.php:294
+msgid "All Google Fonts (650)"
+msgstr ""
+
+#: includes/modules/class-footer-line.php:145
+msgid "Footer Settings"
+msgstr ""
+
+#: includes/modules/class-footer-line.php:160
+msgid "Footer Text"
+msgstr ""
+
+#: includes/modules/class-footer-line.php:177
+msgid "Display Credit Link to ThemeZee on footer line"
+msgstr ""
+
+#: includes/modules/class-footer-line.php:215
+msgid "Footer Navigation"
+msgstr ""
+
+#: includes/modules/class-footer-line.php:216
+msgid "Footer Social Icons"
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:95
+msgid "Footer Left"
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:97
+msgid "Appears on footer on the left hand side."
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:106
+msgid "Footer Center Left"
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:108
+msgid "Appears on footer on center left position."
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:117
+msgid "Footer Center Right"
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:119
+msgid "Appears on footer on center right position."
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:128
+msgid "Footer Right"
+msgstr ""
+
+#: includes/modules/class-footer-widgets.php:130
+msgid "Appears on footer on the right hand side."
+msgstr ""
+
+#: includes/modules/class-header-bar.php:102
+msgid "Top Navigation"
+msgstr ""
+
+#: includes/modules/class-header-bar.php:103
+msgid "Header Social Icons"
+msgstr ""
+
+#: includes/modules/class-header-spacing.php:97
+msgid "Header Spacing"
+msgstr ""
+
+#: includes/modules/class-header-spacing.php:112
+msgid "Logo Spacing (default: 0)"
+msgstr ""
+
+#: includes/modules/class-header-spacing.php:129
+msgid "Header Spacing (default: 20)"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:53
+msgid "Post Meta"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:69
+#: includes/widgets/widget-magazine-posts-boxed.php:457
+#: includes/widgets/widget-magazine-posts-list.php:313
+#: includes/widgets/widget-magazine-posts-single.php:305
+msgid "Display post date"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:85
+#: includes/widgets/widget-magazine-posts-boxed.php:464
+#: includes/widgets/widget-magazine-posts-list.php:320
+#: includes/widgets/widget-magazine-posts-single.php:312
+msgid "Display post author"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:101
+msgid "Display post categories"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:119
+msgid "Single Posts"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:135
+msgid "Display featured image on single posts"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:151
+msgid "Display post tags on single posts"
+msgstr ""
+
+#: includes/modules/class-post-meta.php:166
+msgid "Display post navigation on single posts"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:21
+#, php-format
+msgid "Magazine Posts: Boxed (%s)"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:24
+msgid ""
+"Displays your posts from a selected category in a boxed layout. Please use "
+"this widget ONLY in the Magazine Homepage widget area."
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:373
+#: includes/widgets/widget-magazine-posts-list.php:230
+#: includes/widgets/widget-magazine-posts-single.php:229
+#, php-format
+msgid "View all posts from category %s"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:426
+#: includes/widgets/widget-magazine-posts-list.php:284
+#: includes/widgets/widget-magazine-posts-single.php:282
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:432
+#: includes/widgets/widget-magazine-posts-list.php:290
+#: includes/widgets/widget-magazine-posts-single.php:288
+msgid "Category:"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:435
+#: includes/widgets/widget-magazine-posts-list.php:293
+#: includes/widgets/widget-magazine-posts-single.php:291
+msgid "All Categories"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:447
+msgid "Post Layout:"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:449
+msgid "Horizontal Arrangement"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-boxed.php:450
+msgid "Vertical Arrangement"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-list.php:21
+#, php-format
+msgid "Magazine Posts: List (%s)"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-list.php:24
+msgid ""
+"Displays your posts from a selected category in a simple list layout. Please "
+"use this widget ONLY in the Magazine Homepage widget area."
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-list.php:305
+msgid "Number of posts:"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-list.php:327
+#: includes/widgets/widget-magazine-posts-single.php:319
+msgid "Display post category"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-single.php:21
+#, php-format
+msgid "Magazine Posts: Single (%s)"
+msgstr ""
+
+#: includes/widgets/widget-magazine-posts-single.php:24
+msgid ""
+"Displays a single post from a selected category. Please use this widget ONLY "
+"in the Magazine Homepage widget area."
+msgstr ""
