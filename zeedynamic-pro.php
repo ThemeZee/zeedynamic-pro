@@ -68,7 +68,7 @@ class zeeDynamic_Pro {
 		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.0' );
 		
 		// Define Plugin Name
-		define( 'ZEE_DYNAMIC_PRO_PRODUCT_ID', 58393 );
+		define( 'ZEE_DYNAMIC_PRO_PRODUCT_ID', 58567 );
 
 		// Define Update API URL
 		define( 'ZEE_DYNAMIC_PRO_STORE_API_URL', 'https://themezee.com' ); 
