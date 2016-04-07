@@ -479,12 +479,3 @@ class zeeDynamic_Pro_Magazine_Posts_Boxed_Widget extends WP_Widget {
 	}
 	
 }
-
-// Register Widget
-add_action( 'widgets_init', 'zeedynamic_pro_register_magazine_posts_boxed_widget' );
-
-function zeedynamic_pro_register_magazine_posts_boxed_widget() {
-
-	register_widget( 'zeeDynamic_Pro_Magazine_Posts_Boxed_Widget' );
-	
-}

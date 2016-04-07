@@ -2,6 +2,11 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.0.1
+-----------------------------------
+[fixed] register additional Magazine Post widgets only if zeeDynamic theme is active
+[changed] default values for post meta settings
+
 Version 1.0
 -----------------------------------
 Initial Version

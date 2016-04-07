@@ -334,12 +334,3 @@ class zeeDynamic_Pro_Magazine_Posts_Single_Widget extends WP_Widget {
 	}
 	
 }
-
-// Register Widget
-add_action( 'widgets_init', 'zeedynamic_pro_register_magazine_posts_single_widget' );
-
-function zeedynamic_pro_register_magazine_posts_single_widget() {
-
-	register_widget( 'zeeDynamic_Pro_Magazine_Posts_Single_Widget' );
-	
-}

@@ -140,6 +140,9 @@ class zeeDynamic_Pro {
 		// Enqueue Frontend Widget Styles
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_styles' ), 11 );
 		
+		// Register additional Magazine Post Widgets
+		add_action( 'widgets_init', array( __CLASS__, 'register_widgets' ) );
+		
 		// Add Settings link to Plugin actions
 		add_filter( 'plugin_action_links_' . plugin_basename( ZEE_DYNAMIC_PRO_PLUGIN_FILE ), array( __CLASS__, 'plugin_action_links' ) );
 		
@@ -165,6 +168,24 @@ class zeeDynamic_Pro {
 		
 		// Enqueue Plugin Stylesheet
 		wp_enqueue_style( 'zeedynamic-pro', ZEE_DYNAMIC_PRO_PLUGIN_URL . 'assets/css/zeedynamic-pro.css', array(), ZEE_DYNAMIC_PRO_VERSION );
+		
+	}
+	
+	/**
+	 * Register Magazine Widgets
+	 *
+	 * @return void
+	 */
+	static function register_widgets() {
+		
+		// Return early if zeeDynamic Theme is not active
+		if ( ! current_theme_supports( 'zeedynamic-pro'  ) ) {
+			return;
+		}
+		
+		register_widget( 'zeeDynamic_Pro_Magazine_Posts_Boxed_Widget' );
+		register_widget( 'zeeDynamic_Pro_Magazine_Posts_List_Widget' );
+		register_widget( 'zeeDynamic_Pro_Magazine_Posts_Single_Widget' );
 		
 	}
 	

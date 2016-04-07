@@ -125,7 +125,7 @@ class zeeDynamic_Pro_Post_Meta {
 		);
 		
 		$wp_customize->add_setting( 'zeedynamic_theme_options[post_image]', array(
-			'default'           => false,
+			'default'           => true,
 			'type'           	=> 'option',
 			'transport'         => 'refresh',
 			'sanitize_callback' => 'zeedynamic_sanitize_checkbox'
@@ -141,7 +141,7 @@ class zeeDynamic_Pro_Post_Meta {
 		);
 		
 		$wp_customize->add_setting( 'zeedynamic_theme_options[meta_tags]', array(
-			'default'           => false,
+			'default'           => true,
 			'type'           	=> 'option',
 			'transport'         => 'refresh',
 			'sanitize_callback' => 'zeedynamic_sanitize_checkbox'
