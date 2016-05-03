@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zeeDynamic Pro\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2016-04-03 17:44+0100\n"
-"PO-Revision-Date: 2016-04-03 17:44+0100\n"
+"POT-Creation-Date: 2016-05-03 17:31+0100\n"
+"PO-Revision-Date: 2016-05-03 17:32+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
 "Language: de_DE\n"
@@ -16,11 +16,36 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: zeedynamic-pro.php:178
+#: zeedynamic-pro.php:197
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: zeedynamic-pro.php:200
+#: includes/admin/class-admin-notices.php:55
+#, php-format
+msgid ""
+"Please enter your license key for the %1$s add-on in order to receive "
+"updates and support. <a href=\"%2$s\">Enter License Key</a>"
+msgstr ""
+"Bitte trage deinen Lizenzschlüssel für das %1$s Add-on ein, um automatische "
+"Updates und Support zu erhalten. <a href=\"%2$s\">Lizenzschlüssel eingeben</"
+"a>"
+
+#: includes/admin/class-admin-notices.php:59
+#: includes/admin/class-admin-notices.php:87
+#: includes/admin/class-admin-notices.php:112
+msgid "Dismiss Notice"
+msgstr "Nachricht ausblenden"
+
+#: includes/admin/class-admin-notices.php:83
+#, php-format
+msgid ""
+"Your license for %1$s has expired. Please <a href=\"%2$s\">renew</a> to "
+"continue getting updates and support!"
+msgstr ""
+"Deine Lizenz für %1$s ist abgelaufen. Bitte <a href=\"%2$s\">erneuere sie</"
+"a>, um weiterhin Updates und Support zu erhalten!"
+
+#: includes/admin/class-admin-notices.php:108
 #, php-format
 msgid ""
 "The %1$s add-on needs the %2$s theme activated in order to work. You should "
@@ -30,15 +55,14 @@ msgstr ""
 "Funktionsweise. Du solltest %1$s deaktivieren, wenn du dauerhaft zu einem "
 "anderen Theme gewechselt hast."
 
-#: zeedynamic-pro.php:222
-#, php-format
-msgid ""
-"Please enter your license key for the %1$s add-on in order to receive "
-"updates and support. <a href=\"%2$s\">Enter License Key</a>"
-msgstr ""
-"Bitte trage deinen Lizenzschlüssel für das %1$s Add-on ein, um automatische "
-"Updates und Support zu erhalten. <a href=\"%2$s\">Lizenzschlüssel eingeben</"
-"a>"
+#: includes/admin/class-admin-notices.php:135
+msgid "Security check failed"
+msgstr "Security Check fehlgeschlagen"
+
+#: includes/admin/class-admin-notices.php:135
+#: includes/admin/class-plugin-updater.php:324
+msgid "Error"
+msgstr "Fehler"
 
 #: includes/admin/class-plugin-updater.php:177
 #, php-format
@@ -64,28 +88,37 @@ msgstr ""
 msgid "You do not have permission to install plugin updates"
 msgstr "Du hast keine Berechtigung zur Installation von Plugin Updates"
 
-#: includes/admin/class-plugin-updater.php:324
-msgid "Error"
-msgstr "Fehler"
-
-#: includes/admin/class-settings-page.php:44
-#: includes/admin/class-settings-page.php:45
+#: includes/admin/class-settings-page.php:46
+#: includes/admin/class-settings-page.php:47
 msgid "Pro Version"
 msgstr "Pro Version"
 
-#: includes/admin/class-settings-page.php:65
-msgid "zeeDynamic Pro"
-msgstr "zeeDynamic Pro"
+#: includes/admin/class-settings-page.php:81
+#, php-format
+msgid ""
+"You can find your license keys and manage your active sites on <a href=\"%s"
+"\" target=\"_blank\">themezee.com</a>."
+msgstr ""
+"Du findest deine Lizenzschlüssel und aktive Webseiten unter <a href=\"%s\" "
+"target=\"_blank\">themezee.com</a>."
 
-#: includes/admin/class-settings.php:132
-msgid "License"
-msgstr "Lizenz"
+#: includes/admin/class-settings-page.php:81
+msgid "https://themezee.com/license-keys/"
+msgstr "https://themezee.com/de/lizenzschluessel/"
 
-#: includes/admin/class-settings.php:172
-msgid "Configure the zeeDynamic Pro Addon."
-msgstr "zeeDynamic Pro Addon konfigurieren"
+#: includes/admin/class-settings.php:121
+msgid "Automatic Updates"
+msgstr "Automatische Updates"
 
-#: includes/admin/class-settings.php:182
+#: includes/admin/class-settings.php:126
+msgid "License Status"
+msgstr "Lizenz Status"
+
+#: includes/admin/class-settings.php:135
+msgid "License Key"
+msgstr "Lizenzschlüssel"
+
+#: includes/admin/class-settings.php:151
 #, php-format
 msgid ""
 "Please enter your license key. An active license key is needed for automatic "
@@ -95,23 +128,19 @@ msgstr ""
 "automatische Updates und <a href=\"%s\" target=\"_blank\">Support</a> zu "
 "erhalten."
 
-#: includes/admin/class-settings.php:283
-msgid "License Key"
-msgstr "Lizenzschlüssel"
+#: includes/admin/class-settings.php:200
+msgid "Active"
+msgstr "Aktiv"
 
-#: includes/admin/class-settings.php:409
-msgid "Deactivate License"
-msgstr "Lizenz deaktivieren"
+#: includes/admin/class-settings.php:201
+msgid "You are receiving updates."
+msgstr "Updates sind aktiviert."
 
-#: includes/admin/class-settings.php:410
-msgid "Your license is valid!"
-msgstr "Deine Lizenz ist gültig!"
+#: includes/admin/class-settings.php:207
+msgid "Expired"
+msgstr "Abgelaufen"
 
-#: includes/admin/class-settings.php:413
-msgid "Renew Your License"
-msgstr "Lizenz verlängern"
-
-#: includes/admin/class-settings.php:414
+#: includes/admin/class-settings.php:208
 msgid ""
 "Your license has expired, renew today to continue getting updates and "
 "support!"
@@ -119,21 +148,33 @@ msgstr ""
 "Deine Lizenz ist abgelaufen. Bitte erneuere sie, um weiterhin Updates und "
 "Support zu erhalten!"
 
-#: includes/admin/class-settings.php:416 includes/admin/class-settings.php:419
+#: includes/admin/class-settings.php:209
+msgid "Renew Your License"
+msgstr "Lizenz verlängern"
+
+#: includes/admin/class-settings.php:213
+msgid "Invalid"
+msgstr "Ungültig"
+
+#: includes/admin/class-settings.php:214
+msgid ""
+"Please make sure that you have not reached the site limit and expiration "
+"date."
+msgstr ""
+"Bitte stelle sicher, dass die max. Anzahl an Seiten und das Ablaufdatum der "
+"Lizenz nicht erreicht ist."
+
+#: includes/admin/class-settings.php:218
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: includes/admin/class-settings.php:242
+msgid "Deactivate License"
+msgstr "Lizenz deaktivieren"
+
+#: includes/admin/class-settings.php:247
 msgid "Activate License"
 msgstr "Lizenz aktivieren"
-
-#: includes/admin/class-settings.php:417
-msgid "Your license is invalid!"
-msgstr "Deine Lizenz ist ungültig!"
-
-#: includes/admin/class-settings.php:513
-#, php-format
-msgid ""
-"The callback function used for the <strong>%s</strong> setting is missing."
-msgstr ""
-"Die Callback Funktion für die Einstellung <strong>%s</strong> ist nicht "
-"vorhanden."
 
 #: includes/customizer/class-customize-font-control.php:30
 msgid "Previous Font"
@@ -397,15 +438,15 @@ msgstr "Vertikale Anordnung"
 #: includes/widgets/widget-magazine-posts-list.php:21
 #, php-format
 msgid "Magazine Posts: List (%s)"
-msgstr "Magazin Beiträge: Raster (%s)"
+msgstr "Magazin Beiträge: Liste (%s)"
 
 #: includes/widgets/widget-magazine-posts-list.php:24
 msgid ""
 "Displays your posts from a selected category in a simple list layout. Please "
 "use this widget ONLY in the Magazine Homepage widget area."
 msgstr ""
-"Zeigt die Beiträge einer gewählten Kategorie in einer Liste. Bitte verwende "
-"dieses Widget NUR in dem Magazin Startseite Widgetbereich."
+"Zeigt die Beiträge einer gewählten Kategorie in einer einfachen Liste. Bitte "
+"verwende dieses Widget NUR in dem Magazin Startseite Widgetbereich."
 
 #: includes/widgets/widget-magazine-posts-list.php:305
 msgid "Number of posts:"
@@ -414,7 +455,7 @@ msgstr "Anzahl der Beiträge:"
 #: includes/widgets/widget-magazine-posts-list.php:327
 #: includes/widgets/widget-magazine-posts-single.php:319
 msgid "Display post category"
-msgstr "Zeige die Beitragskategorie"
+msgstr "Zeige Kategorie des Beitrags"
 
 #: includes/widgets/widget-magazine-posts-single.php:21
 #, php-format
@@ -430,12 +471,8 @@ msgstr ""
 "dieses Widget NUR in dem Magazin Startseite Widgetbereich."
 
 #~ msgctxt "color setting"
-#~ msgid "Post Slider"
-#~ msgstr "Beitrags-Slider"
-
-#~ msgctxt "color setting"
-#~ msgid "Header"
-#~ msgstr "Header"
+#~ msgid "Links & Buttons"
+#~ msgstr "Links & Buttons"
 
 #~ msgctxt "color setting"
 #~ msgid "Navigation"
@@ -446,10 +483,6 @@ msgstr ""
 #~ msgstr "Beitrags-Titel"
 
 #~ msgctxt "color setting"
-#~ msgid "Links and Buttons"
-#~ msgstr "Links und Buttons"
-
-#~ msgctxt "color setting"
 #~ msgid "Widget Titles"
 #~ msgstr "Widget Titel"
 
@@ -457,18 +490,164 @@ msgstr ""
 #~ msgid "Widget Links"
 #~ msgstr "Widget Links"
 
-#~ msgctxt "color setting"
-#~ msgid "Footer Widgets"
-#~ msgstr "Footer Widgets"
-
-#~ msgid "Site Logo"
-#~ msgstr "Logo Bild"
+#~ msgid "Display Credit Link to ThemeZee on footer line."
+#~ msgstr "Zeige Link zu ThemeZee im Footer"
 
 #~ msgid "Logo Image (replaces Site Title)"
 #~ msgstr "Logo Bild (ersetzt Titel der Website)"
 
+#~ msgctxt "color setting"
+#~ msgid "Post Slider"
+#~ msgstr "Beitrags-Slider"
+
+#~ msgctxt "color setting"
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgctxt "color setting"
+#~ msgid "Header & Menu (primary)"
+#~ msgstr "Header & Menü (primär)"
+
+#~ msgctxt "color setting"
+#~ msgid "Header & Menu (secondary)"
+#~ msgstr "Header & Menü (sekundär)"
+
+#~ msgctxt "color setting"
+#~ msgid "Post Area (primary)"
+#~ msgstr "Content (primär)"
+
+#~ msgctxt "color setting"
+#~ msgid "Post Area (secondary)"
+#~ msgstr "Content (sekundär)"
+
+#~ msgctxt "color setting"
+#~ msgid "Slider (primary)"
+#~ msgstr "Slider (primär)"
+
+#~ msgctxt "color setting"
+#~ msgid "Slider (secondary)"
+#~ msgstr "Slider (sekundär)"
+
+#~ msgid "Remove spacing on header area for fullwidth logo images."
+#~ msgstr "Entferne Abstände im Header für Fullwidth Logo Bilder."
+
+#~ msgctxt "color setting"
+#~ msgid "Header"
+#~ msgstr "Header"
+
+#~ msgctxt "color setting"
+#~ msgid "Footer Widgets"
+#~ msgstr "Footer Widgets"
+
+#~ msgid "Footer"
+#~ msgstr "Footer"
+
+#~ msgid "Appears on footer area."
+#~ msgstr "Erscheint im Footer Bereich."
+
+#~ msgid "Logo Spacing (default: 10)"
+#~ msgstr "Logo Abstand (Standard: 10)"
+
 #~ msgid "Navigation Spacing (default: 10)"
 #~ msgstr "Navigation Abstand (Standard: 10)"
+
+#~ msgid "Read more"
+#~ msgstr "Weiterlesen"
+
+#~ msgid "Magazine Posts: 2 Columns (%s)"
+#~ msgstr "Magazin Beiträge: 2 Spalten (%s)"
+
+#~ msgid ""
+#~ "Displays your posts from two selected categories. Please use this widget "
+#~ "ONLY in the Magazine Homepage widget area."
+#~ msgstr ""
+#~ "Zeigt die Beiträge von zwei gewählten Kategorien in zwei Spalten. Bitte "
+#~ "verwende dieses Widget NUR in dem Magazin Startseite Widgetbereich."
+
+#~ msgid "Left Category Title:"
+#~ msgstr "Titel der linken Kategorie:"
+
+#~ msgid "Left Category:"
+#~ msgstr "Linke Kategorie:"
+
+#~ msgid "Right Category Title:"
+#~ msgstr "Titel der rechten Kategorie:"
+
+#~ msgid "Right Category:"
+#~ msgstr "Rechte Kategorie:"
+
+#~ msgid "Highlight first post (big image + excerpt)"
+#~ msgstr "Ersten Beitrag hervorheben (großes Bild + Textauszug)"
+
+#~ msgctxt "color setting"
+#~ msgid "Footer Border"
+#~ msgstr "Footer Rahmen"
+
+#~ msgid "Header Settings"
+#~ msgstr "Header Einstellungen"
+
+#~ msgid "Logo Spacing (default: 15)"
+#~ msgstr "Logo Abstand (Standard: 15)"
+
+#~ msgctxt "color setting"
+#~ msgid "Links and Buttons"
+#~ msgstr "Links und Buttons"
+
+#~ msgctxt "color setting"
+#~ msgid "Post Titles (primary)"
+#~ msgstr "Beitragsüberschriften (primär)"
+
+#~ msgctxt "color setting"
+#~ msgid "Post Titles (secondary)"
+#~ msgstr "Beitragsüberschriften (sekundär)"
+
+#~ msgid "Social Icons"
+#~ msgstr "Social Icons"
+
+#~ msgid "Magazine Posts: Sidebar (%s)"
+#~ msgstr "Magazin Beiträge: Sidebar (%s)"
+
+#~ msgid ""
+#~ "Displays your posts from a selected category. You can use this widget in "
+#~ "the Sidebar widget area."
+#~ msgstr ""
+#~ "Zeigt die Beiträge einer gewählten Kategorie. Du kannst dieses Widget in "
+#~ "der Sidebar verwenden."
+
+#~ msgid "Display post excerpt"
+#~ msgstr "Zeige Beitragsauszug"
+
+#~ msgctxt "color setting"
+#~ msgid "Header Border"
+#~ msgstr "Header Rahmen"
+
+#~ msgctxt "color setting"
+#~ msgid "Navigation Hover"
+#~ msgstr "Navigation Hover"
+
+#~ msgid "Site Logo"
+#~ msgstr "Logo Bild"
+
+#~ msgid "Header Spacing (default: 10)"
+#~ msgstr "Header Abstand (Standard: 10)"
+
+#~ msgid "Tortuga Pro"
+#~ msgstr "Tortuga Pro"
+
+#~ msgid "Configure the Tortuga Pro Addon."
+#~ msgstr "Tortuga Pro Addon konfigurieren"
+
+#~ msgid "Your license is valid!"
+#~ msgstr "Deine Lizenz ist gültig!"
+
+#~ msgid "Your license is invalid!"
+#~ msgstr "Deine Lizenz ist ungültig!"
+
+#~ msgid ""
+#~ "The callback function used for the <strong>%s</strong> setting is missing."
+#~ msgstr ""
+#~ "Die Callback Funktion für die Einstellung <strong>%s</strong> ist nicht "
+#~ "vorhanden."
 
 #~ msgid "404: Page not found"
 #~ msgstr "404: Seite nicht gefunden"
@@ -720,9 +899,6 @@ msgstr ""
 #~ "Erweitere die Funktionalität deiner WordPress Webseite mit unseren "
 #~ "kostenlosen Plugins."
 
-#~ msgid "https://themezee.com/plugins/"
-#~ msgstr "https://themezee.com/de/plugins/"
-
 #~ msgid "Browse Plugins"
 #~ msgstr "Plugins ansehen"
 
@@ -840,31 +1016,6 @@ msgstr ""
 #~ msgid "Display post date and author"
 #~ msgstr "Zeige Beitragsdatum und Autor"
 
-#~ msgid ""
-#~ "Displays your posts from two selected categories. Please use this widget "
-#~ "ONLY in the Magazine Homepage widget area."
-#~ msgstr ""
-#~ "Zeigt die Beiträge von zwei gewählten Kategorien in zwei Spalten. Bitte "
-#~ "verwende dieses Widget NUR in dem Magazin Startseite Widgetbereich."
-
-#~ msgid "Category Posts: 2 Columns (%s)"
-#~ msgstr "Kategorie Beiträge: 2 Spalten (%s)"
-
-#~ msgid "Left Category Title:"
-#~ msgstr "Titel der linken Kategorie:"
-
-#~ msgid "Left Category:"
-#~ msgstr "Linke Kategorie:"
-
-#~ msgid "Right Category Title:"
-#~ msgstr "Titel der rechten Kategorie:"
-
-#~ msgid "Right Category:"
-#~ msgstr "Rechte Kategorie:"
-
-#~ msgid "Highlight first post (big image + excerpt)"
-#~ msgstr "Ersten Beitrag hervorheben (großes Bild + Textauszug)"
-
 #~ msgid "Link Category Titles to Category Archive pages"
 #~ msgstr "Verlinke die Kategorie Titel zu den Kategorie Archiv Seiten"
 
@@ -883,9 +1034,6 @@ msgstr ""
 
 #~ msgid "Category Posts: Horizontal (%s)"
 #~ msgstr "Kategorie Beiträge: Horizontal (%s)"
-
-#~ msgid "Read more"
-#~ msgstr "Weiterlesen"
 
 #~ msgid "Edit Post"
 #~ msgstr "Beitrag bearbeiten"
@@ -1217,47 +1365,6 @@ msgstr ""
 #~ msgid "Invalid License Key"
 #~ msgstr "Ungültiger Lizenzschlüssel"
 
-#~ msgid "Active"
-#~ msgstr "Aktiv"
-
-#~ msgid "Display Credit Link to ThemeZee on footer line."
-#~ msgstr "Zeige Link zu ThemeZee im Footer"
-
-#~ msgctxt "color setting"
-#~ msgid "Links"
-#~ msgstr "Links"
-
-#~ msgctxt "color setting"
-#~ msgid "Header & Menu (primary)"
-#~ msgstr "Header & Menü (primär)"
-
-#~ msgctxt "color setting"
-#~ msgid "Header & Menu (secondary)"
-#~ msgstr "Header & Menü (sekundär)"
-
-#~ msgctxt "color setting"
-#~ msgid "Slider (primary)"
-#~ msgstr "Slider (primär)"
-
-#~ msgctxt "color setting"
-#~ msgid "Slider (secondary)"
-#~ msgstr "Slider (sekundär)"
-
-#~ msgid "Remove spacing on header area for fullwidth logo images."
-#~ msgstr "Entferne Abstände im Header für Fullwidth Logo Bilder."
-
-#~ msgctxt "color setting"
-#~ msgid "Footer Border"
-#~ msgstr "Footer Rahmen"
-
-#~ msgctxt "color setting"
-#~ msgid "Header Border"
-#~ msgstr "Header Rahmen"
-
-#~ msgctxt "color setting"
-#~ msgid "Navigation Hover"
-#~ msgstr "Navigation Hover"
-
 #~ msgid "Version %s"
 #~ msgstr "Version %s "
 
@@ -1331,9 +1438,6 @@ msgstr ""
 
 #~ msgid "Post type:"
 #~ msgstr "Beitragstyp:"
-
-#~ msgid "Static page:"
-#~ msgstr "Statische Seite:"
 
 #~ msgid "All taxonomy pages"
 #~ msgstr "Alle Taxonomie-Seiten"
@@ -1584,9 +1688,6 @@ msgstr ""
 
 #~ msgid "Display post thumbnails"
 #~ msgstr "Zeige Beitragsbilder"
-
-#~ msgid "Display post comments"
-#~ msgstr "Zeige Kommentare"
 
 #~ msgid "Social Icons (ThemeZee)"
 #~ msgstr "Social Icons (ThemeZee)"

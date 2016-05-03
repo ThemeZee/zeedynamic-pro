@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zeeDynamic Pro\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2016-04-03 17:44+0100\n"
-"PO-Revision-Date: 2016-04-03 17:44+0100\n"
+"POT-Creation-Date: 2016-05-03 17:31+0100\n"
+"PO-Revision-Date: 2016-05-03 17:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
 "Language: en_US\n"
@@ -20,22 +20,44 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: zeedynamic-pro.php:178
+#: zeedynamic-pro.php:197
 msgid "Settings"
 msgstr ""
 
-#: zeedynamic-pro.php:200
+#: includes/admin/class-admin-notices.php:55
+#, php-format
+msgid ""
+"Please enter your license key for the %1$s add-on in order to receive "
+"updates and support. <a href=\"%2$s\">Enter License Key</a>"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:59
+#: includes/admin/class-admin-notices.php:87
+#: includes/admin/class-admin-notices.php:112
+msgid "Dismiss Notice"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:83
+#, php-format
+msgid ""
+"Your license for %1$s has expired. Please <a href=\"%2$s\">renew</a> to "
+"continue getting updates and support!"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:108
 #, php-format
 msgid ""
 "The %1$s add-on needs the %2$s theme activated in order to work. You should "
 "deactivate %1$s if you have switched to another theme permanently."
 msgstr ""
 
-#: zeedynamic-pro.php:222
-#, php-format
-msgid ""
-"Please enter your license key for the %1$s add-on in order to receive "
-"updates and support. <a href=\"%2$s\">Enter License Key</a>"
+#: includes/admin/class-admin-notices.php:135
+msgid "Security check failed"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:135
+#: includes/admin/class-plugin-updater.php:324
+msgid "Error"
 msgstr ""
 
 #: includes/admin/class-plugin-updater.php:177
@@ -57,68 +79,83 @@ msgstr ""
 msgid "You do not have permission to install plugin updates"
 msgstr ""
 
-#: includes/admin/class-plugin-updater.php:324
-msgid "Error"
-msgstr ""
-
-#: includes/admin/class-settings-page.php:44
-#: includes/admin/class-settings-page.php:45
+#: includes/admin/class-settings-page.php:46
+#: includes/admin/class-settings-page.php:47
 msgid "Pro Version"
 msgstr ""
 
-#: includes/admin/class-settings-page.php:65
-msgid "zeeDynamic Pro"
+#: includes/admin/class-settings-page.php:81
+#, php-format
+msgid ""
+"You can find your license keys and manage your active sites on <a href=\"%s"
+"\" target=\"_blank\">themezee.com</a>."
 msgstr ""
 
-#: includes/admin/class-settings.php:132
-msgid "License"
+#: includes/admin/class-settings-page.php:81
+msgid "https://themezee.com/license-keys/"
 msgstr ""
 
-#: includes/admin/class-settings.php:172
-msgid "Configure the zeeDynamic Pro Addon."
+#: includes/admin/class-settings.php:121
+msgid "Automatic Updates"
 msgstr ""
 
-#: includes/admin/class-settings.php:182
+#: includes/admin/class-settings.php:126
+msgid "License Status"
+msgstr ""
+
+#: includes/admin/class-settings.php:135
+msgid "License Key"
+msgstr ""
+
+#: includes/admin/class-settings.php:151
 #, php-format
 msgid ""
 "Please enter your license key. An active license key is needed for automatic "
 "plugin updates and <a href=\"%s\" target=\"_blank\">support</a>."
 msgstr ""
 
-#: includes/admin/class-settings.php:283
-msgid "License Key"
+#: includes/admin/class-settings.php:200
+msgid "Active"
 msgstr ""
 
-#: includes/admin/class-settings.php:409
-msgid "Deactivate License"
+#: includes/admin/class-settings.php:201
+msgid "You are receiving updates."
 msgstr ""
 
-#: includes/admin/class-settings.php:410
-msgid "Your license is valid!"
+#: includes/admin/class-settings.php:207
+msgid "Expired"
 msgstr ""
 
-#: includes/admin/class-settings.php:413
-msgid "Renew Your License"
-msgstr ""
-
-#: includes/admin/class-settings.php:414
+#: includes/admin/class-settings.php:208
 msgid ""
 "Your license has expired, renew today to continue getting updates and "
 "support!"
 msgstr ""
 
-#: includes/admin/class-settings.php:416 includes/admin/class-settings.php:419
-msgid "Activate License"
+#: includes/admin/class-settings.php:209
+msgid "Renew Your License"
 msgstr ""
 
-#: includes/admin/class-settings.php:417
-msgid "Your license is invalid!"
+#: includes/admin/class-settings.php:213
+msgid "Invalid"
 msgstr ""
 
-#: includes/admin/class-settings.php:513
-#, php-format
+#: includes/admin/class-settings.php:214
 msgid ""
-"The callback function used for the <strong>%s</strong> setting is missing."
+"Please make sure that you have not reached the site limit and expiration "
+"date."
+msgstr ""
+
+#: includes/admin/class-settings.php:218
+msgid "Inactive"
+msgstr ""
+
+#: includes/admin/class-settings.php:242
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/admin/class-settings.php:247
+msgid "Activate License"
 msgstr ""
 
 #: includes/customizer/class-customize-font-control.php:30

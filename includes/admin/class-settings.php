@@ -271,9 +271,6 @@ class zeeDynamic_Pro_Settings {
 		$status  = $this->get( 'license_status' );
 		$license = trim( $_POST['zeedynamic_pro_settings']['license_key'] );
 
-		if( 'valid' == $status )
-			return; // license already activated and valid
-
 		// data to send in our API request
 		$api_params = array(
 			'edd_action'=> 'activate_license',
@@ -340,7 +337,7 @@ class zeeDynamic_Pro_Settings {
 
 		$options = $this->get_all();
 
-		$options['license_status'] = 0;
+		$options['license_status'] = 'inactive';
 
 		update_option( 'zeedynamic_pro_settings', $options );
 
@@ -363,34 +360,43 @@ class zeeDynamic_Pro_Settings {
 		
 		// Run the license check a maximum of once per day
 		if( false === $status ) {
-
-			// data to send in our API request
-			$api_params = array(
-				'edd_action'=> 'check_license',
-				'license' 	=> $this->get( 'license_key' ),
-				'item_name' => urlencode( ZEE_DYNAMIC_PRO_NAME ),
-				'item_id'   => ZEE_DYNAMIC_PRO_PRODUCT_ID,
-				'url'       => home_url()
-			);
 			
-			// Call the custom API.
-			$response = wp_remote_post( ZEE_DYNAMIC_PRO_STORE_API_URL, array( 'timeout' => 25, 'sslverify' => true, 'body' => $api_params ) );
-
-			// make sure the response came back okay
-			if ( is_wp_error( $response ) )
-				return false;
-
-			$license_data = json_decode( wp_remote_retrieve_body( $response ) );
-
 			$options = $this->get_all();
+			$license_key = $options['license_key'];
+			
+			if( $license_key <> '' and $options['license_status'] <> 'inactive' ) {
+				
+				// data to send in our API request
+				$api_params = array(
+					'edd_action'=> 'check_license',
+					'license' 	=> $license_key,
+					'item_name' => urlencode( ZEEDYNAMIC_PRO_NAME ),
+					'item_id'   => ZEEDYNAMIC_PRO_PRODUCT_ID,
+					'url'       => home_url()
+				);
+				
+				// Call the custom API.
+				$response = wp_remote_post( ZEEDYNAMIC_PRO_STORE_API_URL, array( 'timeout' => 25, 'sslverify' => true, 'body' => $api_params ) );
 
-			$options['license_status'] = $license_data->license;
+				// make sure the response came back okay
+				if ( is_wp_error( $response ) )
+					return false;
+
+				$license_data = json_decode( wp_remote_retrieve_body( $response ) );
+				
+				$status = $license_data->license;
+				
+			} else {
+				
+				$status = 'inactive';
+			
+			}
+			
+			$options['license_status'] = $status;
 			
 			update_option( 'zeedynamic_pro_settings', $options );
 
-			set_transient( 'zeedynamic_pro_license_check', $license_data->license, DAY_IN_SECONDS );
-
-			$status = $license_data->license;
+			set_transient( 'zeedynamic_pro_license_check', $status, DAY_IN_SECONDS );
 
 		}
 

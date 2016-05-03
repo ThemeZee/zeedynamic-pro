@@ -48,7 +48,7 @@ class zeeDynamic_Pro_Admin_Notices {
 		// Get Settings
 		$options = zeeDynamic_Pro_Settings::instance();
 			
-		if( '' == $options->get( 'license_key' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php' ) ) && current_theme_supports( 'zeedynamic-pro' ) && ! get_transient( 'zeedynamic_pro_activate_license_dismissed' ) && current_user_can( 'edit_theme_options' ) ) : ?>
+		if( '' == $options->get( 'license_key' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php', 'themes.php' ) ) && ! isset( $_GET['page'] ) && current_theme_supports( 'zeedynamic-pro' ) && ! get_transient( 'zeedynamic_pro_activate_license_dismissed' ) && current_user_can( 'edit_theme_options' ) ) : ?>
 			
 			<div class="notice notice-info">
 				<p>
@@ -76,7 +76,7 @@ class zeeDynamic_Pro_Admin_Notices {
 		// Get Settings
 		$options = zeeDynamic_Pro_Settings::instance();
 			
-		if( 'expired' == $options->get( 'license_status' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php' ) ) && current_theme_supports( 'zeedynamic-pro' ) && ! get_transient( 'zeedynamic_pro_expired_license_dismissed' ) && current_user_can( 'edit_theme_options' ) ) : ?>
+		if( 'expired' == $options->get( 'license_status' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php', 'themes.php' ) ) && ! isset( $_GET['page'] ) && current_theme_supports( 'zeedynamic-pro' ) && ! get_transient( 'zeedynamic_pro_expired_license_dismissed' ) && current_user_can( 'edit_theme_options' ) ) : ?>
 			
 			<div class="notice notice-warning">
 				<p>
@@ -101,7 +101,7 @@ class zeeDynamic_Pro_Admin_Notices {
 	static function missing_theme() { 
 		global $pagenow;
 		
-		if( ! current_theme_supports( 'zeedynamic-pro' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php' ) ) && ! get_transient( 'zeedynamic_pro_missing_theme_dismissed' ) && current_user_can( 'edit_theme_options' ) ) : ?>
+		if( ! current_theme_supports( 'zeedynamic-pro' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php', 'themes.php' ) ) && ! isset( $_GET['page'] ) && ! get_transient( 'zeedynamic_pro_missing_theme_dismissed' ) && current_user_can( 'edit_theme_options' ) ) : ?>
 			
 			<div class="notice notice-warning">
 				<p>
