@@ -7,77 +7,91 @@
  * @package zeeDynamic Pro
  */
 
+/**
+ * Custom Font List class
+ */
 class zeeDynamic_Pro_Custom_Font_Lists {
-	
-	public static function get_fonts($type) {
-					
-		// Set Fonts Array
+
+	/**
+	 * Get Fonts
+	 *
+	 * @param String $type Type of Font list.
+	 * @return array List of Google Fonts.
+	 */
+	public static function get_fonts( $type ) {
+
+		// Set Fonts Array.
 		$fonts = array();
-		
-		// Set available font list depending on user setting
-		switch($type):
-		
+
+		// Set available font list depending on user setting.
+		switch ( $type ) :
+
 			case 'all':
 				$fonts = zeeDynamic_Pro_Custom_Font_Lists::all_google_fonts();
 			break;
-			
+
 			case 'popular':
 				$fonts = zeeDynamic_Pro_Custom_Font_Lists::popular_google_fonts();
 			break;
-			
+
 			case 'default':
 				$fonts = zeeDynamic_Pro_Custom_Font_Lists::default_browser_fonts();
 			break;
-			
+
 			default:
 				$fonts = zeeDynamic_Pro_Custom_Font_Lists::favorite_google_fonts();
 			break;
-		
+
 		endswitch;
-		
-		// Get Theme Options
+
+		// Get Theme Options.
 		$theme_options = zeeDynamic_Pro_Customizer::get_theme_options();
-		
-		// Get Default Fonts from settings
+
+		// Get Default Fonts from settings.
 		$default_options = zeeDynamic_Pro_Customizer::get_default_options();
-		
-		// Add current selected fonts to array in any case
-		if ( isset($theme_options['text_font']) and ! in_array( $theme_options['text_font'], $fonts, true ) ) :
-			$fonts[trim($theme_options['text_font'])] = esc_attr(trim($theme_options['text_font']));
+
+		// Add current selected fonts to array in any case.
+		if ( isset( $theme_options['text_font'] ) and ! in_array( $theme_options['text_font'], $fonts, true ) ) :
+			$fonts[ trim( $theme_options['text_font'] ) ] = esc_attr( trim( $theme_options['text_font'] ) );
 		endif;
-		if ( isset($theme_options['title_font']) and ! in_array( $theme_options['title_font'], $fonts, true ) ) :
-			$fonts[trim($theme_options['title_font'])] = esc_attr(trim($theme_options['title_font']));
+		if ( isset( $theme_options['title_font'] ) and ! in_array( $theme_options['title_font'], $fonts, true ) ) :
+			$fonts[ trim( $theme_options['title_font'] ) ] = esc_attr( trim( $theme_options['title_font'] ) );
 		endif;
-		if ( isset($theme_options['navi_font']) and ! in_array( $theme_options['navi_font'], $fonts, true ) ) :
-			$fonts[trim($theme_options['navi_font'])] = esc_attr(trim($theme_options['navi_font']));
+		if ( isset( $theme_options['navi_font'] ) and ! in_array( $theme_options['navi_font'], $fonts, true ) ) :
+			$fonts[ trim( $theme_options['navi_font'] ) ] = esc_attr( trim( $theme_options['navi_font'] ) );
 		endif;
-		if ( isset($theme_options['widget_title_font']) and ! in_array( $theme_options['widget_title_font'], $fonts, true ) ) :
-			$fonts[trim($theme_options['widget_title_font'])] = esc_attr(trim($theme_options['widget_title_font']));
+		if ( isset( $theme_options['widget_title_font'] ) and ! in_array( $theme_options['widget_title_font'], $fonts, true ) ) :
+			$fonts[ trim( $theme_options['widget_title_font'] ) ] = esc_attr( trim( $theme_options['widget_title_font'] ) );
 		endif;
-		
-		// Add default fonts to array in any case
-		if ( isset($default_options['text_font']) and ! in_array( $default_options['text_font'], $fonts, true ) ) :
-			$fonts[trim($default_options['text_font'])] = esc_attr(trim($default_options['text_font']));
+
+		// Add default fonts to array in any case.
+		if ( isset( $default_options['text_font'] ) and ! in_array( $default_options['text_font'], $fonts, true ) ) :
+			$fonts[ trim( $default_options['text_font'] ) ] = esc_attr( trim( $default_options['text_font'] ) );
 		endif;
-		if ( isset($default_options['title_font']) and ! in_array( $default_options['title_font'], $fonts, true ) ) :
-			$fonts[trim($default_options['title_font'])] = esc_attr(trim($default_options['title_font']));
+		if ( isset( $default_options['title_font'] ) and ! in_array( $default_options['title_font'], $fonts, true ) ) :
+			$fonts[ trim( $default_options['title_font'] ) ] = esc_attr( trim( $default_options['title_font'] ) );
 		endif;
-		if ( isset($default_options['navi_font']) and ! in_array( $default_options['navi_font'], $fonts, true ) ) :
-			$fonts[trim($default_options['navi_font'])] = esc_attr(trim($default_options['navi_font']));
+		if ( isset( $default_options['navi_font'] ) and ! in_array( $default_options['navi_font'], $fonts, true ) ) :
+			$fonts[ trim( $default_options['navi_font'] ) ] = esc_attr( trim( $default_options['navi_font'] ) );
 		endif;
-		if ( isset($default_options['widget_title_font']) and ! in_array( $default_options['widget_title_font'], $fonts, true ) ) :
-			$fonts[trim($default_options['widget_title_font'])] = esc_attr(trim($default_options['widget_title_font']));
+		if ( isset( $default_options['widget_title_font'] ) and ! in_array( $default_options['widget_title_font'], $fonts, true ) ) :
+			$fonts[ trim( $default_options['widget_title_font'] ) ] = esc_attr( trim( $default_options['widget_title_font'] ) );
 		endif;
-			
-		// Sort fonts alphabetically
-		asort($fonts);
+
+		// Sort fonts alphabetically.
+		asort( $fonts );
 
 		return $fonts;
-		
+
 	}
-	
+
+	/**
+	 * Get default browser fonts
+	 *
+	 * @return array List of Google Fonts.
+	 */
 	public static function default_browser_fonts() {
-		
+
 		$fonts = array(
 			'Arial' => 'Arial',
 			'Arial Black' => 'Arial Black',
@@ -90,15 +104,20 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Lucida Console' => 'Lucida Console',
 			'Tahoma' => 'Tahoma',
 			'Times New Roman' => 'Times New Roman',
-			'Verdana' => 'Verdana'
+			'Verdana' => 'Verdana',
 		);
-			
+
 		return $fonts;
-		
+
 	}
-	
+
+	/**
+	 * Get our favorite fonts
+	 *
+	 * @return array List of Google Fonts.
+	 */
 	private static function favorite_google_fonts() {
-		
+
 		$fonts = array(
 			'Arimo' => 'Arimo',
 			'Bitter' => 'Bitter',
@@ -107,10 +126,10 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Crimson Text' => 'Crimson Text',
 			'Cuprum' => 'Cuprum',
 			'Dosis' => 'Dosis',
-			'Droid Sans' => 'Droid Sans',
+			'Roboto' => 'Roboto',
 			'Exo' => 'Exo',
 			'Fjalla One' => 'Fjalla One',
-			'Francois One' => 'Francois One',
+			'Roboto' => 'Roboto',
 			'Hammersmith One' => 'Hammersmith One',
 			'Istok Web' => 'Istok Web',
 			'Jockey One' => 'Jockey One',
@@ -134,16 +153,20 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Tinos' => 'Tinos',
 			'Ubuntu' => 'Ubuntu',
 			'Vollkorn' => 'Vollkorn',
-			'Yanone Kaffeesatz' => 'Yanone Kaffeesatz'
+			'Yanone Kaffeesatz' => 'Yanone Kaffeesatz',
 		);
-			
+
 		return $fonts;
-		
+
 	}
-	
-	
+
+	/**
+	 * Get popular google fonts
+	 *
+	 * @return array List of Google Fonts.
+	 */
 	private static function popular_google_fonts() {
-		
+
 		$fonts = array(
 			'Abel' => 'Abel',
 			'Alegreya' => 'Alegreya',
@@ -170,13 +193,13 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Dancing Script' => 'Dancing Script',
 			'Didact Gothic' => 'Didact Gothic',
 			'Dosis' => 'Dosis',
-			'Droid Sans' => 'Droid Sans',
+			'Roboto' => 'Roboto',
 			'Droid Serif' => 'Droid Serif',
 			'Exo 2' => 'Exo 2',
 			'Exo' => 'Exo',
 			'Fira Sans' => 'Fira Sans',
 			'Fjalla One' => 'Fjalla One',
-			'Francois One' => 'Francois One',
+			'Roboto' => 'Roboto',
 			'Glegoo' => 'Glegoo',
 			'Gloria Hallelujah' => 'Gloria Hallelujah',
 			'Gudea' => 'Gudea',
@@ -244,16 +267,20 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Ubuntu' => 'Ubuntu',
 			'Varela Round' => 'Varela Round',
 			'Vollkorn' => 'Vollkorn',
-			'Yanone Kaffeesatz' => 'Yanone Kaffeesatz'
+			'Yanone Kaffeesatz' => 'Yanone Kaffeesatz',
 		);
-			
+
 		return $fonts;
-		
+
 	}
-	
-	
+
+	/**
+	 * Get all google fonts
+	 *
+	 * @return array List of Google Fonts.
+	 */
 	private static function all_google_fonts() {
-		
+
 		$fonts = array(
 			'ABeeZee' => 'ABeeZee',
 			'Abel' => 'Abel',
@@ -437,8 +464,8 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Dorsa' => 'Dorsa',
 			'Dosis' => 'Dosis',
 			'Dr Sugiyama' => 'Dr Sugiyama',
-			'Droid Sans' => 'Droid Sans',
-			'Droid Sans Mono' => 'Droid Sans Mono',
+			'Roboto' => 'Roboto',
+			'Roboto Mono' => 'Roboto Mono',
 			'Droid Serif' => 'Droid Serif',
 			'Duru Sans' => 'Duru Sans',
 			'Dynalight' => 'Dynalight',
@@ -482,7 +509,7 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Fondamento' => 'Fondamento',
 			'Fontdiner Swanky' => 'Fontdiner Swanky',
 			'Forum' => 'Forum',
-			'Francois One' => 'Francois One',
+			'Roboto' => 'Roboto',
 			'Freckle Face' => 'Freckle Face',
 			'Fredericka the Great' => 'Fredericka the Great',
 			'Fredoka One' => 'Fredoka One',
@@ -946,11 +973,9 @@ class zeeDynamic_Pro_Custom_Font_Lists {
 			'Yellowtail' => 'Yellowtail',
 			'Yeseva One' => 'Yeseva One',
 			'Yesteryear' => 'Yesteryear',
-			'Zeyada' => 'Zeyada'
+			'Zeyada' => 'Zeyada',
 		);
-			
+
 		return $fonts;
-		
 	}
-	
 }
