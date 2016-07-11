@@ -8,7 +8,7 @@
  * @package zeeDynamic Pro
  */
 
- 
+
 /*--------------------------------------------------------------
 # Header Bar
 --------------------------------------------------------------*/
@@ -68,12 +68,12 @@
 	transition: all 0.2s ease;
 }
 
-.top-navigation-menu a:link, 
+.top-navigation-menu a:link,
 .top-navigation-menu a:visited {
 	color: #fff;
 }
 
-.top-navigation-menu a:hover, 
+.top-navigation-menu a:hover,
 .top-navigation-menu a:active {
 	background: rgba(0,0,0,0.5);
 }
@@ -115,7 +115,7 @@
 	border-bottom: none;
 }
 
-.top-navigation-menu ul a:link, 
+.top-navigation-menu ul a:link,
 .top-navigation-menu ul a:visited {
 	text-decoration: none;
 }
@@ -125,15 +125,15 @@
 	margin-left: 16rem;
 }
 
-.top-navigation-menu li:hover ul ul, 
-.top-navigation-menu li:hover ul ul ul, 
+.top-navigation-menu li:hover ul ul,
+.top-navigation-menu li:hover ul ul ul,
 .top-navigation-menu li:hover ul ul ul ul {
 	display: none;
 }
 
-.top-navigation-menu li:hover ul, 
-.top-navigation-menu li li:hover ul, 
-.top-navigation-menu li li li:hover ul, 
+.top-navigation-menu li:hover ul,
+.top-navigation-menu li li:hover ul,
+.top-navigation-menu li li li:hover ul,
 .top-navigation-menu li li li li:hover ul {
 	display: block;
 }
@@ -173,7 +173,7 @@
 
 /* Magazine Posts Boxed Widget Horizontal Style */
 .widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .wp-post-image {
-	float: left;	
+	float: left;
 	width: 50%;
 	margin: 0;
 	padding-right: 1em;
@@ -268,12 +268,12 @@
 	color: #fff;
 }
 
-.footer-widgets .widget a:link, 
+.footer-widgets .widget a:link,
 .footer-widgets .widget a:visited  {
 	color: #eee;
 }
 
-.footer-widgets .widget a:hover, 
+.footer-widgets .widget a:hover,
 .footer-widgets .widget a:active  {
 	color: rgba(255,255,255,0.6);
 }
@@ -329,12 +329,12 @@
 	transition: all 0.2s ease;
 }
 
-.footer-navigation-menu a:link, 
+.footer-navigation-menu a:link,
 .footer-navigation-menu a:visited {
 	color: #fff;
 }
 
-.footer-navigation-menu a:hover, 
+.footer-navigation-menu a:hover,
 .footer-navigation-menu a:active {
 	background: rgba(0,0,0,0.5);
 }
@@ -385,7 +385,7 @@
 	.footer-widget-column {
 		padding-right: 1.5em;
 	}
-	
+
 }
 
 @media only screen and (max-width: 70em) {
@@ -393,26 +393,26 @@
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .more-link  {
 		display: none;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Desktop Medium ( < 1040px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 65em) {
-	
+
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .entry-content {
 		display: none;
 	}
-	
+
 	.footer-widget-column {
 		width: 50%;
 	}
-	
+
 	.footer-widget-column:nth-child(3) {
 		clear: left;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
@@ -421,60 +421,60 @@
 @media only screen and (max-width: 60em) {
 
 	/*** Mobile Top Navigation ***/
-	
+
 	/* Reset */
 	.top-navigation-menu {
 		margin: 0;
 	}
-	
+
 	.top-navigation-menu li {
 		float: none;
 		position: static;
 	}
-	
+
 	.top-navigation-menu ul {
 		position: static;
 		display: block;
 	}
-	
+
 	.top-navigation-menu ul a {
 		width: auto;
 		float: none;
 	}
-	
+
 	.top-navigation-menu li ul ul {
 		margin-left: 0;
 	}
-	
-	.top-navigation-menu li:hover ul ul, 
-	.top-navigation-menu li:hover ul ul ul, 
+
+	.top-navigation-menu li:hover ul ul,
+	.top-navigation-menu li:hover ul ul ul,
 	.top-navigation-menu li:hover ul ul ul ul,
-	.top-navigation-menu li:hover ul, 
-	.top-navigation-menu li li:hover ul, 
+	.top-navigation-menu li:hover ul,
+	.top-navigation-menu li li:hover ul,
 	.top-navigation-menu li li li:hover ul,
 	.top-navigation-menu li li li li:hover ul {
 		display: inline;
 	}
-	
+
 	.top-navigation-menu > .menu-item-has-children > a:after {
 		display: none;
 	}
-	
-	
+
+
 	/* Top Navigation Toggle */
 	.top-navigation-toggle {
 		display: inline-block;
 		padding: 0.75em;
 		background: none;
 	}
-	
+
 	.top-navigation-toggle:hover,
 	.top-navigation-toggle:active,
 	.top-navigation-toggle:focus {
 		cursor: pointer;
 		background: none;
 	}
-	
+
 	.top-navigation-toggle:after {
 		float: left;
 		display: inline-block;
@@ -489,11 +489,11 @@
 		content: '\f419';
 		color: #fff;
 	}
-	
+
 	.top-navigation-toggle:hover {
 		background: rgba(0,0,0,0.25);
 	}
-	
+
 	/* Top Navigation Menu */
 	.top-navigation-menu {
 		float: left;
@@ -501,7 +501,7 @@
 		display: none;
 		border-top: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.top-navigation-menu a {
 		display: block;
 		clear: left;
@@ -510,7 +510,7 @@
 		padding: 1em 1.25em;
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.top-navigation-menu li:last-child a {
 		border-bottom: none;
 	}
@@ -519,17 +519,17 @@
 		width: 100%;
 		border-top: none;
 	}
-	
+
 	.top-navigation-menu ul a {
 		display: block;
 		width: 100%;
 		padding-left: 3em;
 	}
-	
+
 	.top-navigation-menu ul li:last-child a {
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
-		
+
 	.top-navigation-menu ul ul a {
 		padding-left: 6em;
 	}
@@ -542,11 +542,11 @@
 		padding: 0.75em 1em;
 		background: none;
 	}
-	
+
 	.top-navigation-menu .submenu-dropdown-toggle:hover {
 		cursor: pointer;
 	}
-	
+
 	.top-navigation-menu .submenu-dropdown-toggle:before {
 		font-size: 24px;
 		line-height: 1;
@@ -558,28 +558,28 @@
 		content: '\f431';
 		color: #fff;
 	}
-	
+
 	.top-navigation-menu .submenu-dropdown-toggle:hover:before {
 		color: rgba(255,255,255,0.6);
 	}
-	
+
 	.top-navigation-menu .submenu-dropdown-toggle.active:before {
 		content: '\f432';
 	}
-	
+
 	.top-navigation-menu ul .submenu-dropdown-toggle {
 		padding: 0.6em 1em;
 	}
-	
+
 	/* Footer Line */
 	.footer-navigation .today {
 		display: none;
 	}
-	
+
 	.site-footer .site-info {
 		max-width: 80%;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
@@ -591,40 +591,40 @@
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .more-link {
 		display: inline-block;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Tablet Medium ( < 800px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 50em) {
-	
+
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .more-link {
 		display: none;
 	}
-	
+
 	.site-footer .site-info {
 		max-width: 60%;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Tablet Small ( < 720px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 45em) {
-	
+
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .entry-content {
 		display: none;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Mobile Extra Large ( < 640px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 40em) {
-	
+
 	/* Magazine Post Widgets */
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .wp-post-image,
 	.widget-magazine-posts-boxed .magazine-posts-boxed-vertical .large-post {
@@ -639,19 +639,19 @@
 		margin-left: 0;
 		padding-left: 0;
 	}
-	
+
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .post-content {
 		float: right;
 		width: 50%;
 		padding-left: 1.5em;
 	}
-	
+
 	/*** Mobile Footer Navigation ***/
 	.footer-navigation .today {
 		display: inline-block;
 		margin-left: 1em;
 	}
-	
+
 	/* Footer Navigation Toggle */
 	.footer-navigation-toggle {
 		float: right;
@@ -659,14 +659,14 @@
 		background: none;
 		padding: 0.9em;
 	}
-	
+
 	.footer-navigation-toggle:hover,
 	.footer-navigation-toggle:active,
 	.footer-navigation-toggle:focus {
 		cursor: pointer;
 		background: rgba(0,0,0,0.25);
 	}
-	
+
 	.footer-navigation-toggle:after {
 		float: left;
 		display: inline-block;
@@ -681,14 +681,14 @@
 		content: '\f419';
 		color: #fff;
 	}
-	
+
 	/* Footer Navigation Menu */
 	.footer-navigation {
 		display: block;
 		width: 100%;
 		padding: 0;
 	}
-	
+
 	.footer-navigation-menu {
 		float: right;
 		display: none;
@@ -696,16 +696,16 @@
 		padding: 0;
 		border-top: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	.footer-navigation-menu li {
 		float: none;
 	}
-	
+
 	.footer-navigation-menu a {
 		padding: 0.8em 1em;
 		border-bottom: 1px solid rgba(255,255,255,0.1);
 	}
-	
+
 	/* Footer Line */
 	.site-footer .site-info {
 		float: none;
@@ -713,80 +713,80 @@
 		max-width: 100%;
 		padding-bottom: 0.5em;
 	}
-	
+
 	.site-footer .social-icons-navigation {
 		float: left;
 		margin: 0 1em 1em;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Mobile Large ( < 560px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 35em) {
-	
+
 	/* Magazine Homepage: Category Post Widgets */
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .medium-posts {
 		margin-right: 0;
 	}
-	
+
 	.widget-magazine-posts-list .type-post .entry-content {
 		display: none;
 	}
-	
+
 	.footer-widgets {
 		margin-right: 0;
 	}
-	
+
 	.footer-widget-column {
 		float: none;
 		width: 100%;
 		padding-right: 0;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Mobile Medium ( < 480px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 30em) {
-	
+
 	/* Magazine Homepage: Category Post Widgets */
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .post-content {
 		float: none;
 		width: 100%;
 		padding: 0;
 	}
-	
+
 	.widget-magazine-posts-boxed .magazine-posts-boxed-horizontal .large-post .entry-content {
 		display: inline-block;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Mobile Small ( < 320px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 25em) {
-	
+
 	.widget-magazine-posts-list .type-post .entry-title {
 		font-size: 18px;
 		font-size: 1.125rem;
 	}
-	
+
 }
 
 /*--------------------------------------------------------------
 ## Mobile Small ( < 320px )
 --------------------------------------------------------------*/
 @media only screen and (max-width: 20em) {
-	
+
 	.widget-magazine-posts-list .type-post .entry-title {
 		font-size: 16px;
 		font-size: 1rem;
 	}
-	
+
 	.widget-magazine-posts-list .type-post .entry-meta {
 		display: none;
 	}
@@ -799,18 +799,18 @@
 
 /* Ensure top navigation is visible on desktop view */
 @media only screen and (min-width: 60.001em) {
-	
+
 	.top-navigation-menu {
 		display: block !important;
 	}
-	
+
 }
 
 /* Ensure footer navigation is visible on desktop view */
 @media only screen and (min-width: 40.001em) {
-	
+
 	.footer-navigation-menu {
 		display: block !important;
 	}
-	
+
 }

@@ -274,7 +274,7 @@ class zeeDynamic_Pro_Custom_Fonts {
 			'default'           => 'favorites',
 			'type'           	=> 'option',
 			'transport'         => 'postMessage',
-			'sanitize_callback' => array( 'zeeDynamic_Pro_Custom_Fonts', 'zeedynamic_pro_sanitize_available_fonts' ),
+			'sanitize_callback' => array( 'zeeDynamic_Pro_Custom_Fonts', 'sanitize_available_fonts' ),
 			)
 		);
 		$wp_customize->add_control( new zeeDynamic_Pro_Customize_Font_List_Control(
