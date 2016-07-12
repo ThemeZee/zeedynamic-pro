@@ -122,9 +122,6 @@ class zeeDynamic_Pro {
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-list.php';
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-single.php';
 
-		// Include Custom Stylesheet class.
-		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/class-custom-stylesheet.php';
-
 	}
 
 	/**
@@ -163,6 +160,18 @@ class zeeDynamic_Pro {
 
 		// Enqueue Plugin Stylesheet.
 		wp_enqueue_style( 'zeedynamic-pro', ZEE_DYNAMIC_PRO_PLUGIN_URL . 'assets/css/zeedynamic-pro.css', array(), ZEE_DYNAMIC_PRO_VERSION );
+
+		// Get Custom CSS.
+		$custom_css = apply_filters( 'zeedynamic_pro_custom_css_stylesheet', '' );
+
+		// Sanitize Custom CSS.
+		$custom_css = wp_kses( $custom_css, array( '\'', '\"' ) );
+		$custom_css = str_replace( '&gt;', '>', $custom_css );
+		$custom_css = preg_replace( '/\n/', '', $custom_css );
+		$custom_css = preg_replace( '/\t/', '', $custom_css );
+
+		// Add Custom CSS.
+		wp_add_inline_style( 'zeedynamic-pro', $custom_css );
 
 	}
 

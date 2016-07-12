@@ -56,7 +56,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 		public function enqueue() {
 
 			// Register and Enqueue Custom Font JS Constructor.
-			wp_enqueue_script( 'zeedynamic-pro-custom-font-control', ZEEDYNAMIC_PRO_PLUGIN_URL . 'assets/js/custom-font-control.js', array( 'customize-controls' ), ZEEDYNAMIC_PRO_VERSION, true );
+			wp_enqueue_script( 'zeedynamic-pro-custom-font-control', ZEE_DYNAMIC_PRO_PLUGIN_URL . 'assets/js/custom-font-control.js', array( 'customize-controls' ), ZEE_DYNAMIC_PRO_VERSION, true );
 
 		}
 

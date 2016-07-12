@@ -2,6 +2,12 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.0.2
+-----------------------------------
+[added] loading of custom colors and custom fonts CSS with wp_add_inline_style()
+[updated] plugin uploader class
+[improved] code formatting
+
 Version 1.0.1
 -----------------------------------
 [improved] styling of license settings page

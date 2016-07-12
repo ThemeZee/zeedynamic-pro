@@ -67,7 +67,7 @@ class zeeDynamic_Pro_Settings_Page {
 
 		<div class="wrap pro-version-wrap">
 
-			<h1><?php echo ZEEDYNAMIC_PRO_NAME; ?> <?php echo ZEEDYNAMIC_PRO_VERSION; ?></h1>
+			<h1><?php echo ZEE_DYNAMIC_PRO_NAME; ?> <?php echo ZEE_DYNAMIC_PRO_VERSION; ?></h1>
 
 			<div id="zeedynamic-pro-settings" class="zeedynamic-pro-settings-wrap">
 
@@ -102,7 +102,7 @@ class zeeDynamic_Pro_Settings_Page {
 		}
 
 		// Embed theme info css style.
-		wp_enqueue_style( 'zeedynamic-pro-settings-css', plugins_url( '/assets/css/settings.css', dirname( dirname( __FILE__ ) ) ), array(), ZEEDYNAMIC_PRO_VERSION );
+		wp_enqueue_style( 'zeedynamic-pro-settings-css', plugins_url( '/assets/css/settings.css', dirname( dirname( __FILE__ ) ) ), array(), ZEE_DYNAMIC_PRO_VERSION );
 
 	}
 }

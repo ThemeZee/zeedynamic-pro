@@ -53,7 +53,7 @@ class zeeDynamic_Pro_Admin_Notices {
 			<div class="notice notice-info">
 				<p>
 					<?php printf( __( 'Please enter your license key for the %1$s add-on in order to receive updates and support. <a href="%2$s">Enter License Key</a>', 'zeedynamic-pro' ),
-						ZEEDYNAMIC_PRO_NAME,
+						ZEE_DYNAMIC_PRO_NAME,
 						admin_url( 'themes.php?page=zeedynamic-pro' )
 					);
 					?>
@@ -82,7 +82,7 @@ class zeeDynamic_Pro_Admin_Notices {
 			<div class="notice notice-warning">
 				<p>
 					<?php printf( __( 'Your license for %1$s has expired. Please <a href="%2$s">renew</a> to continue getting updates and support!', 'zeedynamic-pro' ),
-						ZEEDYNAMIC_PRO_NAME,
+						ZEE_DYNAMIC_PRO_NAME,
 						admin_url( 'themes.php?page=zeedynamic-pro' )
 					);
 					?>
@@ -108,7 +108,7 @@ class zeeDynamic_Pro_Admin_Notices {
 			<div class="notice notice-warning">
 				<p>
 					<?php printf( __( 'The %1$s add-on needs the %2$s theme activated in order to work. You should deactivate %1$s if you have switched to another theme permanently.', 'zeedynamic-pro' ),
-						ZEEDYNAMIC_PRO_NAME,
+						ZEE_DYNAMIC_PRO_NAME,
 						'zeeDynamic'
 					); ?>
 					<a style="float: right" href="<?php echo wp_nonce_url( add_query_arg( array( 'zeedynamic_pro_action' => 'dismiss_notices', 'zeedynamic_pro_notice' => 'missing_theme' ) ), 'zeedynamic_pro_dismiss_notice', 'zeedynamic_pro_dismiss_notice_nonce' ); ?>"><?php _e( 'Dismiss Notice', 'zeedynamic-pro' ); ?></a>
