@@ -2,6 +2,11 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.0.3
+-----------------------------------
+[added] custom styling for mega menu plugin
+[improved] browser prefixing of CSS stylesheets
+
 Version 1.0.2
 -----------------------------------
 [added] loading of custom colors and custom fonts CSS with wp_add_inline_style()
