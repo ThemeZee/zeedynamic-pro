@@ -5,7 +5,7 @@ Plugin URI: http://themezee.com/addons/zeedynamic-pro/
 Description: Adds additional features like custom colors, google fonts, widget areas and footer copyright to the zeeDynamic theme.
 Author: ThemeZee
 Author URI: https://themezee.com/
-Version: 1.0.3
+Version: 1.0.4
 Text Domain: zeedynamic-pro
 Domain Path: /languages/
 License: GPL v3
@@ -62,7 +62,7 @@ class zeeDynamic_Pro {
 		define( 'ZEE_DYNAMIC_PRO_NAME', 'zeeDynamic Pro' );
 
 		// Define Version Number.
-		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.0.3' );
+		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.0.4' );
 
 		// Define Plugin Name.
 		define( 'ZEE_DYNAMIC_PRO_PRODUCT_ID', 58567 );
@@ -158,8 +158,12 @@ class zeeDynamic_Pro {
 			return;
 		}
 
-		// Enqueue Plugin Stylesheet.
-		wp_enqueue_style( 'zeedynamic-pro', ZEE_DYNAMIC_PRO_PLUGIN_URL . 'assets/css/zeedynamic-pro.css', array(), ZEE_DYNAMIC_PRO_VERSION );
+		// Enqueue RTL or default Plugin Stylesheet.
+		if ( is_rtl() ) {
+			wp_enqueue_style( 'zeedynamic-pro', ZEE_DYNAMIC_PRO_PLUGIN_URL . 'assets/css/zeedynamic-pro-rtl.css', array(), ZEE_DYNAMIC_PRO_VERSION );
+		} else {
+			wp_enqueue_style( 'zeedynamic-pro', ZEE_DYNAMIC_PRO_PLUGIN_URL . 'assets/css/zeedynamic-pro.css', array(), ZEE_DYNAMIC_PRO_VERSION );
+		}
 
 		// Get Custom CSS.
 		$custom_css = apply_filters( 'zeedynamic_pro_custom_css_stylesheet', '' );

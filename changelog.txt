@@ -2,6 +2,11 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.0.4
+-----------------------------------
+[added] RTL language support for all Pro features
+[added] 18 new Google Fonts to font settings
+
 Version 1.0.3
 -----------------------------------
 [added] custom styling for mega menu plugin

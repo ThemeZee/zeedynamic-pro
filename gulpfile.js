@@ -29,7 +29,7 @@ gulp.task( 'cleancss', function() {
 
 // RTL CSS
 gulp.task( 'rtlcss', function () {
-	return gulp.src( 'assets/css/poseidon-pro.css' )
+	return gulp.src( 'assets/css/zeedynamic-pro.css' )
 		.pipe( rtlcss() )
 		.pipe( rename( {
 			suffix: '-rtl'
