@@ -2,28 +2,33 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.0.5
+-----------------------------------
+* changed Google Font URL to https in Customizer
+* updated custom color settings for pagination
+
 Version 1.0.4
 -----------------------------------
-[added] RTL language support for all Pro features
-[added] 18 new Google Fonts to font settings
+* added RTL language support for all Pro features
+* added 18 new Google Fonts to font settings
 
 Version 1.0.3
 -----------------------------------
-[added] custom styling for mega menu plugin
-[improved] browser prefixing of CSS stylesheets
+* added custom styling for mega menu plugin
+* improved browser prefixing of CSS stylesheets
 
 Version 1.0.2
 -----------------------------------
-[added] loading of custom colors and custom fonts CSS with wp_add_inline_style()
-[updated] plugin uploader class
-[improved] code formatting
+* added loading of custom colors and custom fonts CSS with wp_add_inline_style()
+* updated plugin uploader class
+* improved code formatting
 
 Version 1.0.1
 -----------------------------------
-[improved] styling of license settings page
-[added] dismiss links to admin notices
-[fixed] register additional Magazine Post widgets only if zeeDynamic theme is active
-[changed] default values for post meta settings
+* improved styling of license settings page
+* added dismiss links to admin notices
+* fixed register additional Magazine Post widgets only if zeeDynamic theme is active
+* changed default values for post meta settings
 
 Version 1.0
 -----------------------------------
