@@ -225,7 +225,7 @@ class zeeDynamic_Pro {
 
 		if ( $options->get( 'license_key' ) <> '' ) :
 
-			$license_key = $options->get( 'license_key' );
+			$license_key = trim( $options->get( 'license_key' ) );
 
 			// Setup the updater.
 			$zeedynamic_pro_updater = new zeeDynamic_Pro_Plugin_Updater( ZEE_DYNAMIC_PRO_STORE_API_URL, __FILE__, array(
