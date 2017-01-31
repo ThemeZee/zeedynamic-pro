@@ -2,6 +2,11 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.0.6
+-----------------------------------
+* changed HTML markup of header bar
+* updated EDD Plugin Updater class
+
 Version 1.0.5
 -----------------------------------
 * changed Google Font URL to https in Customizer
