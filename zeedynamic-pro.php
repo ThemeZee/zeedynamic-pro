@@ -117,7 +117,8 @@ class zeeDynamic_Pro {
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/modules/class-header-spacing.php';
 
 		// Include Magazine Widgets.
-		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-boxed.php';
+		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-horizontal-box.php';
+		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-vertical-box.php';
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-list.php';
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-single.php';
 
@@ -190,7 +191,8 @@ class zeeDynamic_Pro {
 			return;
 		}
 
-		register_widget( 'zeeDynamic_Pro_Magazine_Posts_Boxed_Widget' );
+		register_widget( 'zeeDynamic_Pro_Magazine_Horizontal_Box_Widget' );
+		register_widget( 'zeeDynamic_Pro_Magazine_Vertical_Box_Widget' );
 		register_widget( 'zeeDynamic_Pro_Magazine_Posts_List_Widget' );
 		register_widget( 'zeeDynamic_Pro_Magazine_Posts_Single_Widget' );
 
