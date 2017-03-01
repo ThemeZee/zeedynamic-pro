@@ -21,10 +21,10 @@ class zeeDynamic_Pro_Magazine_Horizontal_Box_Widget extends WP_Widget {
 		// Setup Widget.
 		parent::__construct(
 			'zeedynamic-magazine-posts-boxed', // ID.
-			esc_html__( 'Magazine (Horizontal Box)', 'zeedynamic' ), // Name.
+			esc_html__( 'Magazine (Horizontal Box)', 'zeedynamic-pro' ), // Name.
 			array(
 				'classname' => 'zeedynamic-magazine-horizontal-box-widget',
-				'description' => esc_html__( 'Displays your posts from a selected category in a horizontal box. Please use this widget ONLY in the Magazine Homepage widget area.', 'zeedynamic' ),
+				'description' => esc_html__( 'Displays your posts from a selected category in a horizontal box. Please use this widget ONLY in the Magazine Homepage widget area.', 'zeedynamic-pro' ),
 				'customize_selective_refresh' => true,
 			) // Args.
 		);
@@ -159,7 +159,7 @@ class zeeDynamic_Pro_Magazine_Horizontal_Box_Widget extends WP_Widget {
 			if ( $settings['category'] > 0 ) :
 
 				// Set Link URL and Title for Category.
-				$link_title = sprintf( esc_html__( 'View all posts from category %s', 'zeedynamic' ), get_cat_name( $settings['category'] ) );
+				$link_title = sprintf( esc_html__( 'View all posts from category %s', 'zeedynamic-pro' ), get_cat_name( $settings['category'] ) );
 				$link_url = esc_url( get_category_link( $settings['category'] ) );
 
 				// Display Widget Title with link to category archive.
@@ -207,16 +207,16 @@ class zeeDynamic_Pro_Magazine_Horizontal_Box_Widget extends WP_Widget {
 		?>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'zeedynamic' ); ?>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'zeedynamic-pro' ); ?>
 				<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $settings['title'] ); ?>" />
 			</label>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php esc_html_e( 'Category:', 'zeedynamic' ); ?></label><br/>
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php esc_html_e( 'Category:', 'zeedynamic-pro' ); ?></label><br/>
 			<?php // Display Category Select.
 				$args = array(
-					'show_option_all'    => esc_html__( 'All Categories', 'zeedynamic' ),
+					'show_option_all'    => esc_html__( 'All Categories', 'zeedynamic-pro' ),
 					'show_count' 		 => true,
 					'hide_empty'		 => false,
 					'selected'           => $settings['category'],
@@ -230,13 +230,3 @@ class zeeDynamic_Pro_Magazine_Horizontal_Box_Widget extends WP_Widget {
 		<?php
 	}
 }
-
-/**
- * Register Widget
- */
-function zeedynamic_register_magazine_posts_horizontal_box_widget() {
-
-	register_widget( 'zeeDynamic_Pro_Magazine_Horizontal_Box_Widget' );
-
-}
-add_action( 'widgets_init', 'zeedynamic_register_magazine_posts_horizontal_box_widget' );
