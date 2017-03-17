@@ -53,6 +53,14 @@ class zeeDynamic_Pro_Magazine_Vertical_Box_Widget extends WP_Widget {
 	 */
 	function widget( $args, $instance ) {
 
+		// Show message to admins if Theme is not updated.
+		if ( ! function_exists( 'zeedynamic_get_magazine_post_ids' ) ) {
+			if ( current_user_can( 'edit_theme_options' ) ) {
+				echo '<p>INFO: Magazine Widget is missing theme functions and can not be displayed. Please update the theme to the latest version. This message is only shown to admins.</p>';
+			}
+			return;
+		}
+
 		// Start Output Buffering.
 		ob_start();
 
