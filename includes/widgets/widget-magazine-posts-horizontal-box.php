@@ -5,7 +5,7 @@
  * Display the latest posts from a selected category in a horizontal box.
  * Intented to be used in the Magazine Homepage widget area to built a magazine layouted page.
  *
- * @package zeeDynamic
+ * @package zeeDynamic Pro
  */
 
 /**

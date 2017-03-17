@@ -5,7 +5,7 @@
  * Displays a single post from a selected category.
  * Intented to be used in the Magazine Homepage widget area to built a magazine layouted page.
  *
- * @package zeeDynamic
+ * @package zeeDynamic Pro
  */
 
 /**
