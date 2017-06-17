@@ -108,9 +108,10 @@ class zeeDynamic_Pro_Magazine_Posts_Single_Widget extends WP_Widget {
 
 		// Fetch posts from database.
 		$query_arguments = array(
-			'post__in'       => $post_id,
-			'posts_per_page' => 1,
-			'no_found_rows'  => true,
+			'post__in'            => $post_id,
+			'posts_per_page'      => 1,
+			'ignore_sticky_posts' => true,
+			'no_found_rows'       => true,
 		);
 		$posts_query = new WP_Query( $query_arguments );
 
