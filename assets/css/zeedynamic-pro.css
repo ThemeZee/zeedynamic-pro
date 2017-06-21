@@ -353,6 +353,47 @@
 }
 
 /*--------------------------------------------------------------
+# Scroll to Top Button
+--------------------------------------------------------------*/
+.scroll-to-top-button {
+	z-index: 9999;
+	width: 40px;
+	height: 40px;
+	display: inline;
+	position: fixed;
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 0;
+	right: 1em;
+	bottom: 1em;
+	background: #e84747;
+	transition: none;
+}
+
+.scroll-to-top-button:focus,
+.scroll-to-top-button:active {
+	background: #e84747;
+}
+
+.scroll-to-top-button:hover {
+	background: #333333;
+}
+
+.scroll-to-top-button:after {
+	display: inline-block;
+	margin: 0 0 0 2px;
+	color: #fff;
+	content: '\f432';
+	vertical-align: top;
+	text-decoration: inherit;
+	font-size: 26px;
+	font-family: 'Genericons';
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 

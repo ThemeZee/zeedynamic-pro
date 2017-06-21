@@ -6,8 +6,13 @@
  * @package zeeDynamic Pro
  */
 
-#customize-control-zeedynamic_theme_options-header_spacing {
+#customize-control-zeedynamic_theme_options-header_spacing,
+#customize-control-zeedynamic_theme_options-footer_text {
 	margin-top: 16px;
+}
+
+#customize-control-zeedynamic_theme_options-scroll_top_title {
+	margin-bottom: 0;
 }
 
 #customize-control-zeedynamic_theme_options-footer_text textarea {
