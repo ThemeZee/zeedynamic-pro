@@ -2,6 +2,14 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.3
+-----------------------------------
+* added Scroll-Back-to-Top Feature
+* updated color settings for Scroll Button
+* ignore sticky posts in Magazine Widgets
+* fixed number of posts setting in Magazine Widgets
+* fixed wrong local time displayed in footer line
+
 Version 1.2
 -----------------------------------
 * added transient caching for Magazine widgets to increase performance
