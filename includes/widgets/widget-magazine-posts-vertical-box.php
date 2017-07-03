@@ -24,7 +24,7 @@ class zeeDynamic_Pro_Magazine_Vertical_Box_Widget extends WP_Widget {
 			esc_html__( 'Magazine (Vertical Box)', 'zeedynamic-pro' ), // Name.
 			array(
 				'classname' => 'zeedynamic-magazine-vertical-box-widget',
-				'description' => esc_html__( 'Displays your posts from a selected category in a vertical box. Please use this widget ONLY in the Magazine Homepage widget area.', 'zeedynamic-pro' ),
+				'description' => esc_html__( 'Displays your posts from a selected category in a vertical box.', 'zeedynamic-pro' ),
 				'customize_selective_refresh' => true,
 			) // Args.
 		);
@@ -36,8 +36,8 @@ class zeeDynamic_Pro_Magazine_Vertical_Box_Widget extends WP_Widget {
 	private function default_settings() {
 
 		$defaults = array(
-			'title'				=> '',
-			'category'			=> 0,
+			'title'    => esc_html__( 'Magazine (Vertical Box)', 'zeedynamic-pro' ),
+			'category' => 0,
 		);
 
 		return $defaults;

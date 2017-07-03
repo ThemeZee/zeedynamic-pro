@@ -24,7 +24,7 @@ class zeeDynamic_Pro_Magazine_Posts_List_Widget extends WP_Widget {
 			esc_html__( 'Magazine (List)', 'zeedynamic-pro' ), // Name.
 			array(
 				'classname' => 'zeedynamic-magazine-list-widget',
-				'description' => esc_html__( 'Displays your posts from a selected category in a simple list layout. Please use this widget ONLY in the Magazine Homepage widget area.', 'zeedynamic-pro' ),
+				'description' => esc_html__( 'Displays your posts from a selected category in a simple list layout.', 'zeedynamic-pro' ),
 				'customize_selective_refresh' => true,
 			) // Args.
 		);
@@ -36,7 +36,7 @@ class zeeDynamic_Pro_Magazine_Posts_List_Widget extends WP_Widget {
 	private function default_settings() {
 
 		$defaults = array(
-			'title'    => '',
+			'title'    => esc_html__( 'Magazine (List)', 'zeedynamic-pro' ),
 			'category' => 0,
 			'number'   => 3,
 		);
