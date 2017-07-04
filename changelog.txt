@@ -2,6 +2,11 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.3.1
+-----------------------------------
+* added default widget titles for Magazine widgets
+* added Customizer images for Magazine widgets
+
 Version 1.3
 -----------------------------------
 * added Scroll-Back-to-Top Feature

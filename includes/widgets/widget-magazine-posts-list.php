@@ -24,7 +24,7 @@ class zeeDynamic_Pro_Magazine_Posts_List_Widget extends WP_Widget {
 			esc_html__( 'Magazine (List)', 'zeedynamic-pro' ), // Name.
 			array(
 				'classname' => 'zeedynamic-magazine-list-widget',
-				'description' => esc_html__( 'Displays your posts from a selected category in a simple list layout.', 'zeedynamic-pro' ),
+				'description' => esc_html__( 'Displays your posts from a selected category in a list layout.', 'zeedynamic-pro' ),
 				'customize_selective_refresh' => true,
 			) // Args.
 		);
