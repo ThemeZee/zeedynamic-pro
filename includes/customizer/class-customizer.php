@@ -75,7 +75,6 @@ class zeeDynamic_Pro_Customizer {
 			'title_font'              => 'Francois One',
 			'navi_font'               => 'Francois One',
 			'widget_title_font'       => 'Droid Sans',
-			'available_fonts'         => 'favorites',
 		);
 
 		return $default_options;
