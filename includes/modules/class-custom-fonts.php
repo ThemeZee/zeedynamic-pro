@@ -269,6 +269,54 @@ class zeeDynamic_Pro_Custom_Fonts {
 	}
 
 	/**
+	 * Get local fonts
+	 *
+	 * @return array List of local fonts.
+	 */
+	static function get_local_fonts() {
+
+		$fonts = array(
+			'Arial'                       => 'Arial',
+			'Arial Black'                 => 'Arial Black',
+			'Courier New'                 => 'Courier New',
+			'Georgia'                     => 'Georgia',
+			'Helvetica'                   => 'Helvetica',
+			'Impact'                      => 'Impact',
+			'Palatino, Palatino Linotype' => 'Palatino',
+			'SystemFontStack'             => 'System Font Stack',
+			'Tahoma'                      => 'Tahoma',
+			'Trebuchet MS, Trebuchet'     => 'Trebuchet MS',
+			'Times New Roman, Times'      => 'Times New Roman',
+			'Verdana'                     => 'Verdana',
+		);
+
+		// Get Theme Options from Database.
+		$theme_options = zeeDynamic_Pro_Customizer::get_theme_options();
+
+		// Get Default Fonts from settings.
+		$default_options = zeeDynamic_Pro_Customizer::get_default_options();
+
+		// Add default fonts to local fonts.
+		if ( isset( $default_options['text_font'] ) and ! array_key_exists( $default_options['text_font'], $fonts ) ) :
+			$fonts[ trim( $default_options['text_font'] ) ] = esc_attr( trim( $default_options['text_font'] ) );
+		endif;
+		if ( isset( $default_options['title_font'] ) and ! array_key_exists( $default_options['title_font'], $fonts ) ) :
+			$fonts[ trim( $default_options['title_font'] ) ] = esc_attr( trim( $default_options['title_font'] ) );
+		endif;
+		if ( isset( $default_options['navi_font'] ) and ! array_key_exists( $default_options['navi_font'], $fonts ) ) :
+			$fonts[ trim( $default_options['navi_font'] ) ] = esc_attr( trim( $default_options['navi_font'] ) );
+		endif;
+		if ( isset( $default_options['widget_title_font'] ) and ! array_key_exists( $default_options['widget_title_font'], $fonts ) ) :
+			$fonts[ trim( $default_options['widget_title_font'] ) ] = esc_attr( trim( $default_options['widget_title_font'] ) );
+		endif;
+
+		// Sort fonts alphabetically.
+		asort( $fonts );
+
+		return $fonts;
+	}
+
+	/**
 	 * Get all google fonts
 	 *
 	 * @return array List of Google Fonts.
@@ -995,16 +1043,16 @@ class zeeDynamic_Pro_Custom_Fonts {
 
 		// Remove default theme fonts from Google fonts.
 		if ( isset( $default_options['text_font'] ) and array_key_exists( $default_options['text_font'], $fonts ) ) :
-			#unset( $fonts[ trim( $default_options['text_font'] ) ] );
+			unset( $fonts[ trim( $default_options['text_font'] ) ] );
 		endif;
 		if ( isset( $default_options['title_font'] ) and array_key_exists( $default_options['title_font'], $fonts ) ) :
-			#unset( $fonts[ trim( $default_options['title_font'] ) ] );
+			unset( $fonts[ trim( $default_options['title_font'] ) ] );
 		endif;
 		if ( isset( $default_options['navi_font'] ) and array_key_exists( $default_options['navi_font'], $fonts ) ) :
-			#unset( $fonts[ trim( $default_options['navi_font'] ) ] );
+			unset( $fonts[ trim( $default_options['navi_font'] ) ] );
 		endif;
 		if ( isset( $default_options['widget_title_font'] ) and array_key_exists( $default_options['widget_title_font'], $fonts ) ) :
-			#unset( $fonts[ trim( $default_options['widget_title_font'] ) ] );
+			unset( $fonts[ trim( $default_options['widget_title_font'] ) ] );
 		endif;
 
 		// Sort fonts alphabetically.

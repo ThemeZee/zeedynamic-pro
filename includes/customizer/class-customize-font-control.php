@@ -30,11 +30,18 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 		public $l10n = array();
 
 		/**
-		 * Custom Fonts Array
+		 * Local Fonts Array
 		 *
 		 * @var array
 		 */
-		private $fonts = false;
+		private $local_fonts = false;
+
+		/**
+		 * Google Fonts Array
+		 *
+		 * @var array
+		 */
+		private $google_fonts = false;
 
 		/**
 		 * Setup Font Control
@@ -48,16 +55,16 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			// Make Buttons translateable.
 			$this->l10n = array(
-				'previous' => __( 'Previous Font', 'zeedynamic-pro' ),
-				'next' => __( 'Next Font', 'zeedynamic-pro' ),
-				'standard' => _x( 'Default', 'default font button', 'zeedynamic-pro' ),
+				'previous' => esc_html__( 'Previous Font', 'zeedynamic-pro' ),
+				'next'     => esc_html__( 'Next Font', 'zeedynamic-pro' ),
+				'standard' => esc_html_x( 'Default', 'default font button', 'zeedynamic-pro' ),
 			);
 
 			// Set Fonts.
-			$this->fonts = zeeDynamic_Pro_Custom_Fonts::get_google_fonts();
+			$this->local_fonts = zeeDynamic_Pro_Custom_Fonts::get_local_fonts();
+			$this->google_fonts = zeeDynamic_Pro_Custom_Fonts::get_google_fonts();
 
 			parent::__construct( $manager, $id, $args );
-
 		}
 
 		/**
@@ -81,7 +88,7 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			$l10n = json_encode( $this->l10n );
 
-			if ( ! empty( $this->fonts ) ) :
+			if ( ! empty( $this->local_fonts ) && ! empty( $this->google_fonts ) ) :
 			?>
 
 				<label>
@@ -90,11 +97,21 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 					</span>
 					<div class="customize-font-select-control">
 						<select <?php $this->link(); ?>>
-							<?php
-							foreach ( $this->fonts as $k => $v ) :
-								printf( '<option value="%s" %s>%s</option>', $k, selected( $this->value(), $k, false ), $v );
-							endforeach;
-							?>
+							<optgroup label="<?php esc_html_e( 'Local Fonts', 'zeedynamic-pro' ); ?>">
+								<?php
+								foreach ( $this->local_fonts as $k => $v ) :
+									printf( '<option value="%s" %s>%s</option>', $k, selected( $this->value(), $k, false ), $v );
+								endforeach;
+								?>
+							</optgroup>
+
+							<optgroup label="<?php esc_html_e( 'Google Web Fonts', 'zeedynamic-pro' ); ?>">
+	  							<?php
+								foreach ( $this->google_fonts as $k => $v ) :
+									printf( '<option value="%s" %s>%s</option>', $k, selected( $this->value(), $k, false ), $v );
+								endforeach;
+								?>
+							</optgroup>
 						</select>
 					</div>
 					<div class="actions"></div>
