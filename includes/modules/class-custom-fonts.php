@@ -34,7 +34,7 @@ class zeeDynamic_Pro_Custom_Fonts {
 		add_filter( 'zeedynamic_pro_custom_css_stylesheet', array( __CLASS__, 'custom_fonts_css' ) );
 
 		// Load custom fonts from Google web font API.
-		add_filter( 'zeedynamic_google_fonts_url', array( __CLASS__, 'google_fonts_url' ) );
+		add_filter( 'wp_enqueue_scripts', array( __CLASS__, 'load_google_fonts' ), 1 );
 
 		// Add Font Settings in Customizer.
 		add_action( 'customize_register', array( __CLASS__, 'font_settings' ) );
@@ -117,19 +117,17 @@ class zeeDynamic_Pro_Custom_Fonts {
 	}
 
 	/**
-	 * Replace default Google Fonts URL with custom Fonts from theme settings
+	 * Enqueue Google Fonts if necessary.
 	 *
-	 * @uses zeedynamic_google_fonts_url filter hook
-	 * @param String $google_fonts_url Google Fonts URL.
-	 * @return string Google Font URL
+	 * @return void
 	 */
-	static function google_fonts_url( $google_fonts_url ) {
+	static function load_google_fonts() {
 
 		// Get Theme Options from Database.
 		$theme_options = zeeDynamic_Pro_Customizer::get_theme_options();
 
-		// Default Fonts which haven't to be load from Google.
-		$default_fonts = array();
+		// Get Local Fonts which haven't to be load from Google.
+		$local_fonts = self::get_local_fonts();
 
 		// Set Google Font Array.
 		$google_font_families = array();
@@ -138,40 +136,40 @@ class zeeDynamic_Pro_Custom_Fonts {
 		$font_styles = ':400,400italic,700,700italic';
 
 		// Add Text Font.
-		if ( isset( $theme_options['text_font'] ) and ! in_array( $theme_options['text_font'], $default_fonts ) ) {
+		if ( isset( $theme_options['text_font'] ) and ! array_key_exists( $theme_options['text_font'], $local_fonts ) ) {
 
 			$google_font_families[] = $theme_options['text_font'] . $font_styles;
-			$default_fonts[] = $theme_options['text_font'];
+			$local_fonts[] = $theme_options['text_font']; // Make sure font is not loaded twice.
 
 		}
 
 		// Add Title Font.
-		if ( isset( $theme_options['title_font'] ) and ! in_array( $theme_options['title_font'], $default_fonts ) ) {
+		if ( isset( $theme_options['title_font'] ) and ! array_key_exists( $theme_options['title_font'], $local_fonts ) ) {
 
 			$google_font_families[] = $theme_options['title_font'] . $font_styles;
-			$default_fonts[] = $theme_options['title_font'];
+			$local_fonts[] = $theme_options['title_font']; // Make sure font is not loaded twice.
 
 		}
 
 		// Add Navigation Font.
-		if ( isset( $theme_options['navi_font'] ) and ! in_array( $theme_options['navi_font'], $default_fonts ) ) {
+		if ( isset( $theme_options['navi_font'] ) and ! array_key_exists( $theme_options['navi_font'], $local_fonts ) ) {
 
 			$google_font_families[] = $theme_options['navi_font'] . $font_styles;
-			$default_fonts[] = $theme_options['navi_font'];
+			$local_fonts[] = $theme_options['navi_font']; // Make sure font is not loaded twice.
 
 		}
 
 		// Add Widget Title Font.
-		if ( isset( $theme_options['widget_title_font'] ) and ! in_array( $theme_options['widget_title_font'], $default_fonts ) ) {
+		if ( isset( $theme_options['widget_title_font'] ) and ! array_key_exists( $theme_options['widget_title_font'], $local_fonts ) ) {
 
 			$google_font_families[] = $theme_options['widget_title_font'] . $font_styles;
-			$default_fonts[] = $theme_options['widget_title_font'];
+			$local_fonts[] = $theme_options['widget_title_font']; // Make sure font is not loaded twice.
 
 		}
 
 		// Return early if google font array is empty.
 		if ( empty( $google_font_families ) ) {
-			return $google_fonts_url;
+			return;
 		}
 
 		// Setup Google Font URLs.
@@ -181,7 +179,8 @@ class zeeDynamic_Pro_Custom_Fonts {
 		);
 		$google_fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
 
-		return $google_fonts_url;
+		// Register and Enqueue Google Fonts.
+		wp_enqueue_style( 'zeedynamic-pro-custom-fonts', $google_fonts_url, array(), null );
 	}
 
 	/**
