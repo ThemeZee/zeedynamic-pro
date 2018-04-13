@@ -71,10 +71,10 @@ class zeeDynamic_Pro_Customizer {
 			'content_secondary_color' => '#333333',
 			'footer_area_color'       => '#333333',
 			'footer_navi_color'       => '#e84747',
-			'text_font'               => 'Droid Sans',
+			'text_font'               => 'Open Sans',
 			'title_font'              => 'Francois One',
 			'navi_font'               => 'Francois One',
-			'widget_title_font'       => 'Droid Sans',
+			'widget_title_font'       => 'Open Sans',
 		);
 
 		return $default_options;

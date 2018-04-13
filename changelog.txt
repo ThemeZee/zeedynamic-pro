@@ -6,6 +6,7 @@ Version 1.4
 -----------------------------------
 * added Local Fonts to the Typography settings in the Customizer
 * added System Font Stack to the available Local Fonts
+* changed default font from Droid Sans to Open Sans
 
 In case you are required for GDPR compliance, you can now choose Local Fonts instead of external Google Fonts in the Typography Settings.
 
