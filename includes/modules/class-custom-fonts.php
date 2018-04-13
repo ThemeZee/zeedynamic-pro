@@ -34,7 +34,7 @@ class zeeDynamic_Pro_Custom_Fonts {
 		add_filter( 'zeedynamic_pro_custom_css_stylesheet', array( __CLASS__, 'custom_fonts_css' ) );
 
 		// Load custom fonts from Google web font API.
-		add_filter( 'wp_enqueue_scripts', array( __CLASS__, 'load_google_fonts' ), 1 );
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'load_google_fonts' ), 1 );
 
 		// Add Font Settings in Customizer.
 		add_action( 'customize_register', array( __CLASS__, 'font_settings' ) );

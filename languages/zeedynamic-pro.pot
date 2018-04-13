@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: zeeDynamic Pro\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2017-07-04 11:35+0200\n"
+"POT-Creation-Date: 2018-04-13 10:05+0200\n"
 "PO-Revision-Date: 2016-05-03 17:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -145,21 +145,25 @@ msgstr ""
 msgid "Activate License"
 msgstr ""
 
-#: includes/customizer/class-customize-font-control.php:51
+#: includes/customizer/class-customize-font-control.php:58
 msgid "Previous Font"
 msgstr ""
 
-#: includes/customizer/class-customize-font-control.php:52
+#: includes/customizer/class-customize-font-control.php:59
 msgid "Next Font"
 msgstr ""
 
-#: includes/customizer/class-customize-font-control.php:53
+#: includes/customizer/class-customize-font-control.php:60
 msgctxt "default font button"
 msgid "Default"
 msgstr ""
 
-#: includes/customizer/class-customize-font-list-control.php:44
-msgid "Update Fonts"
+#: includes/customizer/class-customize-font-control.php:100
+msgid "Local Fonts"
+msgstr ""
+
+#: includes/customizer/class-customize-font-control.php:108
+msgid "Google Web Fonts"
 msgstr ""
 
 #: includes/modules/class-custom-colors.php:307
@@ -201,47 +205,27 @@ msgctxt "color setting"
 msgid "Footer Navigation"
 msgstr ""
 
-#: includes/modules/class-custom-fonts.php:198
+#: includes/modules/class-custom-fonts.php:209
 msgid "Theme Fonts"
 msgstr ""
 
-#: includes/modules/class-custom-fonts.php:217
+#: includes/modules/class-custom-fonts.php:228
 msgid "Base Font"
 msgstr ""
 
-#: includes/modules/class-custom-fonts.php:233
+#: includes/modules/class-custom-fonts.php:244
 msgctxt "font setting"
 msgid "Headings"
 msgstr ""
 
-#: includes/modules/class-custom-fonts.php:249
+#: includes/modules/class-custom-fonts.php:260
 msgctxt "font setting"
 msgid "Navigation"
 msgstr ""
 
-#: includes/modules/class-custom-fonts.php:265
+#: includes/modules/class-custom-fonts.php:276
 msgctxt "font setting"
 msgid "Widget Titles"
-msgstr ""
-
-#: includes/modules/class-custom-fonts.php:282
-msgid "Choose available Fonts"
-msgstr ""
-
-#: includes/modules/class-custom-fonts.php:286
-msgid "Default Browser Fonts (12)"
-msgstr ""
-
-#: includes/modules/class-custom-fonts.php:287
-msgid "ThemeZee Favorite Fonts (35)"
-msgstr ""
-
-#: includes/modules/class-custom-fonts.php:288
-msgid "Most Popular Google Fonts (100)"
-msgstr ""
-
-#: includes/modules/class-custom-fonts.php:289
-msgid "All Google Fonts (650)"
 msgstr ""
 
 #: includes/modules/class-footer-line.php:146

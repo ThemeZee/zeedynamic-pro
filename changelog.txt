@@ -2,6 +2,13 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.4
+-----------------------------------
+* added Local Fonts to the Typography settings in the Customizer
+* added System Font Stack to the available Local Fonts
+
+In case you are required for GDPR compliance, you can now choose Local Fonts instead of external Google Fonts in the Typography Settings.
+
 Version 1.3.1
 -----------------------------------
 * added default widget titles for Magazine widgets
