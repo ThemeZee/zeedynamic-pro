@@ -69,7 +69,10 @@ class zeeDynamic_Pro_Custom_Colors {
 				/* Primary Navigation Color Setting */
 				.main-navigation-menu a:hover,
 				.main-navigation-menu a:active,
-				.main-navigation-menu li.current-menu-item > a {
+				.main-navigation-menu li.current-menu-item > a,
+				.main-navigation-toggle:hover,
+				.main-navigation-toggle:focus,
+				.main-navigation-toggle:active {
 					background: ' . $theme_options['navi_primary_color'] . ';
 				}
 				';

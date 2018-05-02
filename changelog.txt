@@ -2,6 +2,10 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.4.1
+-----------------------------------
+* fixed color settings for menu toggle on mobile devices
+
 Version 1.4
 -----------------------------------
 * added Local Fonts to the Typography settings in the Customizer
