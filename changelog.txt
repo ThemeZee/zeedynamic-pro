@@ -2,6 +2,11 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.5
+-----------------------------------
+* updated color settings to set primary color for the Gutenberg Editor
+* adjusted font settings to load custom fonts in the Gutenberg Editor
+
 Version 1.4.1
 -----------------------------------
 * fixed color settings for menu toggle on mobile devices

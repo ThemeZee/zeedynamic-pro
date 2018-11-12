@@ -5,11 +5,11 @@ Plugin URI: http://themezee.com/addons/zeedynamic-pro/
 Description: Adds additional features like custom colors, google fonts, widget areas and footer copyright to the zeeDynamic theme.
 Author: ThemeZee
 Author URI: https://themezee.com/
-Version: 1.4.1
+Version: 1.5
 Text Domain: zeedynamic-pro
 Domain Path: /languages/
-License: GPL v3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 zeeDynamic Pro
 Copyright(C) 2016, ThemeZee.com - support@themezee.com
@@ -17,7 +17,9 @@ Copyright(C) 2016, ThemeZee.com - support@themezee.com
 */
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) { exit; }
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 
 /**
@@ -48,7 +50,6 @@ class zeeDynamic_Pro {
 
 		// Setup Action Hooks.
 		self::setup_actions();
-
 	}
 
 	/**
@@ -62,7 +63,7 @@ class zeeDynamic_Pro {
 		define( 'ZEE_DYNAMIC_PRO_NAME', 'zeeDynamic Pro' );
 
 		// Define Version Number.
-		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.4.1' );
+		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.5' );
 
 		// Define Plugin Name.
 		define( 'ZEE_DYNAMIC_PRO_PRODUCT_ID', 58567 );
@@ -78,7 +79,6 @@ class zeeDynamic_Pro {
 
 		// Plugin Root File.
 		define( 'ZEE_DYNAMIC_PRO_PLUGIN_FILE', __FILE__ );
-
 	}
 
 	/**
@@ -122,7 +122,6 @@ class zeeDynamic_Pro {
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-vertical-box.php';
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-list.php';
 		require_once ZEE_DYNAMIC_PRO_PLUGIN_DIR . '/includes/widgets/widget-magazine-posts-single.php';
-
 	}
 
 	/**
@@ -144,7 +143,6 @@ class zeeDynamic_Pro {
 
 		// Add automatic plugin updater from ThemeZee Store API.
 		add_action( 'admin_init', array( __CLASS__, 'plugin_updater' ), 0 );
-
 	}
 
 	/**
@@ -177,7 +175,6 @@ class zeeDynamic_Pro {
 
 		// Add Custom CSS.
 		wp_add_inline_style( 'zeedynamic-pro', $custom_css );
-
 	}
 
 	/**
@@ -196,7 +193,6 @@ class zeeDynamic_Pro {
 		register_widget( 'zeeDynamic_Pro_Magazine_Vertical_Box_Widget' );
 		register_widget( 'zeeDynamic_Pro_Magazine_Posts_List_Widget' );
 		register_widget( 'zeeDynamic_Pro_Magazine_Posts_Single_Widget' );
-
 	}
 
 	/**
@@ -231,16 +227,14 @@ class zeeDynamic_Pro {
 
 			// Setup the updater.
 			$zeedynamic_pro_updater = new zeeDynamic_Pro_Plugin_Updater( ZEE_DYNAMIC_PRO_STORE_API_URL, __FILE__, array(
-					'version' 	=> ZEE_DYNAMIC_PRO_VERSION,
-					'license' 	=> $license_key,
-					'item_name' => ZEE_DYNAMIC_PRO_NAME,
-					'item_id'   => ZEE_DYNAMIC_PRO_PRODUCT_ID,
-					'author' 	=> 'ThemeZee',
-				)
-			);
+				'version'   => ZEE_DYNAMIC_PRO_VERSION,
+				'license'   => $license_key,
+				'item_name' => ZEE_DYNAMIC_PRO_NAME,
+				'item_id'   => ZEE_DYNAMIC_PRO_PRODUCT_ID,
+				'author'    => 'ThemeZee',
+			) );
 
 		endif;
-
 	}
 }
 
