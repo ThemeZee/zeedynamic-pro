@@ -229,8 +229,9 @@ class zeeDynamic_Pro_Custom_Fonts {
 
 		// Setup Google Font URLs.
 		$query_args = array(
-			'family' => urlencode( implode( '|', $google_font_families ) ),
-			'subset' => urlencode( 'latin,latin-ext' ),
+			'family'  => urlencode( implode( '|', $google_font_families ) ),
+			'subset'  => urlencode( 'latin,latin-ext' ),
+			'display' => urlencode( 'swap' ),
 		);
 
 		$google_fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
