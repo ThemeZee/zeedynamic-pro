@@ -5,14 +5,14 @@ Plugin URI: http://themezee.com/addons/zeedynamic-pro/
 Description: Adds additional features like custom colors, google fonts, widget areas and footer copyright to the zeeDynamic theme.
 Author: ThemeZee
 Author URI: https://themezee.com/
-Version: 1.5
+Version: 1.5.2
 Text Domain: zeedynamic-pro
 Domain Path: /languages/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 zeeDynamic Pro
-Copyright(C) 2016, ThemeZee.com - support@themezee.com
+Copyright(C) 2021, ThemeZee.com - support@themezee.com
 
 */
 
@@ -63,7 +63,7 @@ class zeeDynamic_Pro {
 		define( 'ZEE_DYNAMIC_PRO_NAME', 'zeeDynamic Pro' );
 
 		// Define Version Number.
-		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.5' );
+		define( 'ZEE_DYNAMIC_PRO_VERSION', '1.5.2' );
 
 		// Define Plugin Name.
 		define( 'ZEE_DYNAMIC_PRO_PRODUCT_ID', 58567 );

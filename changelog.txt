@@ -2,6 +2,14 @@
 zeeDynamic Pro Changelog
 ===================================
 
+Version 1.5.2
+-----------------------------------
+* added font display swap to Google Fonts
+
+Version 1.5.1
+-----------------------------------
+* localized date function in footer navigation menu
+
 Version 1.5
 -----------------------------------
 * updated color settings to set primary color for the Gutenberg Editor
